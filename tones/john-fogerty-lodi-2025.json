@@ -1,0 +1,74 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "4a8e2c6f-7b1d-4f95-8c34-1e9b5d7a2f37",
+   "createdAt": "2026-10-17T12:00:00.000Z",
+   "source": "manual",
+   "request": { "song": "Lodi (2025 version)", "artist": "John Fogerty", "part": "Rhythm" },
+   "original": {
+    "guitar": "John and Shane Fogerty (Legacy, 2025). John's CCR-era Rickenbacker is back in use; Les Paul style guitars on stage",
+    "amp": "Not documented for Legacy. CCR-era sound: Kustom and modified Fender Vibrolux amps",
+    "effects": "Spring reverb, short slapback (not documented)",
+    "tuning": "Standard",
+    "notes": "Re-recording on Legacy: The Creedence Clearwater Revival Years (August 2025), produced by John and Shane Fogerty. The studio gear is not published."
+   },
+   "pedal": {
+    "name": "LODI RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x10", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 5, "presence": 6, "volume": 8, "nr": 2 },
+    "channelB": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "TEXTREM", "params": { "speed": 4.5, "depth": 4 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 100, "feedback": 1, "tone": 6, "mix": 1.5 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3.5, "mix": 2 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A is a Vibrolux-style blackface with a little edge, for the strummed rhythm. Channel B is a grittier tweed sound for the fuller parts. Let the open chords ring. For a fuller, rounder strum, switch to the middle position (both, humbucker).",
+   "why": "Lodi is a mid-tempo country-rock song. The rhythm sits on a bright Fender-style amp just at the edge of breakup, with spring reverb and a very short slapback. The new version is fuller and more polished than the 1969 one, so the gain is a touch higher and the reverb a little bigger.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Shore Fire Media: John Fogerty releases Lodi and Born on the Bayou from Legacy", "url": "https://shorefire.com/releases/entry/john-fogerty-releases-two-new-singles-from-upcoming-album-legacy-the-creedence-clearwater-revival-years" },
+    { "title": "American Songwriter: Shane Fogerty recreates the Up Around the Bend lick", "url": "https://americansongwriter.com/john-fogerty-explains-how-his-son-shane-recreated-the-classic-guitar-lick-on-his-new-version-of-ccrs-up-around-the-bend/?nb=1" },
+    { "title": "Equipboard: John Fogerty", "url": "https://equipboard.com/john-fogerty" }
+   ]
+  },
+  {
+   "id": "8d3f6b2a-5e9c-4b17-a6d1-9f4c2e8b3a48",
+   "createdAt": "2026-10-17T12:00:01.000Z",
+   "source": "manual",
+   "request": { "song": "Lodi (2025 version)", "artist": "John Fogerty", "part": "Intro lick, fills and solo" },
+   "original": {
+    "guitar": "John and Shane Fogerty (Legacy, 2025). John's CCR-era Rickenbacker is back in use",
+    "amp": "Not documented for Legacy. CCR-era sound: Kustom and modified Fender amps",
+    "effects": "Treble-boosted edge, slapback, spring reverb (not documented)",
+    "tuning": "Standard",
+    "notes": "Re-recording on Legacy: The Creedence Clearwater Revival Years (August 2025), produced by John and Shane Fogerty. The studio gear is not published."
+   },
+   "pedal": {
+    "name": "LODI LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 5.5, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
+    "pedal": { "on": true, "type": "TREBLE BOOST", "params": { "drive": 2, "level": 6, "tone": 6 } },
+    "mod": { "on": false, "type": "TEXTREM", "params": { "speed": 4.5, "depth": 4 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 140, "feedback": 1, "tone": 6, "mix": 1.8 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3.5, "mix": 2 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A for the intro lick and the fills, channel B for the solo. The treble boost gives that bright, snappy Rickenbacker-and-Kustom edge. Turn it off if it gets too sharp. Play the licks with a light, twangy touch near the bridge.",
+   "why": "Fogerty's leads are bright and cutting rather than saturated: a Bassman-style tweed just breaking up, sharpened by a treble booster, with a slapback and spring reverb.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Shore Fire Media: John Fogerty releases Lodi and Born on the Bayou from Legacy", "url": "https://shorefire.com/releases/entry/john-fogerty-releases-two-new-singles-from-upcoming-album-legacy-the-creedence-clearwater-revival-years" },
+    { "title": "Premier Guitar: Rig Rundown, John Fogerty band", "url": "https://www.premierguitar.com/gear/rig-rundown-john-fogerty-band" },
+    { "title": "Equipboard: John Fogerty", "url": "https://equipboard.com/john-fogerty" }
+   ]
+  }
+ ]
+}

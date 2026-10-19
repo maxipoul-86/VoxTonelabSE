@@ -1,0 +1,72 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "7c5a3e1b-4f8d-4d29-9b6e-2a8c7f4e1d9f",
+   "createdAt": "2026-10-17T14:00:00.000Z",
+   "source": "manual",
+   "request": { "song": "Rock 'n' Roll Is King", "artist": "Electric Light Orchestra", "part": "Boogie rhythm" },
+   "original": {
+    "guitar": "Jeff Lynne (lead and rhythm guitar); a 12-inch single lists a Gibson EDS-1275, Les Paul Custom and Marauder among his guitars",
+    "amp": "Not documented",
+    "effects": "50s-style slapback echo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Secret Messages (June 1983), a 50s rock 'n' roll homage. Mik Kaminski plays the violin solo. The recording studio differs between sources (Wisseloord, Hilversum, or Musicland, Munich)."
+   },
+   "pedal": {
+    "name": "KING RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 6, "vrGain": 5.5, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 100, "feedback": 1, "tone": 6, "mix": 2.5 } },
+    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
+   "tips": "Channel A for the Chuck Berry-style boogie rhythm (the root-fifth to root-sixth shuffle on the low strings), channel B for a grittier sound. The 100 ms slapback is the 50s echo that makes it sound like rock 'n' roll. Palm-mute lightly and keep it driving.",
+   "why": "The song is a 50s rock 'n' roll homage, so the guitar gets the classic recipe: a tweed amp just breaking up with a strong slapback echo. A light plate reverb adds Jeff Lynne's polished 80s production.",
+   "confidence": "low",
+   "sources": [
+    { "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single", "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html" },
+    { "title": "10538 Overture: ELO Secret Messages CD", "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html" }
+   ]
+  },
+  {
+   "id": "3e9b7d2a-6c1f-4a84-b8d3-5f2e9a7c4b1a",
+   "createdAt": "2026-10-17T14:00:01.000Z",
+   "source": "manual",
+   "request": { "song": "Rock 'n' Roll Is King", "artist": "Electric Light Orchestra", "part": "Chuck Berry-style lead" },
+   "original": {
+    "guitar": "Jeff Lynne; Gibson humbucker guitars (Les Paul Custom, EDS-1275) listed for the single",
+    "amp": "Not documented",
+    "effects": "Slapback echo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Secret Messages (June 1983). The main solo is on violin (Mik Kaminski)."
+   },
+   "pedal": {
+    "name": "KING LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "UK BLUES", "cabinet": "UK H30 4x12", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "UK BLUES", "cabinet": "UK H30 4x12", "gain": 7, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
+    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 110, "feedback": 1, "tone": 6, "mix": 2.5 } },
+    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
+   "tips": "Channel A for Chuck Berry-style double-stop licks and fills, channel B for the solo. The main solo on the record is violin: if you cover it on guitar, use channel B. Stomp the Tube OD for extra sustain.",
+   "why": "A JTM45-style crunch on a humbucker, with a slapback echo, gives the classic rock 'n' roll lead sound: double stops that bite without turning into modern distortion.",
+   "confidence": "low",
+   "sources": [
+    { "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single", "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html" },
+    { "title": "10538 Overture: ELO Secret Messages CD", "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html" }
+   ]
+  }
+ ]
+}

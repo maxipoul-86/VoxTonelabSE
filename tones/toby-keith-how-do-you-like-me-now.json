@@ -1,0 +1,72 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "d4b7f1a2-8e3c-4c57-b2d9-6a1e9f4c8b3d",
+   "createdAt": "2026-10-17T12:30:00.000Z",
+   "source": "manual",
+   "request": { "song": "How Do You Like Me Now?!", "artist": "Toby Keith", "part": "Rhythm (verses and big choruses)" },
+   "original": {
+    "guitar": "Jerry McPherson (electric, per one source; album credits also list Brent Rowan and B. James Lowry)",
+    "amp": "Not documented. Late-90s Nashville country-rock: clean Fender-style verses, Marshall-style crunch choruses",
+    "effects": "Light compression, slapback, room reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Title track of How Do You Like Me Now?! (1999), produced by James Stroud and Toby Keith. The credits disagree between sources, and the gear is not documented."
+   },
+   "pedal": {
+    "name": "NOW RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4.5, "vrGain": 5, "treble": 6.5, "middle": 6, "bass": 5, "presence": 6, "volume": 8, "nr": 2 },
+    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 6, "vrGain": 6, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 1.5 } },
+    "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A for the quieter verses. Channel B for the big, rocking choruses: a JCM800-style crunch. Push the tone knob in (humbucker) on channel B if you want the choruses even heavier.",
+   "why": "This song is country-rock: the verses stay clean and compressed, then the choruses hit with a real rock crunch. A JCM800-style amp gives the chorus that late-90s punch, and a small room reverb keeps it tight.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Wikipedia: How Do You Like Me Now?!", "url": "https://en.wikipedia.org/wiki/How_Do_You_Like_Me_Now%3F!" },
+    { "title": "AllMusic: How Do You Like Me Now?!", "url": "https://www.allmusic.com/album/how-do-you-like-me-now-%21-mw0000248166" }
+   ]
+  },
+  {
+   "id": "e9c3a6d5-1b8f-4e24-a7c6-4d2b8e1f5a9e",
+   "createdAt": "2026-10-17T12:30:01.000Z",
+   "source": "manual",
+   "request": { "song": "How Do You Like Me Now?!", "artist": "Toby Keith", "part": "Solo (Brent Mason style) and fills" },
+   "original": {
+    "guitar": "Brent Mason (electric guitar solo, per one source), Telecaster",
+    "amp": "Not documented for this session. Brent Mason's style: a clean, heavily compressed Tele with a little breakup",
+    "effects": "Compressor, delay, spring reverb (his typical style, not documented for this song)",
+    "tuning": "Standard",
+    "notes": "Title track of How Do You Like Me Now?! (1999). One source credits the solo to Brent Mason, but the album credits disagree."
+   },
+   "pedal": {
+    "name": "NOW LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 4, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1.5, "tone": 6, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A for Brent Mason-style clean, fast, compressed licks: hybrid picking, banjo rolls, pedal-steel bends. Channel B for a hairier solo. The comp is a bit stronger here (Sens 4) for sustain. If it starts to feed back, drop it to 3.",
+   "why": "Brent Mason's sound is a Tele bridge pickup, clean but compressed for sustain and snap, with a touch of breakup when he digs in and a delay behind it. It's the most copied lead sound in 90s Nashville.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Wikipedia: How Do You Like Me Now?!", "url": "https://en.wikipedia.org/wiki/How_Do_You_Like_Me_Now%3F!" },
+    { "title": "AllMusic: How Do You Like Me Now?!", "url": "https://www.allmusic.com/album/how-do-you-like-me-now-%21-mw0000248166" }
+   ]
+  }
+ ]
+}

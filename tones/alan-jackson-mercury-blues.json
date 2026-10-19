@@ -1,0 +1,73 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "5e2c8a4f-7b9d-4d16-a3e8-9b1f6c4a2d57",
+   "createdAt": "2026-10-17T13:20:00.000Z",
+   "source": "manual",
+   "request": { "song": "Mercury Blues", "artist": "Alan Jackson", "part": "Shuffle rhythm" },
+   "original": {
+    "guitar": "Brent Mason on lead and B-bender guitar (per Vintage Guitar); rhythm players not credited in the sources found",
+    "amp": "Not documented. Early-90s Nashville country-rock: tweed and Marshall-style crunch",
+    "effects": "Light compression, slapback, spring reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993. The arrangement follows David Lindley's 1981 version."
+   },
+   "pedal": {
+    "name": "MERC RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 1.8 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A for the boogie-shuffle rhythm (the classic two-string shuffle on the low strings), channel B for a heavier crunch in the louder choruses. Palm-mute lightly and swing it.",
+   "why": "Mercury Blues is a country-rock shuffle: a small tweed amp turned up gives the gritty, bouncy rhythm, and a Plexi-style crunch adds weight for the choruses.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Wikipedia: Mercury Blues", "url": "https://en.wikipedia.org/wiki/Mercury_Blues" },
+    { "title": "Vintage Guitar: Alan Jackson review", "url": "https://vintageguitar.com/23749/alan-jackson-3" }
+   ]
+  },
+  {
+   "id": "b1d7f3a9-4c6e-4a82-8f5b-2e9d7a3c1f68",
+   "createdAt": "2026-10-17T13:20:01.000Z",
+   "source": "manual",
+   "request": { "song": "Mercury Blues", "artist": "Alan Jackson", "part": "Brent Mason lead, bender licks and fills" },
+   "original": {
+    "guitar": "Brent Mason, Telecaster-style guitar with a B-bender (per Vintage Guitar)",
+    "amp": "Not documented for this session. Brent Mason's style: a clean, compressed Tele with a little breakup",
+    "effects": "Compressor, slapback, spring reverb (his typical style, not documented for this song)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993."
+   },
+   "pedal": {
+    "name": "MERC LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 4, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 140, "feedback": 1.5, "tone": 6, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A for fills between the vocal lines, channel B for the solos. Brent Mason used a B-bender, so fake the bends: bend the B string up a whole step while you hold the high E (or G) note still, or pre-bend it and release. Hybrid-pick for the fast licks. If the comp makes it feed back, drop Sens to 3.",
+   "why": "Brent Mason's sound is a Tele bridge pickup, clean but compressed for sustain and snap, with a little breakup when he digs in and a slapback behind it.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Vintage Guitar: Alan Jackson review", "url": "https://vintageguitar.com/23749/alan-jackson-3" },
+    { "title": "Premier Guitar: Brent Mason interview", "url": "https://www.premierguitar.com/brent-mason-interview" },
+    { "title": "Wikipedia: Mercury Blues", "url": "https://en.wikipedia.org/wiki/Mercury_Blues" }
+   ]
+  }
+ ]
+}

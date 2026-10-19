@@ -1,0 +1,74 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "e8b4c2d7-9a1f-4c35-8d62-4f0a7e3b1c91",
+   "createdAt": "2026-10-16T16:40:00.000Z",
+   "source": "manual",
+   "request": { "artist": "Brad Paisley", "part": "Signature clean twang (chicken pickin', rhythm)" },
+   "original": {
+    "guitar": "Paisley-finish Telecaster (Crook Custom and Fender), Tele bridge pickup",
+    "amp": "Dr. Z Z-Wreck (Trainwreck-style, EL84) and Z-Verb heads, plus Vox AC30 and Fender Deluxe Reverb",
+    "effects": "Compressor, slapback delay, spring reverb",
+    "tuning": "Standard",
+    "notes": "Built from his documented live rig. His exact knob settings are not published."
+   },
+   "pedal": {
+    "name": "PAISL CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "AC15TB", "cabinet": "VOX AC30", "gain": 4, "vrGain": 5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
+    "channelB": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 7, "middle": 5, "bass": 4.5, "presence": 6.5, "volume": 8, "nr": 2 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 140, "feedback": 1, "tone": 6, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A is the Vox/Dr. Z flavour: clean with a little hair on hard picking. Channel B is a cleaner, sparkly blackface sound. Hybrid-pick (pick plus middle and ring fingers) and mute with the picking hand to get the snap. Songs: the rhythm and fills of Mud on the Tires, Ticks, Water.",
+   "why": "Paisley's clean sound is a Tele bridge pickup into an EL84 amp that's just breaking up, lightly compressed, with a short slapback. The AC15TB is the closest EL84 model on the Tonelab.",
+   "confidence": "medium",
+   "sources": [
+    { "title": "Premier Guitar: Rig Rundown, Brad Paisley's amps and effects", "url": "https://www.premierguitar.com/gear/rig-rundown-brad-paisleys-amps-effects" },
+    { "title": "MusicRadar: Brad Paisley's gear", "url": "https://www.musicradar.com/guitarist/brad-paisleys-gear-267937" },
+    { "title": "Uberproaudio: Brad Paisley guitar gear", "url": "https://www.uberproaudio.com/who-plays-what/406-brad-paisley-guitar-gear-rig-and-equipment" }
+   ]
+  },
+  {
+   "id": "1f7a3e9c-6b2d-4d84-a5c0-9e2b8f4d6a12",
+   "createdAt": "2026-10-16T16:40:01.000Z",
+   "source": "manual",
+   "request": { "artist": "Brad Paisley", "part": "Signature lead (solos)" },
+   "original": {
+    "guitar": "Paisley-finish Telecaster, bridge pickup",
+    "amp": "Dr. Z Z-Wreck pushed by an overdrive (TS-808 / Wampler Paisley Drive)",
+    "effects": "Overdrive, analog-style delay (Aqua Puss), spring reverb",
+    "tuning": "Standard",
+    "notes": "Built from his documented live rig. His exact knob settings are not published."
+   },
+   "pedal": {
+    "name": "PAISL LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 7, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
+    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 4, "level": 7, "tone": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 380, "feedback": 2.5, "tone": 5, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A for fast country-rock licks, channel B for the big solos. Turn the Tube OD off for a cleaner, snappier lead. Roll the guitar volume back to 7 and the sound cleans up for fills. Songs: the solos in Mud on the Tires, Ticks, Alcohol, Online.",
+   "why": "His solo sound is a Tube Screamer-style overdrive with low drive and high level, pushing an EL84 amp into breakup. The AC30TB stands in for the Z-Wreck, and the analog delay sits just behind the notes.",
+   "confidence": "medium",
+   "sources": [
+    { "title": "Premier Guitar: Rig Rundown, Brad Paisley's amps and effects", "url": "https://www.premierguitar.com/gear/rig-rundown-brad-paisleys-amps-effects" },
+    { "title": "MusicRadar: Brad Paisley's gear", "url": "https://www.musicradar.com/guitarist/brad-paisleys-gear-267937" },
+    { "title": "Uberproaudio: Brad Paisley guitar gear", "url": "https://www.uberproaudio.com/who-plays-what/406-brad-paisley-guitar-gear-rig-and-equipment" }
+   ]
+  }
+ ]
+}

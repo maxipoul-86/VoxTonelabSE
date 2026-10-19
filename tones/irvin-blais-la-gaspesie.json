@@ -1,0 +1,70 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "5b9d2f7e-3c8a-4e61-a4d9-7f2c0b8e5a13",
+   "createdAt": "2026-10-16T16:50:00.000Z",
+   "source": "manual",
+   "request": { "song": "La Gaspésie", "artist": "Irvin Blais", "part": "Clean country rhythm and fills" },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Traditional Quebec country: clean Fender-style amp",
+    "effects": "Slapback delay, spring reverb, light compression (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built from the traditional country style Irvin Blais is known for."
+   },
+   "pedal": {
+    "name": "GASPE CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 4.5, "vrGain": 5, "treble": 6, "middle": 6, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 130, "feedback": 1, "tone": 6, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 2", "params": { "time": 4, "mix": 2.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A for clean, twangy rhythm and fills (boom-chicka strumming, bass-note runs). Channel B for a warmer tweed sound with a little grit. Move to the middle position (both, split) for a softer sound in slow songs and waltzes.",
+   "why": "Traditional country electric guitar is a Telecaster-style bridge pickup into a clean Fender amp, with a short slapback and plenty of spring reverb. A light compressor evens out the picking.",
+   "confidence": "low",
+   "sources": [
+    { "title": "SOCAN Magazine: Irvin Blais", "url": "https://www.socanmagazine.ca/?p=2602" }
+   ]
+  },
+  {
+   "id": "9c4e1a6b-8f3d-4b72-b5e0-2a7d9c3f6b24",
+   "createdAt": "2026-10-16T16:50:01.000Z",
+   "source": "manual",
+   "request": { "song": "La Gaspésie", "artist": "Irvin Blais", "part": "Lead fills and solo" },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Traditional Quebec country: tweed or blackface Fender, slightly pushed",
+    "effects": "Light boost, delay, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built from the traditional country style Irvin Blais is known for."
+   },
+   "pedal": {
+    "name": "GASPE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
+    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 2, "level": 6.5, "tone": 6.5 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1.5, "tone": 5, "mix": 1.8 } },
+    "reverb": { "on": true, "type": "SPRING 2", "params": { "time": 4, "mix": 2 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A for fills between the vocal lines, channel B for the solo. The Tube OD is a light boost that adds sustain without real distortion. Turn it off for a fully clean solo. Double-stop bends (two strings at once) in the style of a pedal steel suit this sound.",
+   "why": "A Bassman-style tweed amp just breaking up, nudged by a light overdrive, gives the round, singing country lead of the classic records. A short delay and a spring reverb keep it in the style.",
+   "confidence": "low",
+   "sources": [
+    { "title": "SOCAN Magazine: Irvin Blais", "url": "https://www.socanmagazine.ca/?p=2602" }
+   ]
+  }
+ ]
+}

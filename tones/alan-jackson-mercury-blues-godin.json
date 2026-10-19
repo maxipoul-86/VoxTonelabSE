@@ -1,0 +1,79 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "8a3e6c1f-2d7b-4f49-b5a2-9e4c7d1b6f83",
+   "createdAt": "2026-10-17T15:20:00.000Z",
+   "source": "manual",
+   "request": { "song": "Mercury Blues", "artist": "Alan Jackson", "part": "Shuffle rhythm" },
+   "original": {
+    "guitar": "Brent Mason on lead and B-bender guitar (per Vintage Guitar); rhythm players not credited in the sources found",
+    "amp": "Not documented. Early-90s Nashville country-rock: tweed and Marshall-style crunch",
+    "effects": "Light compression, slapback, spring reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993. The arrangement follows David Lindley's 1981 version."
+   },
+   "pedal": {
+    "name": "MERC RYG",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 4.5, "vrGain": 5, "treble": 4.5, "middle": 7.5, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 5, "vrGain": 5.5, "treble": 4.5, "middle": 8, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 5, "mix": 1.8 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "kind": "piezo", "volume": 10, "bass": 5, "mid": 5, "treble": 5 },
+   "guitarId": "godin-acousticaster",
+   "guitarName": "Godin Acousticaster",
+   "tips": "Channel A for the boogie-shuffle rhythm (the two-string shuffle on the low strings), channel B for a heavier crunch in the louder choruses. The piezo has a sharp attack, so pick a little softer than on the Tele, and palm-mute lightly.",
+   "why": "Same tweed and Plexi recipe as the Tele version, adjusted for the piezo: a point less gain so it doesn't turn fizzy, treble and presence down and middle up to soften the quack, and more channel volume for the lower output. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
+   "confidence": "low",
+   "warnings": ["A piezo can't fully match the thick, gritty crunch of magnetic pickups. Channel B's Plexi sound will be lighter and brighter than on the Tele."],
+   "sources": [
+    { "title": "Wikipedia: Mercury Blues", "url": "https://en.wikipedia.org/wiki/Mercury_Blues" },
+    { "title": "Vintage Guitar: Alan Jackson review", "url": "https://vintageguitar.com/23749/alan-jackson-3" }
+   ]
+  },
+  {
+   "id": "c4f7b2e9-6a1d-4c38-8e95-3b2d8f5a1c94",
+   "createdAt": "2026-10-17T15:20:01.000Z",
+   "source": "manual",
+   "request": { "song": "Mercury Blues", "artist": "Alan Jackson", "part": "Brent Mason lead, bender licks and fills" },
+   "original": {
+    "guitar": "Brent Mason, Telecaster-style guitar with a B-bender (per Vintage Guitar)",
+    "amp": "Not documented for this session. Brent Mason's style: a clean, compressed Tele with a little breakup",
+    "effects": "Compressor, slapback, spring reverb (his typical style, not documented for this song)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993."
+   },
+   "pedal": {
+    "name": "MERC LDG",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4.5, "vrGain": 5, "treble": 5, "middle": 7.5, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5.5, "vrGain": 5.5, "treble": 4.5, "middle": 8, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 140, "feedback": 1.5, "tone": 5, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "kind": "piezo", "volume": 10, "bass": 5, "mid": 5, "treble": 5 },
+   "guitarId": "godin-acousticaster",
+   "guitarName": "Godin Acousticaster",
+   "tips": "Channel A for fills between the vocal lines, channel B for the solos. Brent Mason used a B-bender, so fake the bends: bend the B string up a whole step while you hold the high E (or G) note still, or pre-bend it and release. Hybrid-pick for the fast licks. The comp is at Sens 3.5 here (4 on the Tele version): a piezo guitar's body can feed back, so drop it to 3 if it starts to.",
+   "why": "A clean Fender-style channel for the fills, since a piezo's snap already suits Brent Mason's clean, compressed style, and an AC30 crunch for the solos. Gain is a point lower than on the Tele, with treble and presence down and middle up to tame the piezo's quack. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
+   "confidence": "low",
+   "warnings": ["A piezo can't fully match a Telecaster bridge pickup's twang. Expect a brighter, more acoustic attack on the licks."],
+   "sources": [
+    { "title": "Vintage Guitar: Alan Jackson review", "url": "https://vintageguitar.com/23749/alan-jackson-3" },
+    { "title": "Premier Guitar: Brent Mason interview", "url": "https://www.premierguitar.com/brent-mason-interview" },
+    { "title": "Wikipedia: Mercury Blues", "url": "https://en.wikipedia.org/wiki/Mercury_Blues" }
+   ]
+  }
+ ]
+}

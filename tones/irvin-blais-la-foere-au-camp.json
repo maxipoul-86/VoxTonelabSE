@@ -1,0 +1,70 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "7e2b9c4a-1d6f-4a38-9b57-3e8a0f2c7d15",
+   "createdAt": "2026-10-16T17:00:00.000Z",
+   "source": "manual",
+   "request": { "song": "La foère au camp", "artist": "Irvin Blais", "part": "Upbeat rhythm" },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Upbeat Quebec country: tweed-style crunch",
+    "effects": "Slapback delay, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built for an upbeat party country song, as the title suggests."
+   },
+   "pedal": {
+    "name": "FOERE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
+    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 110, "feedback": 1, "tone": 6, "mix": 1.8 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A is a gritty tweed sound for driving, upbeat rhythm. Channel B is clean, for quieter verses. Palm-mute lightly and accent the backbeat. Roll the guitar volume back to 7 to clean up channel A without switching.",
+   "why": "A small tweed amp turned up gives the crunchy, bouncy rhythm of party country. A short slapback adds energy without blurring the strumming.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Viberate: Irvin Blais", "url": "https://www.viberate.com/artist/irvin-blais" }
+   ]
+  },
+  {
+   "id": "2c8f5d1e-9b4a-4c63-a7e2-6d1b3f9a8e26",
+   "createdAt": "2026-10-16T17:00:01.000Z",
+   "source": "manual",
+   "request": { "song": "La foère au camp", "artist": "Irvin Blais", "part": "Lead fills and solo" },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Upbeat Quebec country: EL84 crunch pushed by an overdrive",
+    "effects": "Light overdrive, slapback delay, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built for an upbeat party country song, as the title suggests."
+   },
+   "pedal": {
+    "name": "FOERE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 7, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
+    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6.5 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1.5, "tone": 6, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A for fast fills between the vocal lines, channel B for the solo. Hybrid-pick and use double stops for a chicken-pickin' feel. Turn the Tube OD off for a snappier, cleaner lead.",
+   "why": "Fast country leads need snap and a little hair: an EL84 crunch nudged by a light overdrive, with a slapback that doubles each note.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Viberate: Irvin Blais", "url": "https://www.viberate.com/artist/irvin-blais" }
+   ]
+  }
+ ]
+}

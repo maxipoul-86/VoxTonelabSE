@@ -1,0 +1,72 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "c3e9a7f2-1d6b-4b84-a2c5-7e4f9b1d8c35",
+   "createdAt": "2026-10-17T13:10:00.000Z",
+   "source": "manual",
+   "request": { "song": "All You Ever Do Is Bring Me Down", "artist": "The Mavericks", "part": "Rhythm" },
+   "original": {
+    "guitar": "The Mavericks (Nick Kane on lead guitar at the time; track credits not found)",
+    "amp": "Not documented. The Mavericks' retro sound: clean Fender-style amps with plenty of spring reverb",
+    "effects": "Spring reverb, slapback (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Music for All Occasions (January 1996), featuring Flaco Jiménez on accordion, who plays the solo."
+   },
+   "pedal": {
+    "name": "BRING RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 5, "vrGain": 5.5, "treble": 6, "middle": 6, "bass": 4.5, "presence": 5.5, "volume": 7.5, "nr": 2 },
+    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "TEXTREM", "params": { "speed": 5, "depth": 4 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 2 } },
+    "reverb": { "on": true, "type": "SPRING 2", "params": { "time": 4.5, "mix": 2.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "both", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A for the clean, bouncy Tex-Mex rhythm: short, choppy strums on the off-beats, polka style, so the accordion and bass carry the downbeats. Channel B for a warmer tweed sound in the louder sections.",
+   "why": "The Mavericks' sound mixes Tex-Mex, country and 60s pop: clean Fender amps, a short slapback and plenty of spring reverb. The guitar stays out of the way of the accordion.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Wikipedia: All You Ever Do Is Bring Me Down", "url": "https://en.wikipedia.org/wiki/All_You_Ever_Do_Is_Bring_Me_Down" },
+    { "title": "Wikipedia: Music for All Occasions", "url": "https://en.wikipedia.org/wiki/Music_for_All_Occasions" }
+   ]
+  },
+  {
+   "id": "8f1b4d6e-9a2c-4e37-b5d8-3c6a1f9e2b46",
+   "createdAt": "2026-10-17T13:10:01.000Z",
+   "source": "manual",
+   "request": { "song": "All You Ever Do Is Bring Me Down", "artist": "The Mavericks", "part": "Twangy lead lines and fills" },
+   "original": {
+    "guitar": "The Mavericks (Nick Kane on lead guitar at the time; track credits not found)",
+    "amp": "Not documented. Retro twang: clean Fender-style amp, EL84 for warmer lines",
+    "effects": "Spring reverb, slapback, tremolo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Music for All Occasions (January 1996). The solo is on accordion (Flaco Jiménez)."
+   },
+   "pedal": {
+    "name": "BRING LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2 },
+    "channelB": { "amp": "AC15TB", "cabinet": "VOX AC30", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "TEXTREM", "params": { "speed": 5, "depth": 4 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 140, "feedback": 1.5, "tone": 6, "mix": 2.5 } },
+    "reverb": { "on": true, "type": "SPRING 2", "params": { "time": 4.5, "mix": 2.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A for twangy, Duane Eddy-style lines on the low strings and fills between the vocal lines. Channel B for warmer melody lines. Stomp MOD for a retro tremolo. The solo on the record is accordion: if you cover it on guitar, use channel B and play it with lots of short, picked notes.",
+   "why": "Retro twang is a clean Fender with a lot of spring reverb and slapback, picked hard on the bridge pickup. The AC15TB on channel B is a rounder voice for melodies.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Wikipedia: All You Ever Do Is Bring Me Down", "url": "https://en.wikipedia.org/wiki/All_You_Ever_Do_Is_Bring_Me_Down" },
+    { "title": "Wikipedia: Music for All Occasions", "url": "https://en.wikipedia.org/wiki/Music_for_All_Occasions" }
+   ]
+  }
+ ]
+}

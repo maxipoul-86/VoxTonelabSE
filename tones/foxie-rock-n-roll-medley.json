@@ -1,0 +1,77 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "5c8e2a6f-3d9b-4a71-b6e4-9f2d7c1a8e7d",
+   "createdAt": "2026-10-18T13:30:00.000Z",
+   "source": "manual",
+   "request": { "song": "Rock n' Roll Medley", "artist": "Foxie", "part": "Rhythm" },
+   "original": {
+    "guitar": "Not documented (Foxie with Jonas Dejevik, Peter Samuelsson, Anders Møller and Mange Olsson)",
+    "amp": "Not documented. Modern dansband production of 50s rock 'n' roll and Creedence songs",
+    "effects": "Slapback echo, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single released February 5, 2021, about seven minutes, also on Dansband & Bugg Medley. Songwriting credits include Chuck Berry, Leiber & Stoller, Eddie Cochran and John Fogerty."
+   },
+   "pedal": {
+    "name": "FOXIE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 110, "feedback": 1, "tone": 5, "mix": 2.2 } },
+    "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for the Chuck Berry and Eddie Cochran boogie rhythm (root-fifth to root-sixth shuffle on the low strings). Channel B, a brighter AC30 crunch, for the Creedence parts. For a Gretsch-like Cochran twang, pull the tone knob (single coil). It's a seven-minute medley for dancing: keep the groove steady and the palm muting light.",
+   "why": "A small tweed amp turned up with a slapback echo is the classic 50s rock 'n' roll rhythm sound. A modern dansband production keeps it tight, so the echo and room reverb stay short.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Spotify: Rock n' Roll Medley by Foxie", "url": "https://open.spotify.com/track/07QFKyerHOuvyzebBiTX5N" },
+    { "title": "Deezer: Foxie, Rock N' Roll Medley", "url": "https://www.deezer.com/en/album/199793782" },
+    { "title": "Apple Music: Rock N' Roll Medley, single by Foxie", "url": "https://music.apple.com/mx/album/rock-n-roll-medley-feat-jonas-dejevik-peter-samuelsson/1548836775?l=en-GB" }
+   ]
+  },
+  {
+   "id": "8f3a7d1c-6e2b-4c94-a8d5-2b7e4f9c3a8e",
+   "createdAt": "2026-10-18T13:30:01.000Z",
+   "source": "manual",
+   "request": { "song": "Rock n' Roll Medley", "artist": "Foxie", "part": "Lead fills and solos" },
+   "original": {
+    "guitar": "Not documented",
+    "amp": "Not documented. Modern dansband production of 50s rock 'n' roll and Creedence songs",
+    "effects": "Slapback echo, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single released February 5, 2021. Songwriting credits include Chuck Berry, Leiber & Stoller, Eddie Cochran and John Fogerty."
+   },
+   "pedal": {
+    "name": "FOXIE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
+    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 5, "mix": 2 } },
+    "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 9 },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for Chuck Berry-style double-stop intros and fills, channel B, a Plexi crunch, for the bigger solos. Stomp the Tube OD for more sustain. Pull the tone knob (single coil) for brighter, twangier fills.",
+   "why": "An AC30 crunch with a slapback echo covers the Chuck Berry double stops. The Plexi-style channel gives the solos more weight without going past classic rock 'n' roll grit.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Spotify: Rock n' Roll Medley by Foxie", "url": "https://open.spotify.com/track/07QFKyerHOuvyzebBiTX5N" },
+    { "title": "Deezer: Foxie, Rock n' Roll Medley", "url": "https://www.deezer.com/en/track/1207391302" }
+   ]
+  }
+ ]
+}

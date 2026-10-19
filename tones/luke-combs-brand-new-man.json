@@ -1,0 +1,72 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "e3b7a1d9-5f2c-4c48-a9e6-1d8b4f7c2e3b",
+   "createdAt": "2026-10-17T13:40:00.000Z",
+   "source": "manual",
+   "request": { "song": "Brand New Man (with Luke Combs)", "artist": "Brooks & Dunn", "part": "Rhythm" },
+   "original": {
+    "guitar": "Session players (not credited in the sources found)",
+    "amp": "Not documented. Modern Nashville country-rock: EL84 and Plexi-style crunch",
+    "effects": "Light compression, slapback, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Brooks & Dunn's 1991 hit re-recorded with Luke Combs for Reboot (2019), produced by Dann Huff. Described as slightly modernized and a little busier than the original."
+   },
+   "pedal": {
+    "name": "NEWMN RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 110, "feedback": 1, "tone": 6, "mix": 1.5 } },
+    "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
+   "tips": "Channel A for the verses: EL84 crunch with snap. Channel B for the big choruses: Plexi-style crunch. Keep it tight and punchy: it's a dance-floor song, so lock in with the kick drum.",
+   "why": "Dann Huff's modern country production stacks tight, punchy crunch guitars with a short slapback and a small room. The EL84 sound keeps the twang, and the Plexi adds weight for the choruses.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Saving Country Music: This new Brooks & Dunn Reboot could be interesting", "url": "https://savingcountrymusic.com/this-new-brooks-dunn-reboot-could-be-interesting/" },
+    { "title": "The Singles Jukebox: Brooks & Dunn ft. Luke Combs, Brand New Man", "url": "https://thesinglesjukebox.com/?p=7850" }
+   ]
+  },
+  {
+   "id": "a9c2e6f4-1b8d-4a73-8e5f-7b3d1c9a4f6c",
+   "createdAt": "2026-10-17T13:40:01.000Z",
+   "source": "manual",
+   "request": { "song": "Brand New Man (with Luke Combs)", "artist": "Brooks & Dunn", "part": "Signature licks and solo" },
+   "original": {
+    "guitar": "Session players (not credited in the sources found)",
+    "amp": "Not documented. Modern Nashville lead: clean amp pushed by an overdrive pedal",
+    "effects": "Overdrive, delay, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Re-recorded with Luke Combs for Reboot (2019), produced by Dann Huff."
+   },
+   "pedal": {
+    "name": "NEWMN LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4.5, "vrGain": 5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 3.5, "level": 6.5, "tone": 6.5 } },
+    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 320, "feedback": 2, "tone": 6, "mix": 2 } },
+    "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3, "mix": 1.5 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
+   "tips": "Channel A for the twangy signature licks: a clean Fender pushed by the Tube OD, so it snaps but still has hair. Channel B for the solo: more gain and sustain. Turn the Tube OD off on channel A for a fully clean twang.",
+   "why": "Modern Nashville leads usually come from a clean Fender-style amp driven by an overdrive pedal: twangy attack with sustain. A delay just behind the notes fills the space, and a small room keeps it tight.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Saving Country Music: This new Brooks & Dunn Reboot could be interesting", "url": "https://savingcountrymusic.com/this-new-brooks-dunn-reboot-could-be-interesting/" },
+    { "title": "Country Standard Time: Brooks & Dunn Reboot", "url": "https://countrystandardtime.com/news/newsitem.asp?xid=10462" }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "2e7b5d9c-4a1f-4c68-9d3e-8f2a6c4b1d71",
+   "createdAt": "2026-10-17T12:50:00.000Z",
+   "source": "manual",
+   "request": { "song": "Oh, Pretty Woman", "artist": "Roy Orbison", "part": "The riff" },
+   "original": {
+    "guitar": "Billy Sanford (intro riff), with Jerry Kennedy and Wayne Moss doubling it; Roy Orbison also on guitar",
+    "amp": "Not documented. 1964 Nashville session: small tweed/brownface Fender-style amps",
+    "effects": "Studio echo chamber (not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded August 1, 1964, produced by Fred Foster, engineered by Bill Porter. Jerry Kennedy suggested starting with one guitar and adding one each time the riff repeats."
+   },
+   "pedal": {
+    "name": "PRETTY RF",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 5, "vrGain": 5.5, "treble": 6, "middle": 6.5, "bass": 5, "presence": 5.5, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 6, "vrGain": 5.5, "treble": 6, "middle": 6.5, "bass": 4.5, "presence": 5.5, "volume": 7.5, "nr": 2 },
+    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": true, "type": "PITCH SHIFTER", "params": { "pitch": 0, "fine": 8, "tracking": 20, "direct": 10, "effect": 6 } },
+    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 5, "mix": 1.5 } },
+    "reverb": { "on": true, "type": "CHAMBER 1", "params": { "time": 4, "mix": 2 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 7 },
+   "tips": "MOD is set to a pitch shifter tuned a few cents sharp and mixed under your guitar. It thickens one guitar into something like the three guitars playing the riff in unison on the record. Turn it off for the very first pass of the riff (one guitar) and on when the others join. Channel A is a rounder Bassman sound, channel B a grittier small tweed. Pick firmly and let the low notes thump.",
+   "why": "Mid-60s Nashville sessions used small Fender-style amps turned up just to the edge of breakup, recorded in a studio echo chamber. The record's riff is several guitars in unison, so a slightly detuned copy of your own signal recreates that thickness.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Wikipedia: Oh, Pretty Woman", "url": "https://en.wikipedia.org/wiki/Oh,_Pretty_Woman" },
+    { "title": "MusicRadar: Roy Orbison, Oh, Pretty Woman interview", "url": "https://musicradar.com/news/roy-orbison-oh-pretty-woman-interview" },
+    { "title": "Sweetwater inSync: Remembering Roy Orbison", "url": "https://www.sweetwater.com/insync/remembering-roy-orbison/" }
+   ]
+  },
+  {
+   "id": "7a3c1e8f-9b5d-4e26-a8f4-5c9b2e7d3a82",
+   "createdAt": "2026-10-17T12:50:01.000Z",
+   "source": "manual",
+   "request": { "song": "Oh, Pretty Woman", "artist": "Roy Orbison", "part": "Clean rhythm (verses)" },
+   "original": {
+    "guitar": "Roy Orbison, Billy Sanford, Jerry Kennedy, Wayne Moss",
+    "amp": "Not documented. 1964 Nashville session: small Fender-style amps",
+    "effects": "Studio echo chamber (not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded August 1, 1964, produced by Fred Foster, engineered by Bill Porter."
+   },
+   "pedal": {
+    "name": "PRETTY CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 3.5, "vrGain": 5, "treble": 6, "middle": 6, "bass": 5, "presence": 5.5, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
+    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "PITCH SHIFTER", "params": { "pitch": 0, "fine": 8, "tracking": 20, "direct": 10, "effect": 6 } },
+    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 5, "mix": 1.5 } },
+    "reverb": { "on": true, "type": "CHAMBER 1", "params": { "time": 4, "mix": 2 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "selector": "both", "coils": "humbucker", "volume": 10, "tone": 7 },
+   "tips": "Channel A is a warm, clean tweed for the strummed verses, and channel B a brighter blackface clean. Stomp MOD for the same unison doubling as the riff tone. For the riff itself, switch to PRETTY RF.",
+   "why": "Behind the riff, the record's guitars are clean and warm, with the studio's echo chamber around them.",
+   "confidence": "low",
+   "sources": [
+    { "title": "Wikipedia: Oh, Pretty Woman", "url": "https://en.wikipedia.org/wiki/Oh,_Pretty_Woman" },
+    { "title": "MusicRadar: Roy Orbison, Oh, Pretty Woman interview", "url": "https://musicradar.com/news/roy-orbison-oh-pretty-woman-interview" }
+   ]
+  }
+ ]
+}

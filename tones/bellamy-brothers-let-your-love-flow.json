@@ -1,0 +1,77 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "1e9c5a7d-4b3f-4d62-8a1e-7f6b2c9d4e05",
+   "createdAt": "2026-10-18T12:00:00.000Z",
+   "source": "manual",
+   "request": { "song": "Let Your Love Flow", "artist": "The Bellamy Brothers", "part": "Clean electric fills and arpeggios" },
+   "original": {
+    "guitar": "David and Howard Bellamy, Richard Bennett and Doug Rhone (per MusicBrainz credits)",
+    "amp": "Not documented. Mid-70s LA studio sound: clean Fender-style amp",
+    "effects": "Light compression, delay, studio plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded October 1975 at Wally Heider Recording Studio, Hollywood; produced by Phil Gernhard and Tony Scotti; single released 1976. Written by Larry Williams."
+   },
+   "pedal": {
+    "name": "LOVE CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "AC15TB", "cabinet": "VOX AC30", "gain": 4.5, "vrGain": 5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
+    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
+    "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.7, "depth": 3, "manual": 5, "mix": 3 } },
+    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1.5, "tone": 5, "mix": 1.5 } },
+    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 4, "mix": 2 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "kind": "split", "selector": "both", "coils": "single", "volume": 10, "tone": 8 },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for clean, bright fills and arpeggios over the acoustic strumming. Channel B is a warmer AC15 with a touch of grit for melodic lines and a solo. Keep the playing light and let the notes ring: the song floats, it doesn't push. For the strummed acoustic part, switch to LOVE AC.",
+   "why": "Mid-70s LA soft-rock and country-pop records used a clean Fender-style electric, lightly compressed, with a short delay and a studio plate reverb. Both pickups, split, give a glassy, Strat-like middle-position sound.",
+   "confidence": "low",
+   "sources": [
+    { "title": "MusicBrainz: Let Your Love Flow credits (Singers & Songwriters 1973-1976)", "url": "https://musicbrainz-mirror.music-assistant.io/release/f4c8e5b2-4164-43c5-a600-a94e431b5a2a" },
+    { "title": "Wikipedia: The Bellamy Brothers", "url": "https://en.wikipedia.org/wiki/The_Bellamy_Brothers" },
+    { "title": "Goldmine: The Bellamy Brothers celebrate their 50th anniversary", "url": "https://www.goldminemag.com/columns/the-bellamy-brothers-celebrate-their-50th-anniversary/" }
+   ]
+  },
+  {
+   "id": "6d2b8f4a-9c1e-4a75-b3d6-2e8a5f7c1b16",
+   "createdAt": "2026-10-18T12:00:01.000Z",
+   "source": "manual",
+   "request": { "song": "Let Your Love Flow", "artist": "The Bellamy Brothers", "part": "Strummed rhythm (acoustic simulation)" },
+   "original": {
+    "guitar": "David and Howard Bellamy on guitar (per MusicBrainz credits); acoustic-driven arrangement",
+    "amp": "Acoustic instruments",
+    "effects": "Studio plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded October 1975 at Wally Heider Recording Studio, Hollywood; single released 1976."
+   },
+   "pedal": {
+    "name": "LOVE AC",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x10", "gain": 2.5, "vrGain": 5, "treble": 6, "middle": 5, "bass": 4.5, "presence": 6, "volume": 9, "nr": 2 },
+    "channelB": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 2.5, "vrGain": 5, "treble": 6.5, "middle": 5, "bass": 4.5, "presence": 6.5, "volume": 9, "nr": 2 },
+    "pedal": { "on": true, "type": "ACOUSTIC", "params": { "body": 6, "bass": 5, "treble": 6.5 } },
+    "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.7, "depth": 3, "manual": 5, "mix": 3 } },
+    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1, "tone": 5, "mix": 1.5 } },
+    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 3.5, "mix": 1.8 } },
+    "exp1": "VOLUME"
+   },
+   "guitar": { "kind": "split", "selector": "both", "coils": "single", "volume": 10, "tone": 7 },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "The song is built on strummed acoustic guitar. The ACOUSTIC effect in the PEDAL slot makes the Tele sound like one. Channel A is warmer, channel B brighter. Strum lightly and evenly. Stomp MOD for a gentle stereo chorus, a 70s touch. Turn PEDAL off for a plain clean electric. For fills, switch to LOVE CL.",
+   "why": "If there's no acoustic player in the band, an acoustic simulation into a very clean amp covers the song's main part. Split pickups in the middle position give the least electric-sounding source for the simulation, and a plate reverb gives the 70s studio space.",
+   "confidence": "low",
+   "sources": [
+    { "title": "MusicBrainz: Let Your Love Flow credits (Singers & Songwriters 1973-1976)", "url": "https://musicbrainz-mirror.music-assistant.io/release/f4c8e5b2-4164-43c5-a600-a94e431b5a2a" },
+    { "title": "Wikipedia: The Bellamy Brothers", "url": "https://en.wikipedia.org/wiki/The_Bellamy_Brothers" }
+   ]
+  }
+ ]
+}
