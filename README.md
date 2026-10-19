@@ -17,13 +17,11 @@ Web MIDI works on `localhost`, so the dev server is enough on the laptop. Chrome
 
 ## Use it on the tablet or phone
 
-Android Chrome only allows Web MIDI on HTTPS. The simplest way is GitHub Pages:
+Android Chrome only allows Web MIDI on HTTPS, so the app is published with GitHub Pages at <https://maxipoul-86.github.io/VoxTonelabSE/>:
 
-1. Move `deploy/github-pages.yml` to `.github/workflows/deploy.yml` (create the folders).
-2. Push this folder to a GitHub repository.
-3. In the repository, Settings › Pages › Source: **GitHub Actions**.
-4. Push to `main`. The workflow builds, tests and publishes the app.
-5. Open the Pages URL in Chrome on the tablet, then "Add to Home screen" to install it.
+1. Once, in the repository: Settings › Pages › Source: **GitHub Actions**.
+2. Every push to `main` runs [.github/workflows/deploy.yml](.github/workflows/deploy.yml), which tests, builds and publishes the app.
+3. Open the Pages URL in Chrome on the tablet, then "Add to Home screen" to install it.
 
 Cable: UM-ONE mk2 → USB-C (male) to USB-A (female) OTG adapter → tablet.
 
