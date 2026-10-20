@@ -8,6 +8,7 @@ import { GuitarSwitch } from './GuitarSwitch';
 import { activeGuitar } from '../ai/guitar';
 import { CloseButton } from './Modal';
 import { MicButton } from './MicButton';
+import { WebSearchSelect } from './WebSearchSelect';
 
 /** Opened from the Gig screen: the track's song and artist, and its key so the tone found gets linked to it. */
 export interface FindPrefill {
@@ -119,9 +120,9 @@ export function FindTone({ onLoaded, prefill, onClose }: { onLoaded: () => void;
             <MicButton onText={setNotes} onInterim={setNotes} />
           </div>
         </label>
-        <label className="check wide">
-          <input type="checkbox" checked={webSearch} onChange={(e) => setWebSearch(e.target.checked)} />
-          <span>Search the web for the original rig (for less-known songs, about 5¢ extra)</span>
+        <label className="field wide">
+          <span>Search the web for the original rig (a few cents extra when it searches)</span>
+          <WebSearchSelect value={webSearch} onChange={setWebSearch} provider={settings.ai.provider} />
         </label>
         <div className="wide row-gap wrap">
           <GuitarSwitch label="For" />

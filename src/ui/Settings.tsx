@@ -3,6 +3,7 @@ import { store, useStore } from './store';
 import { DEFAULT_MODELS, type ProviderId } from '../ai/providers';
 import { activeGuitar, blankGuitar, type GuitarKind, type GuitarProfile, type PiezoGuitar, type SplitGuitar } from '../ai/guitar';
 import { newId } from '../tonelab/recipe';
+import { WebSearchSelect } from './WebSearchSelect';
 
 export function Settings() {
   const s = useStore((x) => x.settings);
@@ -56,9 +57,9 @@ export function Settings() {
           <span>Model for small adjustments</span>
           <input value={ai.fastModel} onChange={(e) => setAi({ fastModel: e.target.value.trim() })} />
         </label>
-        <label className="check wide">
-          <input type="checkbox" checked={ai.webSearch} onChange={(e) => setAi({ webSearch: e.target.checked })} />
-          <span>Web search on by default</span>
+        <label className="field wide">
+          <span>Web search for new tones</span>
+          <WebSearchSelect value={ai.webSearch} onChange={(webSearch) => setAi({ webSearch })} provider={ai.provider} />
         </label>
         <p className="small dim wide">The key is stored only in this browser on this device and sent only to the provider you pick.</p>
       </section>

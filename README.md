@@ -42,7 +42,7 @@ The Spotify bridge reads the "now playing" information Windows shows in its medi
 | Screen | What it does |
 | --- | --- |
 | Pedal | Live two-way copy of the pedal: amp channels A/B, cabinets, effects, footswitches, expression pedals, guitar setup card. Knobs moved away from the loaded recipe turn blue. **Swap A ⇄ B** swaps the channels; **Fine tune…** has the fast model (Haiku) adjust the loaded tone from a typed or spoken request. |
-| Find | Song / artist / part → tone from the AI (Anthropic or OpenRouter), optional web search, "Adjust it" for quick follow-ups. The mic buttons let you talk instead of typing, in Québec French or English (Chrome, needs internet). |
+| Find | Song / artist / part → tone from the AI (Anthropic or OpenRouter), web search only when needed (or always / never), "Adjust it" for quick follow-ups. The mic buttons let you talk instead of typing, in Québec French or English (Chrome, needs internet). |
 | Library | Saved tones (AI suggestions and your own versions), one bank per guitar. Export/import as JSON to move between devices, **Add starter tones** loads the tones bundled in `tones/`, **Delete all…** empties it. |
 | Gig | Follows Winamp or Spotify and loads each track's tone as it starts. |
 | MIDI | Connect, device inquiry, round-trip test, full backup, traffic log, and a **virtual Tonelab** for testing without hardware. |

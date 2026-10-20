@@ -102,7 +102,24 @@ describe('guitars', () => {
     const p = systemPrompt(GODIN_ACOUSTICASTER, DEFAULT_RIG);
     expect(p).toContain('Godin Acousticaster');
     expect(p).toContain('Compensate for the piezo');
+    expect(p).toContain('volume 10, bass 5, mid 5, treble 5');
     expect(p).not.toContain('3-way selector');
+  });
+  it('gives the tested starting ranges for every guitar', () => {
+    for (const g of [DEFAULT_GUITAR, GODIN_ACOUSTICASTER]) expect(systemPrompt(g, DEFAULT_RIG)).toContain('STARTING RANGES');
+  });
+});
+
+describe('settings upgrade', () => {
+  it('turns the old on/off web search into "auto" and moves the old default model to Opus', () => {
+    const s = parseSettings(JSON.stringify({ ai: { provider: 'anthropic', apiKey: 'k', model: 'claude-sonnet-5-5', fastModel: 'claude-haiku-5-5', webSearch: false } }));
+    expect(s.ai).toEqual({ provider: 'anthropic', apiKey: 'k', model: 'claude-opus-5-5', fastModel: 'claude-haiku-5-5', webSearch: 'auto' });
+  });
+  it('keeps a model the player chose', () => {
+    const s = parseSettings(JSON.stringify({ ai: { provider: 'anthropic', apiKey: 'k', model: 'claude-fable-5-1', fastModel: 'x', webSearch: true } }));
+    expect(s.ai.model).toBe('claude-fable-5-1');
+    const t = parseSettings(JSON.stringify({ ai: { provider: 'anthropic', apiKey: 'k', model: 'claude-sonnet-5-5', fastModel: 'x', webSearch: 'off' } }));
+    expect(t.ai).toMatchObject({ model: 'claude-sonnet-5-5', webSearch: 'off' });
   });
 });
 
@@ -118,7 +135,7 @@ describe('generateTone with a mocked Anthropic API', () => {
     vi.stubGlobal('fetch', fetchMock);
     const res = await generateTone(
       { song: 'Back in Black', artist: 'AC/DC', part: 'rhythm + solo' },
-      { ai: { provider: 'anthropic', apiKey: 'test', model: 'claude-sonnet-5-5', fastModel: 'claude-haiku-5-5', webSearch: false }, guitar: DEFAULT_GUITAR, rig: DEFAULT_RIG },
+      { ai: { provider: 'anthropic', apiKey: 'test', model: 'claude-sonnet-5-5', fastModel: 'claude-haiku-5-5', webSearch: 'off' }, guitar: DEFAULT_GUITAR, rig: DEFAULT_RIG },
     );
     expect(res.recipe.pedal.channelA.amp).toBe('UK 68P');
     expect(res.fixes).toEqual([]);
@@ -132,7 +149,7 @@ describe('generateTone with a mocked Anthropic API', () => {
     );
     const res = await generateTone(
       { artist: 'AC/DC' },
-      { ai: { provider: 'openrouter', apiKey: 'k', model: 'anthropic/claude-sonnet-5.5', fastModel: 'x', webSearch: false }, guitar: DEFAULT_GUITAR, rig: DEFAULT_RIG },
+      { ai: { provider: 'openrouter', apiKey: 'k', model: 'anthropic/claude-sonnet-5.5', fastModel: 'x', webSearch: 'off' }, guitar: DEFAULT_GUITAR, rig: DEFAULT_RIG },
     );
     expect(res.recipe.guitar).toMatchObject({ tone: 8 });
   });
@@ -148,10 +165,55 @@ describe('generateTone with a mocked Anthropic API', () => {
     vi.stubGlobal('fetch', fetchMock);
     const res = await generateTone(
       { song: 'Wagon Wheel' },
-      { ai: { provider: 'anthropic', apiKey: 'test', model: 'claude-sonnet-5-5', fastModel: 'claude-haiku-5-5', webSearch: false }, guitar: GODIN_ACOUSTICASTER, rig: DEFAULT_RIG },
+      { ai: { provider: 'anthropic', apiKey: 'test', model: 'claude-sonnet-5-5', fastModel: 'claude-haiku-5-5', webSearch: 'off' }, guitar: GODIN_ACOUSTICASTER, rig: DEFAULT_RIG },
     );
     expect(res.recipe.guitar).toEqual({ kind: 'piezo', volume: 10, bass: 6, mid: 6, treble: 4 });
     expect(res.recipe.guitarId).toBe(GODIN_ACOUSTICASTER.id);
+  });
+
+  it('searches inside the tone call on "auto" and continues a paused turn', async () => {
+    const bodies: any[] = [];
+    const fetchMock = vi.fn(async (_url: string, init: RequestInit) => {
+      const body = JSON.parse(String(init.body));
+      bodies.push(body);
+      if (bodies.length === 1) {
+        const search = { type: 'web_search_tool_result', tool_use_id: 's1', content: [{ type: 'web_search_result', url: 'https://example.com/rig', title: 'Rig rundown' }] };
+        return new Response(JSON.stringify({ model: body.model, stop_reason: 'pause_turn', content: [search], usage: { input_tokens: 100, output_tokens: 10 } }));
+      }
+      return new Response(JSON.stringify({ model: body.model, stop_reason: 'tool_use', content: [{ type: 'tool_use', name: 'submit_tone', input: sample }], usage: { input_tokens: 200, output_tokens: 50 } }));
+    });
+    vi.stubGlobal('fetch', fetchMock);
+    const res = await generateTone(
+      { song: 'La Gaspésie', artist: 'Irvin Blais' },
+      { ai: { provider: 'anthropic', apiKey: 'test', model: 'claude-opus-5-5', fastModel: 'claude-haiku-5-5', webSearch: 'auto' }, guitar: DEFAULT_GUITAR, rig: DEFAULT_RIG },
+    );
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    expect(bodies[0].tools.map((t: any) => t.type ?? t.name)).toEqual(['submit_tone', 'web_search_20260209']);
+    expect(bodies[0].output_config).toEqual({ effort: 'high' });
+    expect(bodies[0].max_tokens).toBe(16000);
+    expect(bodies[0].messages[0].content).toContain('Use it only when you are not sure');
+    expect(bodies[1].messages.map((m: any) => m.role)).toEqual(['user', 'assistant']);
+    expect(res.recipe.sources).toEqual([{ url: 'https://example.com/rig', title: 'Rig rundown' }]);
+    expect(res.usage).toMatchObject({ inputTokens: 300, outputTokens: 60 });
+  });
+
+  it('says so when the request is not about a guitar sound', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify({ model: 'x', stop_reason: 'end_turn', content: [{ type: 'text', text: 'OFF_TOPIC' }] }))));
+    await expect(
+      generateTone({ song: 'Write my homework' }, { ai: { provider: 'anthropic', apiKey: 'test', model: 'claude-opus-5-5', fastModel: 'x', webSearch: 'auto' }, guitar: DEFAULT_GUITAR, rig: DEFAULT_RIG }),
+    ).rejects.toThrow('only makes guitar tones');
+  });
+
+  it('sends no search tool when search is off', async () => {
+    const fetchMock = vi.fn(async (_url: string, init: RequestInit) => {
+      const body = JSON.parse(String(init.body));
+      expect(body.tools).toHaveLength(1);
+      expect(body.messages[0].content).not.toContain('WEB SEARCH');
+      return new Response(JSON.stringify({ model: body.model, content: [{ type: 'tool_use', name: 'submit_tone', input: sample }] }));
+    });
+    vi.stubGlobal('fetch', fetchMock);
+    await generateTone({ song: 'Back in Black' }, { ai: { provider: 'anthropic', apiKey: 'test', model: 'claude-opus-5-5', fastModel: 'x', webSearch: 'off' }, guitar: DEFAULT_GUITAR, rig: DEFAULT_RIG });
+    expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 });
 

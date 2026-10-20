@@ -5,7 +5,7 @@ import { sanitizeName } from '../tonelab/program';
 import { SLOT_KEYS } from '../tonelab/spec';
 import type { GuitarProfile, RigProfile } from './guitar';
 import { RESEARCH_PROMPT, refinePrompt, systemPrompt, userPrompt, type LearnedEdit, type ToneRequest } from './prompt';
-import { AiError, callResearch, callTone, type AiSettings } from './providers';
+import { AiError, callResearch, callTone, type AiSettings, type WebSearchMode } from './providers';
 import { toneSchema } from './schema';
 
 export interface EngineContext {
@@ -23,18 +23,25 @@ export interface EngineResult {
   usage?: { inputTokens?: number; outputTokens?: number; cacheReadTokens?: number };
 }
 
-export async function generateTone(req: ToneRequest, ctx: EngineContext, opts: { webSearch?: boolean } = {}): Promise<EngineResult> {
+export async function generateTone(req: ToneRequest, ctx: EngineContext, opts: { webSearch?: WebSearchMode } = {}): Promise<EngineResult> {
   if (!req.song && !req.artist) throw new AiError('Enter a song or an artist.');
+  const mode = opts.webSearch ?? ctx.ai.webSearch;
+  // Anthropic searches inside the tone call, only when needed on "auto". OpenRouter needs a separate call, so only on "always".
+  const inCall: WebSearchMode = ctx.ai.provider === 'anthropic' ? mode : 'off';
   let research: string | undefined;
   let sources: { title: string; url: string }[] = [];
-  if (opts.webSearch ?? ctx.ai.webSearch) {
+  if (ctx.ai.provider === 'openrouter' && mode === 'always') {
     ctx.onStatus?.('Searching the web for the original rig…');
     const r = await callResearch(ctx.ai, RESEARCH_PROMPT(req));
     research = r.text;
     sources = r.sources;
   }
-  ctx.onStatus?.('Designing the tone…');
-  const res = await callTone(ctx.ai, ctx.ai.model, systemPrompt(ctx.guitar, ctx.rig), userPrompt(req, research, ctx.learned), toneSchema(ctx.guitar.kind));
+  ctx.onStatus?.(inCall === 'off' ? 'Designing the tone…' : 'Designing the tone (searching the web if needed)…');
+  const res = await callTone(ctx.ai, ctx.ai.model, systemPrompt(ctx.guitar, ctx.rig), userPrompt(req, { research, search: inCall, learned: ctx.learned }), toneSchema(ctx.guitar.kind), {
+    effort: 'high',
+    webSearch: inCall !== 'off',
+  });
+  sources = [...sources, ...res.sources];
   const recipe = toRecipe(res.input, { request: req, source: 'ai', model: res.model, sources, guitar: ctx.guitar });
   const fixes = applyRecipe(recipe.pedal).warnings;
   return { recipe, fixes, usage: res.usage };

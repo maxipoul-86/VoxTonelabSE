@@ -113,3 +113,5 @@ export type ToneSchema = ReturnType<typeof toneSchema>;
 
 export const TOOL_NAME = 'submit_tone';
 export const TOOL_DESCRIPTION = 'Submit the Tonelab SE program and guitar setup for the requested sound.';
+/** The model's whole answer when a request is not about a guitar sound. */
+export const OFF_TOPIC = 'OFF_TOPIC';

@@ -97,7 +97,7 @@ const SETTINGS_KEY = 'tonelab-se-settings';
 
 export function defaultSettings(): AppSettings {
   return {
-    ai: { provider: 'anthropic', apiKey: '', ...DEFAULT_MODELS.anthropic, webSearch: false },
+    ai: { provider: 'anthropic', apiKey: '', ...DEFAULT_MODELS.anthropic, webSearch: 'auto' },
     guitars: DEFAULT_GUITARS.map((g) => ({ ...g })),
     activeGuitarId: FIRST_GUITAR_ID,
     rig: DEFAULT_RIG,
@@ -123,7 +123,18 @@ export function parseSettings(raw: string | null): AppSettings {
     guitars = [{ ...DEFAULT_GUITAR, ...legacy, id: FIRST_GUITAR_ID, kind: 'split' }, ...d.guitars.filter((g) => g.id !== FIRST_GUITAR_ID)];
   }
   const activeGuitarId = guitars.some((g) => g.id === s.activeGuitarId) ? s.activeGuitarId : guitars[0].id;
-  return { ...d, ...s, ai: { ...d.ai, ...s.ai }, guitars, activeGuitarId, rig: { ...d.rig, ...s.rig } };
+  return { ...d, ...s, ai: { ...d.ai, ...upgradeAi(s.ai) }, guitars, activeGuitarId, rig: { ...d.rig, ...s.rig } };
+}
+
+/** The models that were the defaults while web search was an on/off switch. */
+const OLD_DEFAULT_MODELS = ['claude-sonnet-5-5', 'anthropic/claude-sonnet-5.5'];
+
+/** Settings saved while web search was on/off: search becomes "auto", and the old default model moves to the new default. */
+function upgradeAi(ai: any): Partial<AiSettings> | undefined {
+  if (typeof ai?.webSearch !== 'boolean') return ai;
+  const { webSearch: _, ...rest } = ai;
+  const provider: keyof typeof DEFAULT_MODELS = rest.provider === 'openrouter' ? 'openrouter' : 'anthropic';
+  return OLD_DEFAULT_MODELS.includes(rest.model) ? { ...rest, model: DEFAULT_MODELS[provider].model } : rest;
 }
 
 export function saveSettings(s: AppSettings) {
