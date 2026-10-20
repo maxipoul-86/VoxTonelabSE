@@ -37,6 +37,13 @@ export const library = {
   all: () => tx<ToneRecipe[]>(RECIPES, 'readonly', (s) => s.getAll() as IDBRequest<ToneRecipe[]>).then((r) => r.sort((a, b) => b.createdAt.localeCompare(a.createdAt))),
   put: (r: ToneRecipe) => tx(RECIPES, 'readwrite', (s) => s.put(r)),
   remove: (id: string) => tx(RECIPES, 'readwrite', (s) => s.delete(id)),
+  /** Delete every saved tone, all guitars. */
+  clear: () => tx(RECIPES, 'readwrite', (s) => s.clear()),
+  /** Add the tones bundled with the app (tones/all-tones.json); same ids replace older copies. */
+  async addStarterTones(): Promise<number> {
+    const { default: text } = await import('../../tones/all-tones.json?raw');
+    return library.importJson(text);
+  },
   /** A saved tone for this song, made for this guitar. */
   async find(song: string | undefined, artist: string | undefined, part: string | undefined, guitarId: string): Promise<ToneRecipe | undefined> {
     const n = (x?: string) => (x ?? '').trim().toLowerCase();
@@ -75,13 +82,15 @@ export interface AppSettings {
   activeGuitarId: string;
   /** The Library shows every guitar's tones instead of the active guitar's bank. */
   libraryShowAll?: boolean;
-  /** Load each Winamp track's tone as it starts (Gig screen). */
+  /** Load each Winamp or Spotify track's tone as it starts (Gig screen). */
   gigFollow?: boolean;
-  /** Winamp track key (see parseTrack) -> recipe id, for tracks the automatic match gets wrong. */
+  /** Track key (see parseTrack) -> recipe id, for tracks the automatic match gets wrong. */
   trackLinks?: Record<string, string>;
   rig: RigProfile;
   midiChannel: number;
   lastPortName?: string;
+  /** Language for talking instead of typing (MicButton). */
+  voiceLang?: 'fr-CA' | 'en-CA';
 }
 
 const SETTINGS_KEY = 'tonelab-se-settings';

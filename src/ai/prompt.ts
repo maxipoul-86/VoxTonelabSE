@@ -69,13 +69,14 @@ THE RIG
 
 RULES
 - ${pickupRule(guitar)}
-- If the song has a rhythm and a lead sound, put rhythm on channel A and lead on channel B (often a bit more gain, middle and volume) and say so in tips. Otherwise make B a useful variation (e.g. a boosted lead) and keep A active.
+- Channel A is always the rhythm sound of the verse. Channel B is the lead sound when the song has a guitar solo or lead part (often a bit more gain, middle and volume); otherwise it is the chorus sound (usually a little bigger: more gain or volume). Keep A active, and say in tips what B is for.
 - Balance channel volumes so switching A/B does not jump unless a lead boost is intended.
 - Use effects only when the original has them; set "on": false for unused slots but still pick a sensible type.
 - Delay time in ms; match the song tempo when you know it.
 - Name: max 8 characters, upper case.
 - Things the pedal cannot do (alternate tunings, octave/doubled studio parts, a specific pedal it lacks) go in warnings with a practical suggestion, e.g. "Tune down a half step".
 - Confidence: high only for well-documented famous tones.
+- Write the text for the player (original, tips, why, warnings) in French. Keep amp, cabinet and effect names, parameter keys and the program name exactly as listed. Keep control and effect words in English as on the pedal, the way Québec guitarists say them: gain, treble, middle, bass, presence, volume, reverb, delay, chorus, tremolo, compressor (e.g. "un peu moins de treble", "plus de reverb", "le delay").
 - Answer ONLY by calling the ${TOOL_NAME} tool. No other text.
 
 TONELAB SE MENU

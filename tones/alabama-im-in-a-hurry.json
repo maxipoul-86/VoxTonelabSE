@@ -6,65 +6,34 @@
    "id": "6a4d2f8b-3e1c-4b97-9c6a-8d5e2b7f4a19",
    "createdAt": "2026-10-17T13:30:00.000Z",
    "source": "manual",
-   "request": { "song": "I'm in a Hurry (And Don't Know Why)", "artist": "Alabama", "part": "Rhythm" },
+   "request": { "song": "I'm in a Hurry (And Don't Know Why)", "artist": "Alabama", "part": "Couplets (A) / Solo (B)" },
    "original": {
-    "guitar": "Session and band guitarists (not credited in the sources found)",
-    "amp": "Not documented. Early-90s Nashville country: clean Fender-style amp with chorus and delay",
-    "effects": "Compressor, light chorus, stereo delay, plate reverb (era style, not documented)",
+    "guitar": "Guitaristes du groupe et de studio (non crédités dans les sources trouvées)",
+    "amp": "Non documenté. Country de Nashville du début des années 90 : ampli de style Fender clean pour le rythme, crunch EL84 et style Plexi pour les leads",
+    "effects": "Compressor, léger chorus, delay stéréo, reverb plate (style de l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "Second single from American Pride (September 1992), recorded May 5, 1992, produced by Larry Michael Lee, Josh Leo and Alabama."
+    "notes": "Deuxième extrait de American Pride (septembre 1992), enregistré le 5 mai 1992, réalisé par Larry Michael Lee, Josh Leo et Alabama."
    },
    "pedal": {
-    "name": "HURRY RY",
+    "name": "HURRY",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
-    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
     "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
     "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.7, "depth": 3, "manual": 5, "mix": 3 } },
     "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 360, "feedback": 2, "tone": 6, "ducking": 3, "mix": 1.8 } },
     "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 4, "mix": 2 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "both", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for the clean, driving rhythm and arpeggios, with a touch of stereo chorus. Channel B for a light AC30 crunch where the song lifts. The song is about rushing, but the groove is steady: keep the strumming even and let the drums push.",
-   "why": "Early-90s Nashville records used a clean, compressed electric with a light chorus, a stereo delay and a studio plate reverb, sitting on top of acoustic strumming.",
+   "tips": "Canal A pour le rythme clean et les arpèges des couplets, avec une touche de chorus stéréo. Canal B pour les fills et le solo, en crunch style Plexi. Pour le solo, passez au micro chevalet et écrasez MOD pour couper le chorus si vous voulez un son plus direct. La chanson parle de se dépêcher, mais le groove est stable : gardez le strumming régulier et laissez la batterie pousser.",
+   "why": "Les disques de Nashville du début des années 90 utilisaient une électrique clean et compressée avec un léger chorus, un delay stéréo et une reverb plate, par-dessus les guitares acoustiques. Le crunch Plexi sur 4x12 du canal B donne au solo plus de corps et de sustain.",
    "confidence": "low",
    "sources": [
     { "title": "Wikipedia: I'm in a Hurry (And Don't Know Why)", "url": "https://en.wikipedia.org/wiki/I%27m_in_a_Hurry_(And_Don%27t_Know_Why)" },
-    { "title": "Wikipedia: American Pride (album)", "url": "https://en.wikipedia.org/wiki/American_Pride_(album)" }
-   ]
-  },
-  {
-   "id": "d8f5b1c3-9a7e-4e24-b6d1-4c2a9f8e6b2a",
-   "createdAt": "2026-10-17T13:30:01.000Z",
-   "source": "manual",
-   "request": { "song": "I'm in a Hurry (And Don't Know Why)", "artist": "Alabama", "part": "Lead fills and solo" },
-   "original": {
-    "guitar": "Session and band guitarists (not credited in the sources found)",
-    "amp": "Not documented. Early-90s Nashville country lead: EL84 crunch, Plexi-style for the solo",
-    "effects": "Compressor, delay, plate reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "Second single from American Pride (September 1992), produced by Larry Michael Lee, Josh Leo and Alabama."
-   },
-   "pedal": {
-    "name": "HURRY LD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
-    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
-    "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.7, "depth": 3, "manual": 5, "mix": 3 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1.5, "tone": 6, "mix": 2 } },
-    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 4, "mix": 1.8 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
-   "tips": "Channel A for fills between the vocal lines, channel B for the solo. The comp adds sustain to the bends. Stomp MOD for a light chorus if you want it to sound more early-90s.",
-   "why": "A Tele through an EL84 amp at the edge of breakup for the fills, and a Plexi-style crunch for the solo, with a delay just behind the notes and a plate reverb.",
-   "confidence": "low",
-   "sources": [
-    { "title": "Wikipedia: I'm in a Hurry (And Don't Know Why)", "url": "https://en.wikipedia.org/wiki/I%27m_in_a_Hurry_(And_Don%27t_Know_Why)" },
+    { "title": "Wikipedia: American Pride (album)", "url": "https://en.wikipedia.org/wiki/American_Pride_(album)" },
     { "title": "American Songwriter: On this day in 1992, Alabama released I'm in a Hurry", "url": "https://americansongwriter.com/on-this-day-in-1992-alabama-released-the-hurried-single-that-became-their-31st-no-1/?nb=1" }
    ]
   }

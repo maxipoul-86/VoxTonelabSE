@@ -6,69 +6,34 @@
    "id": "0b6d3f9a-7e2c-4a15-9d84-6c1e8b3f5a27",
    "createdAt": "2026-10-17T15:00:00.000Z",
    "source": "manual",
-   "request": { "song": "Rock 'n' Roll Is King", "artist": "Electric Light Orchestra", "part": "Boogie rhythm" },
+   "request": { "song": "Rock 'n' Roll Is King", "artist": "Electric Light Orchestra", "part": "Couplets boogie (A) / Licks et solo (B)" },
    "original": {
-    "guitar": "Jeff Lynne (lead and rhythm guitar); a 12-inch single lists a Gibson EDS-1275, Les Paul Custom and Marauder among his guitars",
-    "amp": "Not documented",
-    "effects": "50s-style slapback echo (style, not documented)",
+    "guitar": "Jeff Lynne (guitare solo et rythmique) ; un maxi 12 pouces mentionne une Gibson EDS-1275, une Les Paul Custom et une Marauder parmi ses guitares",
+    "amp": "Non documenté",
+    "effects": "Écho slapback à la années 50 (style, non documenté)",
     "tuning": "Standard",
-    "notes": "Single from Secret Messages (June 1983), a 50s rock 'n' roll homage. Mik Kaminski plays the violin solo."
+    "notes": "Single tiré de Secret Messages (juin 1983), un hommage au rock 'n' roll des années 50. Le solo principal est au violon (Mik Kaminski)."
    },
    "pedal": {
-    "name": "KING RYG",
+    "name": "KING G",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 4, "vrGain": 5, "treble": 4.5, "middle": 7.5, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2 },
-    "channelB": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5, "vrGain": 5, "treble": 4.5, "middle": 7.5, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "UK BLUES", "cabinet": "UK H30 4x12", "gain": 6, "vrGain": 6, "treble": 5, "middle": 8, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2.4 },
     "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
     "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
     "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 100, "feedback": 1, "tone": 5, "mix": 2.5 } },
     "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "kind": "piezo", "volume": 10, "bass": 5, "mid": 5, "treble": 5 },
    "guitarId": "godin-acousticaster",
    "guitarName": "Godin Acousticaster",
-   "tips": "Channel A for the Chuck Berry-style boogie rhythm (root-fifth to root-sixth shuffle on the low strings), channel B for a grittier sound. The piezo has a sharp attack, so pick a little softer than on the Tele, and palm-mute lightly. The 100 ms slapback is the 50s echo.",
-   "why": "Same tweed-and-slapback recipe as the Tele version, adjusted for the piezo: less gain so it doesn't turn fizzy, treble and presence down and middle up to soften the quack, a light compressor for sustain, and more channel volume for the lower output. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
+   "tips": "Canal A : la rythmique boogie à la Chuck Berry (shuffle quinte-sixte sur les cordes graves). Le piezo a une attaque sèche : gratte un peu plus doucement qu'avec la Tele et étouffe légèrement. Canal B : les licks en double stops et le solo (le solo du disque est au violon). Le compressor remplace l'overdrive de la version Tele, parce qu'un overdrive sur un piezo devient criard ; si ça larsen, descends COMP Sens à 2,5. Le slapback de 100 ms, c'est l'écho des années 50.",
+   "why": "Même recette tweed et slapback que la version Tele, ajustée pour le piezo : moins de gain pour éviter le grésillement, treble et presence baissés et middle montés pour adoucir le côté nasillard, un compressor léger pour le sustain et plus de volume de canal pour compenser la sortie plus faible. Sur B, un crunch de style JTM45 avec beaucoup de middle fait mordre les double stops sans grésiller. L'égalisation de la guitare reste à plat ; tout se règle sur le Tonelab.",
    "confidence": "low",
-   "warnings": ["A piezo can't fully match the thick, punchy humbucker crunch on the record. It will sound brighter and lighter. That suits the boogie rhythm well, less so heavier parts."],
-   "sources": [
-    { "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single", "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html" },
-    { "title": "10538 Overture: ELO Secret Messages CD", "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html" }
-   ]
-  },
-  {
-   "id": "5f1a8c4e-3b9d-4e62-a7c5-2d8f6b1e9c38",
-   "createdAt": "2026-10-17T15:00:01.000Z",
-   "source": "manual",
-   "request": { "song": "Rock 'n' Roll Is King", "artist": "Electric Light Orchestra", "part": "Chuck Berry-style lead" },
-   "original": {
-    "guitar": "Jeff Lynne; Gibson humbucker guitars (Les Paul Custom, EDS-1275) listed for the single",
-    "amp": "Not documented",
-    "effects": "Slapback echo (style, not documented)",
-    "tuning": "Standard",
-    "notes": "Single from Secret Messages (June 1983). The main solo is on violin (Mik Kaminski)."
-   },
-   "pedal": {
-    "name": "KING LDG",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "UK BLUES", "cabinet": "UK H30 4x12", "gain": 5, "vrGain": 5.5, "treble": 5, "middle": 8, "bass": 4.5, "presence": 4.5, "volume": 8, "nr": 2 },
-    "channelB": { "amp": "UK BLUES", "cabinet": "UK H30 4x12", "gain": 6, "vrGain": 6, "treble": 5, "middle": 8, "bass": 4.5, "presence": 4.5, "volume": 8.5, "nr": 2.4 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
-    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 110, "feedback": 1, "tone": 5, "mix": 2.5 } },
-    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "kind": "piezo", "volume": 10, "bass": 5, "mid": 5, "treble": 5 },
-   "guitarId": "godin-acousticaster",
-   "guitarName": "Godin Acousticaster",
-   "tips": "Channel A for Chuck Berry-style double-stop licks and fills, channel B for a solo. The main solo on the record is violin: if you cover it on guitar, use channel B. The compressor replaces the Tube OD from the Tele version, because extra overdrive on a piezo turns harsh. If it feeds back, drop COMP Sens to 3.",
-   "why": "A JTM45-style crunch with the gain down a point from the Tele version, more middle and less treble and presence, so the piezo's double stops bite without fizz. The compressor gives the sustain the humbucker had naturally. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
-   "confidence": "low",
-   "warnings": ["A piezo can't fully match the thick humbucker lead sound on the record. Expect a brighter, more acoustic attack."],
+   "warnings": ["Un piezo ne peut pas reproduire tout à fait le crunch épais et percutant des humbuckers du disque : ça sonnera plus brillant, plus léger, avec une attaque plus acoustique. Ça convient bien à la rythmique boogie, moins aux parties plus lourdes."],
    "sources": [
     { "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single", "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html" },
     { "title": "10538 Overture: ELO Secret Messages CD", "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html" }

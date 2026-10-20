@@ -6,62 +6,30 @@
    "id": "b41e7c90-6a2f-4d18-8c53-2f9a0d6e1b31",
    "createdAt": "2026-10-16T16:10:00.000Z",
    "source": "manual",
-   "request": { "song": "Donne-moi ma chance", "artist": "Les BB", "part": "Clean rhythm (verses), light crunch (choruses)" },
+   "request": { "song": "Donne-moi ma chance", "artist": "Les BB", "part": "Couplets (A) / Lignes de lead (B)" },
    "original": {
-    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
-    "amp": "Unknown. Typical early-90s Quebec pop-rock studio sound: clean, compressed, chorus and stereo delay",
-    "effects": "Chorus, stereo delay, plate/hall reverb (era style, not documented)",
+    "guitar": "Patrick Bourgeois ou Alain Lapointe (crédits de cette pièce non trouvés)",
+    "amp": "Inconnu. Son de studio pop-rock québécois du début des années 90 : clair, compressé, chorus et delay stéréo; crunch rock de style Marshall pour les leads",
+    "effects": "Chorus, delay stéréo, reverb plate ou hall (selon l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "From the album Snob (1991). No source documents the gear on this song, so this tone follows the style of the record."
+    "notes": "Tiré de l'album Snob (1991). Aucune source ne documente l'équipement sur cette chanson; ce son suit le style du disque."
    },
    "pedal": {
-    "name": "BB CLEAN",
+    "name": "BB DONNE",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 6, "treble": 6.5, "middle": 5, "bass": 5, "presence": 6.5, "volume": 10, "nr": 1 },
-    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 6, "treble": 6.5, "middle": 6, "bass": 5, "presence": 6, "volume": 8.5, "nr": 1.4 },
+    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 7.5, "vrGain": 7, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6.5, "volume": 8.5, "nr": 2 },
     "pedal": { "on": false, "type": "COMP", "params": { "sens": 5, "level": 6, "attack": 5 } },
     "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.8, "depth": 5, "manual": 5, "mix": 5 } },
     "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 380, "feedback": 2.5, "tone": 6, "ducking": 3, "mix": 2 } },
     "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 5, "mix": 2.5 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "both", "coils": "single", "volume": 10, "tone": 7 },
-   "tips": "Channel A for the clean, chorused verses. Switch to channel B for a light AC30 crunch in the choruses. Stomp COMP for more sustain on arpeggios. The chorus and delay are stereo: they sound widest if the mixer has the Tonelab's L and R outputs panned apart.",
-   "why": "The early-90s pop-rock clean sound is a bright clean amp with chorus, a stereo delay just under the beat and a plate reverb. Both pickups, split, give a glassy, Strat-like middle-position sound.",
-   "confidence": "low",
-   "sources": [
-    { "title": "Wikipedia: Les B.B.", "url": "https://en.wikipedia.org/wiki/Les_B.B." },
-    { "title": "L'Encyclopédie canadienne : Les BB", "url": "https://www.thecanadianencyclopedia.ca/fr/article/les-bb" }
-   ]
-  },
-  {
-   "id": "e5a2d8f3-1c7b-4e69-b0a4-9d3f6c2e8a42",
-   "createdAt": "2026-10-16T16:10:01.000Z",
-   "source": "manual",
-   "request": { "song": "Donne-moi ma chance", "artist": "Les BB", "part": "Crunch rhythm and lead lines" },
-   "original": {
-    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
-    "amp": "Unknown. Typical late-80s / early-90s Marshall-style rock crunch",
-    "effects": "Light chorus, stereo delay, hall reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "From the album Snob (1991). No source documents the gear on this song, so this tone follows the style of the record."
-   },
-   "pedal": {
-    "name": "BB LEAD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 6, "vrGain": 6.5, "treble": 6, "middle": 6.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2 },
-    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 7.5, "vrGain": 7, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6.5, "volume": 8.5, "nr": 2 },
-    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 7, "tone": 6 } },
-    "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
-    "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 420, "feedback": 3, "tone": 6, "ducking": 4, "mix": 2.5 } },
-    "reverb": { "on": true, "type": "HALL 1", "params": { "time": 5, "mix": 2 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
-   "tips": "Channel A for the crunch rhythm, channel B for the lead lines. Stomp the Tube OD for extra sustain on a solo. Lower the guitar volume to 7 on channel A to clean the crunch up.",
-   "why": "A JCM800-style crunch with a touch of chorus, a stereo delay and a hall reverb is the classic polished rock-lead sound of that era. The bridge humbucker gives the lead its focus.",
+   "tips": "Canal A pour les couplets clairs avec chorus : les deux micros, en simple bobinage. Écrase PEDAL (COMP) pour plus de sustain dans les arpèges. Canal B pour le crunch et les lignes de lead : passe au micro chevalet et pousse le bouton de tonalité (humbucker). Si le chorus est trop mouillé pour le lead, coupe MOD. Le chorus et le delay sont stéréo : c'est plus large si les sorties L et R du Tonelab sont panoramiquées de chaque côté à la console.",
+   "why": "Le son clair pop-rock du début des années 90, c'est un ampli clair brillant avec du chorus, un delay stéréo juste sous le temps et une reverb plate; les deux micros en simple bobinage donnent un son vitreux, comme la position du milieu d'une Strat. Pour les leads, un crunch style JCM800 avec le micro humbucker du chevalet donne le son rock poli et précis de l'époque.",
    "confidence": "low",
    "sources": [
     { "title": "Wikipedia: Les B.B.", "url": "https://en.wikipedia.org/wiki/Les_B.B." },

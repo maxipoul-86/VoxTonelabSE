@@ -6,62 +6,30 @@
    "id": "8f0c6a4e-2b1d-4c7a-9e35-1a6d2f0b7c11",
    "createdAt": "2026-10-16T16:00:00.000Z",
    "source": "manual",
-   "request": { "song": "Pretty Little Lie", "artist": "Blackberry Smoke", "part": "Rhythm (verses and choruses)" },
+   "request": { "song": "Pretty Little Lie", "artist": "Blackberry Smoke", "part": "Couplets (A) / Riff d'intro et solo (B)" },
    "original": {
-    "guitar": "Charlie Starr: Les Paul Junior (P-90), Fender Esquire / B-Bender Telecaster; Paul Jackson: Les Paul",
-    "amp": "Tweed Deluxe-style combo (Echopark Vibramatic) blended with a Marshall-style head (Germino) into a 4x12",
-    "effects": "Mostly straight into the amp; Klon-style boost, spring reverb",
+    "guitar": "Charlie Starr : Les Paul Junior (P-90), Fender Esquire / Telecaster B-Bender (les bends du riff d'intro et du solo); Paul Jackson : Les Paul",
+    "amp": "Combo de style tweed Deluxe (Echopark Vibramatic) mélangé à une tête de style Marshall (Germino) dans un 4x12",
+    "effects": "Surtout directement dans l'ampli; boost de style Klon, un peu de delay sur le lead, reverb à ressort",
     "tuning": "Standard",
-    "notes": "No source documents the exact settings for this song. Built from the band's published rigs."
+    "notes": "Aucune source ne documente les réglages exacts pour cette chanson. Construit à partir des rigs publiés du groupe."
    },
    "pedal": {
-    "name": "PLL RHY",
+    "name": "PLL",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5.5, "vrGain": 6, "treble": 6, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7, "nr": 1 },
-    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6, "vrGain": 6, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 1 },
-    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 2, "level": 7, "tone": 6 } },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 7, "vrGain": 7, "treble": 6.5, "middle": 7.5, "bass": 4.5, "presence": 6.5, "volume": 8, "nr": 1 },
+    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 2.5, "level": 7.5, "tone": 6 } },
     "mod": { "on": false, "type": "TEXTREM", "params": { "speed": 4, "depth": 4 } },
-    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 360, "feedback": 1.5, "tone": 5, "mix": 1.5 } },
+    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 360, "feedback": 2, "tone": 5, "mix": 2 } },
     "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 4, "mix": 2 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "bridge", "coils": "single", "volume": 9, "tone": 8 },
-   "tips": "Channel A is the tweed rhythm sound for the verses. Switch to channel B for a bigger Marshall-style crunch in the choruses. If it needs more push, stomp the Tube OD: it works as a light, Klon-style boost.",
-   "why": "Starr runs a tweed Deluxe-style amp all the time and blends it with a Marshall-style head. Channel A copies the tweed, channel B the Marshall. A split Pearly Gates on the bridge gets close to his Esquire and P-90 bite.",
-   "confidence": "medium",
-   "sources": [
-    { "title": "Premier Guitar: Rig Rundown, Blackberry Smoke (2023)", "url": "https://www.premierguitar.com/videos/rig-rundowns/blackberry-smoke-2023" },
-    { "title": "Equipboard: Charlie Starr", "url": "https://equipboard.com/charlie-starr" }
-   ]
-  },
-  {
-   "id": "3d7b9e21-5f4a-4b8c-a2d6-7e9c0f1a4b22",
-   "createdAt": "2026-10-16T16:00:01.000Z",
-   "source": "manual",
-   "request": { "song": "Pretty Little Lie", "artist": "Blackberry Smoke", "part": "Intro riff and solo" },
-   "original": {
-    "guitar": "B-Bender Telecaster (the intro riff and solo use B-string bender bends)",
-    "amp": "Marshall-style head (Germino) into a 4x12, with the tweed combo blended in",
-    "effects": "Klon-style boost, a little delay, spring reverb",
-    "tuning": "Standard",
-    "notes": "No source documents the exact settings for this song. Built from the band's published rigs."
-   },
-   "pedal": {
-    "name": "PLL LEAD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 1 },
-    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 7.5, "vrGain": 7, "treble": 6.5, "middle": 7.5, "bass": 4.5, "presence": 6.5, "volume": 8.5, "nr": 1 },
-    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 3, "level": 7.5, "tone": 6 } },
-    "mod": { "on": false, "type": "TEXTREM", "params": { "speed": 4, "depth": 4 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 360, "feedback": 2, "tone": 5, "mix": 2 } },
-    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 4, "mix": 2 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for the intro riff, channel B for the solo. You don't have a B-bender, so fake the bends: bend the B string up a whole step while you hold the high E (or G) note still, or pre-bend it and let it down. Keep the tone knob pulled for single-coil twang.",
-   "why": "A Plexi-style crunch over a 4x12, pushed by a light overdrive, keeps the bends round but cutting. A short analog slapback and spring reverb fill out the sound without blurring the notes.",
+   "tips": "Canal A : le son tweed pour le rythme des couplets. Canal B : le crunch style Marshall pour le riff d'intro, les refrains plus lourds et le solo. Pour le solo, écrasez PEDAL (le Tube OD sert de boost léger style Klon) et DELAY pour l'écho derrière les bends, et montez le volume de la guitare à 10. Vous n'avez pas de B-bender : imitez les bends en montant la corde de si d'un ton pendant que vous tenez la note sur le mi aigu (ou le sol), ou pré-bendez et relâchez. Gardez le bouton de tonalité tiré pour le twang en simple bobinage.",
+   "why": "Starr joue toujours avec un ampli de style tweed Deluxe mélangé à une tête de style Marshall. Le canal A copie le tweed, le canal B le Marshall dans un 4x12, poussé par un overdrive léger pour garder les bends ronds mais tranchants. Un Pearly Gates en simple bobinage au chevalet se rapproche du mordant de son Esquire et de ses P-90.",
    "confidence": "medium",
    "sources": [
     { "title": "Premier Guitar: Rig Rundown, Blackberry Smoke (2023)", "url": "https://www.premierguitar.com/videos/rig-rundowns/blackberry-smoke-2023" },

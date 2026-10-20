@@ -3,7 +3,7 @@ import { pack7, packedLength, unpack7 } from './pack';
 import { SCALES, SPEED_TABLE_HZ } from './scales';
 import * as sx from './sysex';
 import { PROGRAM_SIZE, EFFECT_SLOTS, SLOT_KEYS, AMP_TYPES, CAB_TYPES } from './spec';
-import { addressOf, blankProgram, controlFromAddress, getName, read, setName, write, type ControlRef } from './program';
+import { addressOf, blankProgram, controlFromAddress, getName, read, setName, swapChannels, write, type ControlRef } from './program';
 import { applyRecipe, expTargetLabel, readRecipe, type PedalSettings } from './recipe';
 
 describe('7-bit packing (NOTE 8)', () => {
@@ -171,6 +171,25 @@ describe('recipes', () => {
     expect(back.exp1).toBe('VOLUME');
     expect(back.exp2).toBe('A/GAIN B');
     expect(read(bytes, { kind: 'status', key: 'cabA' })).toBe(1);
+  });
+
+  it('swaps channels A and B, keeping the sound that plays', () => {
+    const { bytes } = applyRecipe(pedal);
+    const swapped = swapChannels(bytes);
+    const back = readRecipe(swapped);
+    expect(back.channelA).toEqual(readRecipe(bytes).channelB);
+    expect(back.channelB).toEqual(readRecipe(bytes).channelA);
+    expect(read(swapped, { kind: 'status', key: 'channelB' })).toBe(1);
+    expect(back.exp2).toBe('A/GAIN A');
+    expect(back.delay).toEqual(readRecipe(bytes).delay);
+    expect(swapChannels(swapped)).toEqual(bytes);
+  });
+
+  it('always makes EXP 1 the volume pedal, over any earlier program', () => {
+    const base = write(blankProgram(), { kind: 'expTarget', pedal: 'exp1' }, 0b101000); // A/GAIN A
+    const { bytes } = applyRecipe({ ...pedal, exp1: 'A/GAIN A' }, base);
+    expect(readRecipe(bytes).exp1).toBe('VOLUME');
+    expect(read(bytes, { kind: 'expMax', pedal: 'exp1' })).toBe(100);
   });
 
   it('clamps and warns about bad values', () => {

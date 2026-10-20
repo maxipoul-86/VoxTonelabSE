@@ -13,7 +13,8 @@
     "preview": "vite preview --host",
     "typecheck": "tsc",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "tones": "node tones/build.mjs"
   },
   "dependencies": {
     "react": "^19.3.1",

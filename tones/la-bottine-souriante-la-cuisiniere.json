@@ -6,65 +6,35 @@
    "id": "f6d1b8a3-2c9e-4f57-b3a4-9e6c1d5f8b7d",
    "createdAt": "2026-10-17T13:50:00.000Z",
    "source": "manual",
-   "request": { "song": "La cuisinière", "artist": "La Bottine Souriante", "part": "Strummed rhythm (acoustic simulation)" },
+   "request": { "song": "La cuisinière", "artist": "La Bottine Souriante", "part": "Rythme acoustique (A) / Électrique clair (B)" },
    "original": {
-    "guitar": "Acoustic rhythm guitar (band guitarists over the years include Gilles Cartin, André Marchand and Michel Bordeleau; track credits not found)",
-    "amp": "Acoustic instrument",
-    "effects": "None (acoustic folk recording)",
+    "guitar": "Guitare rythmique acoustique (les guitaristes du groupe au fil des ans incluent Gilles Cartin, André Marchand et Michel Bordeleau; crédits de la pièce non trouvés)",
+    "amp": "Instrument acoustique",
+    "effects": "Aucun (enregistrement folk acoustique)",
     "tuning": "Standard",
-    "notes": "Traditional Quebec music: accordion, fiddle, foot-tapping (podorythmie) and acoustic guitar. The album and players on this track were not confirmed."
+    "notes": "Musique traditionnelle québécoise : accordéon, violon, podorythmie et guitare acoustique. L'album et les musiciens de cette pièce n'ont pas été confirmés."
    },
    "pedal": {
-    "name": "CUISI AC",
+    "name": "CUISI",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x10", "gain": 2.5, "vrGain": 5, "treble": 6.5, "middle": 5, "bass": 4.5, "presence": 6.5, "volume": 9, "nr": 2 },
-    "channelB": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 2.5, "vrGain": 5, "treble": 6, "middle": 5.5, "bass": 5, "presence": 6, "volume": 9, "nr": 2 },
+    "channelB": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
     "pedal": { "on": true, "type": "ACOUSTIC", "params": { "body": 5.5, "bass": 4.5, "treble": 7 } },
     "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
     "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 1.5 } },
     "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 2.5, "mix": 1.5 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "both", "coils": "single", "volume": 10, "tone": 7 },
-   "tips": "In Quebec trad music the guitar is the rhythm section: strong, percussive strumming that locks in with the foot-tapping, with accents on the off-beats and bass notes alternating on the downbeats. Channel A is brighter and more percussive, channel B a bit warmer. Leave the melody to the accordion and fiddle.",
-   "why": "The guitar on these recordings is acoustic. The ACOUSTIC effect into a very clean amp, with a short room reverb, gets an electric close to a strummed acoustic. The brighter treble setting helps the strumming cut through accordion and fiddle.",
+   "tips": "En trad québécois, la guitare est la section rythmique : grattage fort et percussif, collé sur la podorythmie, avec les accents sur les contretemps et les notes de basse alternées sur les temps forts. Laisse la mélodie à l'accordéon et au violon. Canal A : la simulation acoustique. Canal B : une électrique claire, pour jouer la pièce avec un vrai son d'électrique; écrase alors PEDAL pour couper l'effet ACOUSTIC (il est partagé par les deux canaux) et monte la tonalité de la guitare à 8. Pas de delay pour que le grattage rapide reste serré; ajoute le slapback (DELAY) seulement si la salle sonne mort.",
+   "why": "Sur ces enregistrements, la guitare est acoustique. L'effet ACOUSTIC dans un ampli très clair, avec une reverb de pièce courte, rapproche une électrique d'une acoustique grattée; le treble plus présent aide le grattage à passer à travers l'accordéon et le violon. Le canal B, clair et sans artifice, garde le rythme trad rapide net et hors du chemin des instruments mélodiques.",
    "confidence": "low",
+   "warnings": ["L'effet ACOUSTIC est dans la case PEDAL, partagée par les deux canaux : coupe-le avec le footswitch PEDAL quand tu passes au canal B pour un vrai son d'électrique."],
    "sources": [
     { "title": "L'Encyclopédie canadienne : La Bottine souriante", "url": "https://encyclopediecanadienne.ca/article/la-bottine-souriante/" },
     { "title": "The Canadian Encyclopedia: La Bottine souriante", "url": "https://thecanadianencyclopedia.ca/en/article/la-bottine-souriante-emc" }
-   ]
-  },
-  {
-   "id": "2a7e4c9f-8d3b-4b61-a5c7-3f9a6e2d1c8e",
-   "createdAt": "2026-10-17T13:50:01.000Z",
-   "source": "manual",
-   "request": { "song": "La cuisinière", "artist": "La Bottine Souriante", "part": "Clean electric rhythm" },
-   "original": {
-    "guitar": "Band guitarists (track credits not found)",
-    "amp": "Not applicable (acoustic arrangement)",
-    "effects": "None",
-    "tuning": "Standard",
-    "notes": "For playing the song with a plain electric sound instead of the acoustic simulation."
-   },
-   "pedal": {
-    "name": "CUISI EL",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
-    "channelB": { "amp": "AC15TB", "cabinet": "VOX AC30", "gain": 4.5, "vrGain": 5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
-    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
-    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 1.5 } },
-    "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 2.5, "mix": 1.5 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "both", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A is a plain, clean electric for percussive strumming. Channel B is a warmer AC15 with a touch of grit. There's no delay, so fast strumming stays tight: add the slapback (DELAY) only if the room sounds dead.",
-   "why": "If you'd rather sound like an electric guitar, a clean, lightly compressed amp with a short room reverb keeps the fast trad rhythm crisp and out of the way of the accordion and fiddle.",
-   "confidence": "low",
-   "sources": [
-    { "title": "L'Encyclopédie canadienne : La Bottine souriante", "url": "https://encyclopediecanadienne.ca/article/la-bottine-souriante/" }
    ]
   }
  ]

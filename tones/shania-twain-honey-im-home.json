@@ -6,66 +6,32 @@
    "id": "4e1b7c9d-8a3f-4d26-9c5e-1f7a3b8d6c6b",
    "createdAt": "2026-10-18T13:00:00.000Z",
    "source": "manual",
-   "request": { "song": "Honey, I'm Home", "artist": "Shania Twain", "part": "The riff and rhythm" },
+   "request": { "song": "Honey, I'm Home", "artist": "Shania Twain", "part": "Couplets et riff (A) / Solo (B)" },
    "original": {
-    "guitar": "Dann Huff and Biff Watson credited with riff and rhythm guitar on Come On Over (not broken down per track)",
-    "amp": "Not documented. Late-90s Mutt Lange production: tight, polished rock crunch",
-    "effects": "Short delay, small room (era style, not documented)",
+    "guitar": "Dann Huff et Biff Watson crédités au riff et à la rythmique sur Come On Over; Brent Mason crédité aux licks et aux solos (crédits non détaillés par chanson)",
+    "amp": "Non documenté. Production de Mutt Lange fin des années 90 : crunch rock serré et poli pour le riff; Brent Mason : Tele propre et compressée, avec un peu de saturation",
+    "effects": "Delay court et petite pièce (style de l'époque, non documenté); compressor, delay et spring reverb pour les licks (son habituel de Brent Mason, non documenté pour cette chanson)",
     "tuning": "Standard",
-    "notes": "From Come On Over (1997), produced by Robert John \"Mutt\" Lange; guitars tracked at Masterfonics, Nashville."
+    "notes": "Tiré de Come On Over (1997), réalisé par Robert John « Mutt » Lange; guitares enregistrées chez Masterfonics, à Nashville."
    },
    "pedal": {
-    "name": "HONEY RF",
+    "name": "HONEY",
     "chain": "M-D-R",
     "activeChannel": "A",
-    "channelA": { "amp": "UK '90S", "cabinet": "UK T75 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
+    "channelA": { "amp": "UK '90S", "cabinet": "UK T75 4x12", "gain": 6, "vrGain": 6.5, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
+    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
     "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
     "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 110, "feedback": 1, "tone": 5, "mix": 1.2 } },
     "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 2.5, "mix": 1.2 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
    "guitarId": "tele",
    "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Channel A for the main riff: tight JCM900-style crunch on the bridge humbucker. Play it with palm muting and stop the notes sharply, as the riff relies on the gaps. Channel B is a lighter AC30 crunch for the verses. Stomp the Tube OD for an even tighter riff.",
-   "why": "Mutt Lange's productions use tight, polished rock guitars, the Def Leppard approach applied to country. A JCM900-style amp gives punch with a firm low end, and a very short delay and a small room keep the riff dry and in your face.",
-   "confidence": "low",
-   "sources": [
-    { "title": "Vintage King: The making of Shania Twain's Come On Over", "url": "https://vintageking.com/blogs/making-of/shania-twain-come-on-over" },
-    { "title": "Come On Over album record (credits)", "url": "https://bemis2.marmot.org/Record/.b15202239" }
-   ]
-  },
-  {
-   "id": "6a9d3e2f-5c7b-4b18-a4f6-8e2c9a5d1b7c",
-   "createdAt": "2026-10-18T13:00:01.000Z",
-   "source": "manual",
-   "request": { "song": "Honey, I'm Home", "artist": "Shania Twain", "part": "Licks and solo (Brent Mason style)" },
-   "original": {
-    "guitar": "Brent Mason credited with the licks and solos on Come On Over (not broken down per track)",
-    "amp": "Not documented. Brent Mason's style: a clean, compressed Tele with a little breakup",
-    "effects": "Compressor, delay, spring reverb (his typical style, not documented for this song)",
-    "tuning": "Standard",
-    "notes": "From Come On Over (1997), produced by Robert John \"Mutt\" Lange."
-   },
-   "pedal": {
-    "name": "HONEY LD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
-    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
-    "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1.5, "tone": 5, "mix": 2 } },
-    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "kind": "split", "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
-   "guitarId": "tele",
-   "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Channel A for clean, snappy Brent Mason-style licks between the vocal lines, channel B for the solo. Pull the tone knob (single coil) for twang. Hybrid-pick and use pedal-steel-style bends. If the comp makes it feed back, drop Sens to 3.",
-   "why": "Brent Mason's sound is a Tele bridge pickup, clean but compressed for sustain and snap, with a little breakup when he digs in and a delay behind it.",
+   "tips": "Canal A pour le riff et les couplets : crunch serré façon JCM900 sur le humbucker chevalet. Joue-le en palm mute et coupe les notes net, le riff vit dans les silences. Baisse le volume de la guitare à 8 pour des couplets plus légers. Canal B pour le solo et les licks à la Brent Mason : tire le bouton de tonalité (simple bobinage) pour le twang et écrase PEDAL (COMP) pour le sustain. Hybrid picking et bends à la pedal steel. Si le comp fait du feedback, baisse Sens à 3.",
+   "why": "Les productions de Mutt Lange ont des guitares rock serrées et polies, l'approche Def Leppard appliquée au country. Un ampli façon JCM900 donne du punch avec un grave ferme, et un delay très court avec une petite pièce garde le riff sec et en avant. Pour le solo, Brent Mason, c'est une Tele chevalet propre mais compressée, avec un peu de saturation quand il attaque : un AC30 un peu poussé s'en approche.",
    "confidence": "low",
    "sources": [
     { "title": "Vintage King: The making of Shania Twain's Come On Over", "url": "https://vintageking.com/blogs/making-of/shania-twain-come-on-over" },

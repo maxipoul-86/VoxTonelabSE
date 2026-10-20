@@ -25,30 +25,32 @@ Android Chrome only allows Web MIDI on HTTPS, so the app is published with GitHu
 
 Cable: UM-ONE mk2 → USB-C (male) to USB-A (female) OTG adapter → tablet.
 
-## Gigs with Winamp
+## Gigs with Winamp or Spotify
 
-The app can load each song's tone by itself as Winamp starts the track. Winamp, the app (in Chrome) and the UM-ONE must be on the same Windows laptop. It works with classic Winamp 5.x.
+The app can load each song's tone by itself as the player starts the track. The player, the app (in Chrome) and the UM-ONE must be on the same Windows laptop. It works with classic Winamp 5.x and the Spotify desktop app (Free or Premium, nothing to sign in to).
 
-1. Double-click `tools/Winamp bridge.cmd` and keep its window open. It only reads what Winamp is playing and tells the app; nothing to install.
-2. Start Winamp and connect the pedal under MIDI.
-3. Open **Gig** and turn on **Follow Winamp**. It stays on next time you open the app.
+1. Get the bridge: **Download the bridge (.zip)** on the Gig screen (or use `tools/` in this repository) and unzip it anywhere. Double-click `Winamp bridge.cmd` or `Spotify bridge.cmd` and keep its window open. It only reads what the player is playing and tells the app; nothing to install. Run one bridge at a time.
+2. Start the player and connect the pedal under MIDI.
+3. Open **Gig** and turn on **Follow Winamp or Spotify**. It stays on next time you open the app.
 
-When a track starts, the app finds the song in the Library bank of the guitar you're playing and loads its first tone into the pedal's edit buffer (nothing is stored), usually about 0.1 s after the track starts. Name your files or tags `Artist - Title` so the songs match. If a track gets the wrong tone or none, pick one under **Tone for this track**: the app remembers it.
+When a track starts, the app finds the song in the Library bank of the guitar you're playing and loads its first tone into the pedal's edit buffer (nothing is stored), usually about 0.1 s after the track starts. For Winamp, name your files or tags `Artist - Title` so the songs match; Spotify gives the artist and title itself, and version notes like "- Remastered 2003" are ignored.
+
+The Spotify bridge reads the "now playing" information Windows shows in its media pop-up, so it can follow other players too: `media-bridge.ps1 -App Chrome` follows YouTube in Chrome, for example. If a track gets the wrong tone or none, pick one under **Tone for this track**: the app remembers it.
 
 ## Screens
 
 | Screen | What it does |
 | --- | --- |
-| Pedal | Live two-way copy of the pedal: amp channels A/B, cabinets, effects, footswitches, expression pedals, guitar setup card. Knobs moved away from the loaded recipe turn blue. |
-| Find | Song / artist / part → tone from the AI (Anthropic or OpenRouter), optional web search, "Adjust it" for quick follow-ups. |
-| Library | Saved tones (AI suggestions and your own versions), one bank per guitar. Export/import as JSON to move between devices. |
-| Gig | Follows Winamp and loads each track's tone as it starts. |
+| Pedal | Live two-way copy of the pedal: amp channels A/B, cabinets, effects, footswitches, expression pedals, guitar setup card. Knobs moved away from the loaded recipe turn blue. **Swap A ⇄ B** swaps the channels; **Fine tune…** has the fast model (Haiku) adjust the loaded tone from a typed or spoken request. |
+| Find | Song / artist / part → tone from the AI (Anthropic or OpenRouter), optional web search, "Adjust it" for quick follow-ups. The mic buttons let you talk instead of typing, in Québec French or English (Chrome, needs internet). |
+| Library | Saved tones (AI suggestions and your own versions), one bank per guitar. Export/import as JSON to move between devices, **Add starter tones** loads the tones bundled in `tones/`, **Delete all…** empties it. |
+| Gig | Follows Winamp or Spotify and loads each track's tone as it starts. |
 | MIDI | Connect, device inquiry, round-trip test, full backup, traffic log, and a **virtual Tonelab** for testing without hardware. |
 | Settings | AI provider, key and models; guitar and rig profile. |
 
 ## Safety
 
-- Tones load into the pedal's **edit buffer** only (func `40`). Nothing is stored until you press **Store to slot…** and confirm.
+- Tones load into the pedal's **edit buffer** only (func `40`). The app never writes to the pedal's program slots; to keep a sound on the pedal, use its own WRITE button.
 - Take a **Full backup** under MIDI before storing anything. Backups are kept in the app and downloaded as a file.
 - The API key is kept in this browser's local storage on this device only.
 
@@ -60,8 +62,8 @@ When a track starts, the app finds the song in the Library bank of the guitar yo
 | `src/midi/` | Web MIDI connection, high-level client with timeouts, virtual pedal. |
 | `src/ai/` | Prompt, JSON schema, Anthropic/OpenRouter adapters, tone engine, learning from your edits. |
 | `src/store/` | IndexedDB library and settings. |
-| `src/gig/` | Winamp bridge connection and track-to-tone matching. |
-| `tools/` | The Winamp bridge (PowerShell). |
+| `src/gig/` | Player bridge connection and track-to-tone matching. |
+| `tools/` | The Winamp and Spotify bridges (PowerShell), sharing `bridge-server.ps1`. |
 | `src/ui/` | React screens. |
 
 Before trusting it on the real pedal, run the checklist in [docs/HARDWARE-TEST.md](docs/HARDWARE-TEST.md).

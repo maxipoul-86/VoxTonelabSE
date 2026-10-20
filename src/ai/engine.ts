@@ -1,6 +1,6 @@
 // The tone engine: request -> (optional research) -> model -> validated ToneRecipe.
 
-import { applyRecipe, newId, type ChannelSettings, type EffectSettings, type GuitarSetup, type PedalSettings, type ToneRecipe } from '../tonelab/recipe';
+import { EXP1_TARGET, applyRecipe, newId, type ChannelSettings, type EffectSettings, type GuitarSetup, type PedalSettings, type ToneRecipe } from '../tonelab/recipe';
 import { sanitizeName } from '../tonelab/program';
 import { SLOT_KEYS } from '../tonelab/spec';
 import type { GuitarProfile, RigProfile } from './guitar';
@@ -113,7 +113,7 @@ export function toRecipe(
     mod: effect(p.mod),
     delay: effect(p.delay),
     reverb: effect(p.reverb),
-    exp1: str(p.exp1),
+    exp1: EXP1_TARGET,
     exp2: str(p.exp2),
   };
   for (const s of SLOT_KEYS) pedal[s] = pedal[s] ?? { on: false };

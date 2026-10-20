@@ -6,65 +6,34 @@
    "id": "9d5f2b7e-6c3a-4f19-b8e2-1a7c4e9d6b93",
    "createdAt": "2026-10-17T13:00:00.000Z",
    "source": "manual",
-   "request": { "song": "Wagon Wheel", "artist": "Darius Rucker", "part": "Strummed rhythm (acoustic simulation)" },
+   "request": { "song": "Wagon Wheel", "artist": "Darius Rucker", "part": "Couplets, simulation acoustique (A) / Fills et solo électrique (B)" },
    "original": {
-    "guitar": "Acoustic-driven arrangement with fiddle, banjo and mandolin (session players not credited in the sources found)",
-    "amp": "Not documented",
-    "effects": "Not documented",
+    "guitar": "Arrangement mené par la guitare acoustique, avec violon, banjo et mandoline ; guitares électriques par des musiciens de session (non crédités dans les sources trouvées)",
+    "amp": "Non documenté. Électrique : son clean nashvillien moderne, ampli de style Fender",
+    "effects": "Non documentés. Pour l'électrique : compressor, slapback, reverb à ressort (style du genre)",
     "tuning": "Standard",
-    "notes": "From True Believers (May 2013), produced by Frank Rogers, recorded at Blackbird Studios, the Pool House and Charleston Sound. Backing vocals by Lady Antebellum."
+    "notes": "Tiré de True Believers (mai 2013), réalisé par Frank Rogers, enregistré à Blackbird Studios, au Pool House et à Charleston Sound. Voix d'accompagnement de Lady Antebellum."
    },
    "pedal": {
-    "name": "WAGON AC",
+    "name": "WAGON",
     "chain": "M-D-R",
     "activeChannel": "A",
-    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x10", "gain": 2.5, "vrGain": 5, "treble": 6, "middle": 5, "bass": 4.5, "presence": 6, "volume": 9, "nr": 2 },
-    "channelB": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3, "vrGain": 5, "treble": 6.5, "middle": 5, "bass": 4.5, "presence": 6.5, "volume": 9, "nr": 2 },
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x10", "gain": 2.5, "vrGain": 5, "treble": 6, "middle": 5, "bass": 4.5, "presence": 6, "volume": 8.5, "nr": 2 },
+    "channelB": { "amp": "AC15TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 8.5, "nr": 2 },
     "pedal": { "on": true, "type": "ACOUSTIC", "params": { "body": 6, "bass": 5, "treble": 6.5 } },
     "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
-    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 130, "feedback": 1, "tone": 6, "mix": 1.5 } },
+    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 130, "feedback": 1, "tone": 6, "mix": 2 } },
     "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "both", "coils": "single", "volume": 10, "tone": 7 },
-   "tips": "The song is built on strummed acoustic guitar. The ACOUSTIC effect in the PEDAL slot makes your electric sound like one. Channel A is warmer, channel B brighter. Strum the four-chord progression with a light, even down-up pattern. Turn PEDAL off for a plain clean electric. For electric fills and licks, switch to WAGON EL.",
-   "why": "If there's no acoustic player in the band, an acoustic simulation into a very clean amp covers the song's main part. Split pickups in the middle position give the least electric-sounding source for the simulation.",
+   "tips": "Canal A : la chanson repose sur une guitare acoustique grattée ; l'effet ACOUSTIC dans le slot PEDAL fait sonner ton électrique comme une acoustique. Gratte la progression de quatre accords avec un va-et-vient léger et régulier. Canal B : l'électrique pour les fills et le solo. En passant sur B, coupe PEDAL (sinon la simulation acoustique reste active) et allume DELAY pour le slapback ; mets le sélecteur au chevalet pour plus de twang. Laisse de la place au violon et au banjo : licks courts, double stops et bends façon pedal steel.",
+   "why": "Sans guitariste acoustique dans le groupe, une simulation acoustique dans un ampli très clean couvre la partie principale ; les micros splittés en position du milieu donnent la source la moins « électrique ». Pour les fills, un son clean de Tele légèrement compressé avec un slapback et de la reverb, ici un AC15TB qui casse à peine pour le solo.",
    "confidence": "low",
    "sources": [
     { "title": "Wikipedia: True Believers (Darius Rucker album)", "url": "https://en.wikipedia.org/wiki/True_Believers_(Darius_Rucker_album)" },
     { "title": "Songfacts: Wagon Wheel", "url": "https://dev-www.songfacts.com/facts/darius-rucker/wagon-wheel" }
-   ]
-  },
-  {
-   "id": "4b8e1c6a-2d7f-4a53-9e1b-6f3d8a2c5e04",
-   "createdAt": "2026-10-17T13:00:01.000Z",
-   "source": "manual",
-   "request": { "song": "Wagon Wheel", "artist": "Darius Rucker", "part": "Electric fills and licks" },
-   "original": {
-    "guitar": "Session players (not credited in the sources found)",
-    "amp": "Not documented. Modern Nashville clean electric: Fender-style amp",
-    "effects": "Compressor, slapback, spring reverb (genre style, not documented)",
-    "tuning": "Standard",
-    "notes": "From True Believers (May 2013), produced by Frank Rogers."
-   },
-   "pedal": {
-    "name": "WAGON EL",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 4.5, "presence": 6, "volume": 8.5, "nr": 2 },
-    "channelB": { "amp": "AC15TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
-    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 130, "feedback": 1, "tone": 6, "mix": 2 } },
-    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3.5, "mix": 2 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for clean, twangy fills between the vocal lines. Channel B for a warmer, slightly broken-up sound for a solo. Leave room for the fiddle and banjo: short licks, double stops and pedal-steel-style bends work best.",
-   "why": "In an acoustic-driven arrangement, the electric guitar plays sparse fills: a clean, lightly compressed Tele sound with a slapback and spring reverb.",
-   "confidence": "low",
-   "sources": [
-    { "title": "Wikipedia: True Believers (Darius Rucker album)", "url": "https://en.wikipedia.org/wiki/True_Believers_(Darius_Rucker_album)" }
    ]
   }
  ]

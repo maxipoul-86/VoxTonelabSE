@@ -1,0 +1,6911 @@
+{
+ "kind": "tonelab-se-library",
+ "version": 1,
+ "recipes": [
+  {
+   "id": "294ccf89-531c-412c-9641-d3a5e3a1868a",
+   "createdAt": "2026-10-20T00:38:40.946Z",
+   "source": "ai",
+   "parentId": "3c7f1b9e-5a2d-4e84-9b6c-8d1e4a7f2c37",
+   "request": {
+    "song": "Chats sauvages",
+    "artist": "Marjo",
+    "part": "Rhythm (clean verses, rock choruses)",
+    "notes": "on dirait que ça distortionne un peu trop?"
+   },
+   "original": {
+    "guitar": "Jean Millaire (guitariste de Marjo et coauteur de l'album)",
+    "amp": "Non documenté. Rock québécois du milieu des années 80 : clean avec chorus pour les couplets, crunch de type Marshall pour les refrains (probable, non documenté)",
+    "effects": "Chorus, stereo delay, hall reverb (style d'époque, non documenté)",
+    "tuning": "Standard",
+    "notes": "Le gros succès de Celle qui va (1986), premier album solo de Marjo, enregistré avec Jean Millaire sur Kébec-Disc."
+   },
+   "pedal": {
+    "name": "CHATS RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 400,
+      "feedback": 2.5,
+      "tone": 6,
+      "ducking": 3,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "HALL 1",
+     "params": {
+      "time": 5,
+      "lodamp": 5,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A pour les couplets (clean chorus, léger grain). Canal B pour les refrains : la distorsion est maintenant plus légère, donc plus de volume de guitare ou un peu plus de gain au besoin si le refrain manque de mordant. Si ça reste trop saturé, baisser le gain du canal B encore d'un demi-point. Pour un son plus propre, baisser aussi le volume de la guitare un peu.",
+   "why": "La saturation venait surtout du canal B (UK '80S) avec un gain de 6 et un vrGain de 6, en plus d'une guitare humbucker au volume maximum. J'ai baissé le gain du canal B à 4,5 et le vrGain à 5 pour réduire la distorsion tout en gardant le caractère de crunch des refrains. Le canal A, les effets et les autres réglages restent identiques.",
+   "confidence": "medium",
+   "warnings": [
+    "Le son original n'est pas documenté avec précision : les réglages sont une approximation de l'ambiance mid-80 québécoise."
+   ],
+   "sources": [
+    {
+     "title": "L'Encyclopédie canadienne : Marjo",
+     "url": "https://thecanadianencyclopedia.ca/fr/article/marjo"
+    },
+    {
+     "title": "The Canadian Encyclopedia: Marjo",
+     "url": "https://thecanadianencyclopedia.ca/en/article/marjo-emc"
+    },
+    {
+     "title": "Noovo Moi : Marjo",
+     "url": "https://www.noovomoi.ca/en-vedette/artistes/article/marjo/"
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "id": "2a72615c-e9e7-4444-bdfd-2ac34c95e5e5",
+   "createdAt": "2026-10-20T00:32:31.885Z",
+   "source": "ai",
+   "parentId": "b2eae2a4-89b5-4abf-a20f-2fadef2ec658",
+   "request": {
+    "song": "Sweet Home Alabama",
+    "artist": "Lynyrd Skynyrd",
+    "notes": "Plus de gain"
+   },
+   "original": {
+    "guitar": "Ed King, Gary Rossington et Allen Collins : trois guitares. Rossington jouait surtout une Gibson Les Paul, Collins une Gibson Explorer/Firebird/Les Paul, Ed King une Stratocaster (le riff d'intro est généralement attribué à Ed King). Les micros exacts par partie sont incertains.",
+    "amp": "Amplis probablement de type Marshall et/ou Fender poussés en léger crunch (détails exacts inconnus)",
+    "effects": "Peu ou pas d'effets : son de studio assez sec, avec un peu de reverb naturelle. Le solo final est joué en crunch/overdrive d'ampli.",
+    "tuning": "Accordage standard (E A D G B E)",
+    "notes": "Riff en D-C-G (ré-do-sol). Son de rock sudiste des années 70 : crunch moyen, médiums présents, très dynamique. Trois guitares superposées en studio."
+   },
+   "pedal": {
+    "name": "SWEET AL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 5,
+     "treble": 5.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 5,
+     "volume": 6,
+     "nr": 0
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 7.5,
+     "vrGain": 5.5,
+     "treble": 5.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 5.5,
+     "volume": 7,
+     "nr": 1
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 5,
+      "tone": 5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 1,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 2.5,
+      "lodamp": 5,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 8,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A pour les couplets et le riff, un peu plus mordant qu'avant. Canal B pour le solo final, avec encore plus de gain et de volume. Si c'est trop saturé, redescendre le gain du canal A d'un point avant de toucher au reste.",
+   "why": "La demande est seulement d'ajouter du gain : j'ai monté le gain du canal A de 4.5 à 6 et celui du canal B de 6 à 7.5, tout le reste est inchangé. Le volume des canaux est gardé identique pour que le passage A/B ne fasse pas de saut de niveau. L'ampli UK 68P reste le bon choix pour ce crunch de rock sudiste.",
+   "confidence": "medium",
+   "warnings": [
+    "Les trois guitares superposées en studio ne peuvent pas être reproduites sur une seule chaîne ; on obtient un seul timbre de crunch.",
+    "Le réglage exact des amplis d'origine est inconnu, donc ce programme est une approximation."
+   ],
+   "sources": [],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "id": "b2eae2a4-89b5-4abf-a20f-2fadef2ec658",
+   "createdAt": "2026-10-20T00:31:00.268Z",
+   "source": "ai",
+   "request": {
+    "song": "Sweet Home Alabama",
+    "artist": "Lynyrd Skynyrd"
+   },
+   "original": {
+    "guitar": "Ed King, Gary Rossington et Allen Collins : trois guitares. Rossington jouait surtout une Gibson Les Paul, Collins une Gibson Explorer/Firebird/Les Paul, Ed King une Stratocaster (le riff d'intro est généralement attribué à Ed King). Les micros exacts par partie sont incertains.",
+    "amp": "Amplis probablement de type Marshall et/ou Fender poussés en léger crunch (détails exacts inconnus)",
+    "effects": "Peu ou pas d'effets : son de studio assez sec, avec un peu de reverb naturelle. Le solo final est joué en crunch/overdrive d'ampli.",
+    "tuning": "Accordage standard (E A D G B E)",
+    "notes": "Riff en D-C-G (ré-do-sol). Son de rock sudiste des années 70 : crunch moyen, médiums présents, très dynamique. Trois guitares superposées en studio."
+   },
+   "pedal": {
+    "name": "SWEET AL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 5.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 5,
+     "volume": 6,
+     "nr": 0
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 5.5,
+     "treble": 5.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 5.5,
+     "volume": 7,
+     "nr": 1
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 5,
+      "tone": 5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 1,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 2.5,
+      "lodamp": 5,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 8,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A pour le riff et les couplets : crunch moyen, qui reste net quand on joue les accords D-C-G. Canal B pour le solo final, avec un peu plus de gain, de médiums et de volume. Pour la nuance, baissez le volume de la guitare vers 6-7 pour l'adoucir. Le micro manche (neck) convient pour les passages plus doux. Le niveau est réglé pour une sortie Line vers la sono.",
+   "why": "Le Marshall Plexi (UK 68P) avec cabinet 4x12 donne le crunch rock des années 70, avec des médiums marqués. Le gain reste modéré car les humbuckers sont chauds, et l'on garde de la dynamique. Une reverb de pièce discrète rappelle le son de studio, sec et naturel. Aucun effet n'est nécessaire.",
+   "confidence": "medium",
+   "warnings": [
+    "Les trois guitares superposées en studio ne peuvent pas être reproduites : jouez simplement le riff principal.",
+    "Les guitares originales (Les Paul, Stratocaster, Explorer) sont différentes de votre Telecaster HH. Pour un son plus proche de la Stratocaster d'Ed King, tirez le bouton de tonalité (single coil) et ajoutez un peu de gain."
+   ],
+   "sources": [],
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "ca878e01-7964-4b55-bdeb-269cb62b42c6",
+   "createdAt": "2026-10-20T00:29:21.049Z",
+   "source": "ai",
+   "parentId": "a189dd2e-d87b-4444-b397-8aa5db4fd7d2",
+   "request": {
+    "song": "have you ever seen the rain",
+    "artist": "John Fogerty",
+    "notes": "Plus de gain"
+   },
+   "original": {
+    "guitar": "Creedence Clearwater Revival (1970, album Pendulum) : Fogerty jouait surtout une Rickenbacker 325 / Les Paul selon les sources ; le son studio est probablement une Telecaster/Rickenbacker non confirmée pour ce titre précis",
+    "amp": "Probablement un ampli Fender (type Twin/Deluxe) poussé à la limite du crunch ; détails exacts inconnus",
+    "effects": "Pas d'effet notable connu ; légère réverbération de studio probable",
+    "tuning": "Standard (accordage normal)",
+    "notes": "Son country-rock américain : rythmique crunch moyen, médiums présents, attaque franche, sans excès de gain. Le solo est simple et mélodique."
+   },
+   "pedal": {
+    "name": "CCR RAIN",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 6.5,
+     "vrGain": 5,
+     "treble": 5.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 5,
+     "volume": 6.5,
+     "nr": 0
+    },
+    "channelB": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 6,
+     "vrGain": 5.5,
+     "treble": 5.5,
+     "middle": 6.5,
+     "bass": 4,
+     "presence": 5.5,
+     "volume": 7,
+     "nr": 0
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 5,
+      "tone": 5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 2,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "lodamp": 4,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 8,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A pour la rythmique du couplet : le gain passe de 4.5 à 6.5 pour plus de mordant, sans perdre la clarté country-rock. Canal B reste inchangé pour le refrain ou le solo. Si le volume paraît plus fort après la montée de gain, baissez légèrement le volume du canal A.",
+   "why": "La demande concerne uniquement le gain : seul le gain du canal A, actif pour la rythmique, est augmenté de 4.5 à 6.5. Le reste de la chaîne, les réglages du canal B, les effets et la guitare restent identiques. Le son d'origine reste un crunch modéré, donc cette hausse reste raisonnable.",
+   "confidence": "medium",
+   "warnings": [
+    "Le matériel exact (guitare, ampli, réglages) n'est pas confirmé pour ce titre ; le gain est ajusté au goût du joueur.",
+    "Le mode split de la recette d'origine (kind) n'est pas géré par ce modèle de requête ; le réglage de guitare est conservé tel quel (micro simple, sélecteur sur chevalet)."
+   ],
+   "sources": [],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "id": "45ff7f1d-a7d6-44b9-8c78-745641b8b8f7",
+   "createdAt": "2026-10-20T00:29:04.775Z",
+   "source": "ai",
+   "parentId": "d2eea1fb-6cbe-4eb6-b524-0b3b959fdc49",
+   "request": {
+    "song": "INIT",
+    "notes": "Plus de gain"
+   },
+   "original": {
+    "guitar": "Inconnue (recette INIT, pas de source)",
+    "amp": "Inconnu",
+    "effects": "Aucun effet activé",
+    "tuning": "Inconnu",
+    "notes": "Recette de départ INIT, aucun son original identifié. Seul le gain du canal A a été modifié, à la demande du joueur."
+   },
+   "pedal": {
+    "name": "INIT",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 7,
+     "vrGain": 5,
+     "treble": 5,
+     "middle": 5,
+     "bass": 5,
+     "presence": 5,
+     "volume": 6,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 5,
+     "treble": 5,
+     "middle": 5,
+     "bass": 5,
+     "presence": 5,
+     "volume": 6,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 5.5,
+      "level": 5,
+      "attack": 5.5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 1,
+      "depth": 5,
+      "manual": 5.5,
+      "mode": 2
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ECHO PLUS",
+     "params": {
+      "time": 400,
+      "feedback": 5,
+      "tone": 5.5,
+      "lodamp": 5,
+      "mix": 5
+     }
+    },
+    "reverb": {
+     "on": false,
+     "type": "SPRING 1",
+     "params": {
+      "time": 5.5,
+      "lodamp": 5,
+      "hidamp": 5,
+      "predelay": 50,
+      "mix": 5
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 10
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A (actif) : rythme et jeu principal. Le gain passe de 5 à 7 pour plus de saturation. Le canal B reste inchangé ; l'utiliser pour un lead si besoin, ou le monter en gain séparément.",
+   "why": "Le joueur demande plus de gain : seul le gain du canal A est augmenté de 5 à 7, les autres réglages restent identiques. Le volume du canal A est conservé pour limiter le saut de niveau, même si un gain plus élevé rend le son un peu plus fort à la perception.",
+   "confidence": "low",
+   "warnings": [],
+   "sources": [],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "id": "a189dd2e-d87b-4444-b397-8aa5db4fd7d2",
+   "createdAt": "2026-10-20T00:23:24.075Z",
+   "source": "ai",
+   "request": {
+    "song": "have you ever seen the rain",
+    "artist": "John Fogerty"
+   },
+   "original": {
+    "guitar": "Creedence Clearwater Revival (1970, album Pendulum) : Fogerty jouait surtout une Rickenbacker 325 / Les Paul selon les sources ; le son studio est probablement une Telecaster/Rickenbacker non confirmée pour ce titre précis",
+    "amp": "Probablement un ampli Fender (type Twin/Deluxe) poussé à la limite du crunch ; détails exacts inconnus",
+    "effects": "Pas d'effet notable connu ; légère réverbération de studio probable",
+    "tuning": "Standard (accordage normal)",
+    "notes": "Son country-rock américain : rythmique crunch moyen, médiums présents, attaque franche, sans excès de gain. Le solo est simple et mélodique."
+   },
+   "pedal": {
+    "name": "CCR RAIN",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 5.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 5,
+     "volume": 6.5,
+     "nr": 0
+    },
+    "channelB": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 6,
+     "vrGain": 5.5,
+     "treble": 5.5,
+     "middle": 6.5,
+     "bass": 4,
+     "presence": 5.5,
+     "volume": 7,
+     "nr": 0
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 5,
+      "tone": 5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 2,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "lodamp": 4,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 8,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A : couplets en accords ouverts, jeu aux doigts ou médiator franc, crunch léger. Canal B : refrains plus puissants et solo mélodique (plus de gain et de volume). Pour un son plus rond, passez sur le micro manche. Le volume de la guitare à 8 permet de nettoyer le son en le baissant.",
+   "why": "Le Bassman (TWEED 4x10) donne le crunch américain gras et médium typique de CCR sans saturation excessive. Les micros en split compensent le côté humbucker trop chaud et rapprochent d'un son Rickenbacker/Telecaster. Une légère réverbération à ressort ajoute l'ambiance studio des années 70.",
+   "confidence": "medium",
+   "warnings": [
+    "Le matériel exact utilisé sur ce titre n'est pas bien documenté ; les réglages sont une approximation du style CCR.",
+    "Si vous restez en humbucker (tone enfoncé), baissez le gain du canal A d'environ 1 point.",
+    "Les doublures de guitare faites en studio ne sont pas reproduites ; jouez-les séparément ou ignorez-les."
+   ],
+   "sources": [],
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "3dbf93be-2357-4941-aa74-3314ba60cf02",
+   "createdAt": "2026-10-20T00:15:30.429Z",
+   "source": "ai",
+   "request": {
+    "song": "Money For Nothing",
+    "artist": "Dire Straits"
+   },
+   "original": {
+    "guitar": "Gibson Les Paul (Mark Knopfler a utilisé une Les Paul '58 Standard / reissue sur ce morceau, selon les sources courantes) ; la signature du riff vient d'un micro en position médium/les deux micros",
+    "amp": "Probablement un Laney (ou Marshall) poussé, avec une pédale wah (Vox) laissée à demi-ouverte pour le son nasal du riff ; la source exacte de l'ampli est incertaine",
+    "effects": "Wah-wah mi-ouverte (son vocal/nasal), compression légère, un peu de réverbération ; jeu aux doigts sans médiator",
+    "tuning": "Accordage standard (probablement)",
+    "notes": "Le riff célèbre a été obtenu en plaçant la pédale wah à mi-course et en jouant aux doigts, avec un volume du micro baissé légèrement et le micro en position médium (les deux). Détails d'ampli incertains."
+   },
+   "pedal": {
+    "name": "MONEY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 5.5,
+     "vrGain": 5,
+     "treble": 5.5,
+     "middle": 7,
+     "bass": 4,
+     "presence": 5,
+     "volume": 5.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 5.5,
+     "treble": 5.5,
+     "middle": 7.5,
+     "bass": 4,
+     "presence": 5.5,
+     "volume": 6,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "VOX WAH",
+     "params": {
+      "close": 3,
+      "open": 8,
+      "manual": 5,
+      "type": 0,
+      "order": 0
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 1,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 2,
+      "lodamp": 4,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "P/MANUAL"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "both",
+    "coils": "humbucker",
+    "volume": 8,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A : riff principal avec la wah (pédale d'expression 2) laissée à mi-course, environ à 50 %, et jeu aux doigts (pouce et doigts, sans médiator) pour le côté nasal. Canal B : un peu plus de gain et de volume pour les parties de lead et les accords ouverts du refrain. Si le son est trop agressif, baisse le volume de la guitare à 7. Bascule en pied pour couper la wah si besoin.",
+   "why": "Le riff repose sur une wah figée à mi-course qui donne un son vocal et nasal, avec un ampli de type Marshall en crunch moyen-fort ; l'UK 68P avec les médiums poussés reproduit ce caractère. Les micros humbucker de ta Tele en position « both » donnent la sortie et le corps proches d'une Les Paul, avec le volume légèrement baissé pour garder de la dynamique. Une légère réverbération de pièce suffit, comme sur l'original.",
+   "confidence": "medium",
+   "warnings": [
+    "Le son d'origine dépend beaucoup du jeu aux doigts et de la position précise de la wah : règle la pédale d'expression 2 à la main jusqu'à trouver le son nasal.",
+    "Les détails exacts de l'ampli et de la guitare sont incertains ; les réglages sont une approximation.",
+    "Les parties doublées en studio ne peuvent pas être reproduites ; joue simplement le riff principal."
+   ],
+   "sources": [],
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "ce077c11-6548-489e-b2b8-1f22a5bb7646",
+   "createdAt": "2026-10-20T00:10:49.924Z",
+   "source": "ai",
+   "request": {
+    "song": "Guitars, Cadillacs",
+    "artist": "Dwight Yoakam"
+   },
+   "original": {
+    "guitar": "Fender Telecaster (Pete Anderson, guitariste et producteur de Dwight Yoakam) – micro chevalet single coil, son twang californien/Bakersfield",
+    "amp": "Probablement un ampli Fender type Deluxe/Twin ou Vox poussé légèrement ; détail exact inconnu",
+    "effects": "Peu d'effets : léger reverb à ressort et probablement un peu de slapback/écho court ; compression possible (probable)",
+    "tuning": "Standard (E A D G B E)",
+    "notes": "Son country honky-tonk très clair, mordant, avec un twang de Telecaster au chevalet et du picking style Bakersfield. Les détails de l'équipement précis sur cet enregistrement sont incertains."
+   },
+   "pedal": {
+    "name": "CADILLAC",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 4,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 4,
+     "presence": 6,
+     "volume": 6.5,
+     "nr": 0
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4,
+     "presence": 5.5,
+     "volume": 6.5,
+     "nr": 0
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 4,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 1,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "lodamp": 4,
+      "hidamp": 5,
+      "predelay": 0,
+      "mix": 3
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 9,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A : couplets, rythmique claire et twang au chevalet, avec des cordes à vide et du picking. Canal B : refrain et solo, ampli Tweed un peu plus crunchy et plus gras. Attaquer près du chevalet pour accentuer le twang. Pour un son moins brillant, passer au micro du manche ou en mode double bobinage.",
+   "why": "Le micro chevalet en simple bobinage (tone tiré) reproduit le twang d'une Telecaster. L'ampli BLACK 2x12 donne le clean scintillant façon Fender, avec un peu de compression pour la régularité du picking. Un slapback court et un reverb à ressort léger rappellent le son country. Le canal B en Tweed ajoute un grain plus mordant pour le refrain et le solo.",
+   "confidence": "medium",
+   "warnings": [
+    "Le matériel exact de l'enregistrement n'est pas documenté avec certitude : réglages basés sur le style Telecaster/country de Pete Anderson.",
+    "Si le son est trop fin ou agressif en sortie PA, baisser le treble de 1 point ou repasser en humbucker en baissant le gain de 1 à 2 points."
+   ],
+   "sources": [],
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "35fff5d2-8467-4621-80d2-f7cedd1eb5d6",
+   "createdAt": "2026-10-20T00:08:51.513Z",
+   "source": "ai",
+   "request": {
+    "song": "Have You Ever Seen The Rain",
+    "artist": "John Fogerty and Alan Jackson"
+   },
+   "original": {
+    "guitar": "Version 2013 : Brent Mason (électrique, probablement Telecaster), Bobby Terry (acoustique), Dan Dugmore (steel), Fogerty (guitare et chant). Matériel exact non documenté.",
+    "amp": "Inconnu pour cet enregistrement. Brent Mason utilise habituellement un Marshall, un Matchless 30 W ou un Fender Deluxe '67, mais rien ne le confirme ici. CCR 1970 : ampli à transistors utilisé en son clair.",
+    "effects": "Inconnu. Probablement un peu de reverb et un léger drive en studio country-rock.",
+    "tuning": "Accordage standard (probable, non confirmé)",
+    "notes": "Enregistré au Castle, Nashville, en mai 2012. Production Keith Stegall, mixage John Kelton. Tempo non trouvé pour cette version (environ 112 BPM cité pour l'original, non vérifié)."
+   },
+   "pedal": {
+    "name": "RAIN CTR",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 2.5,
+     "vrGain": 4,
+     "treble": 5.5,
+     "middle": 5.5,
+     "bass": 4.5,
+     "presence": 5,
+     "volume": 6.5,
+     "nr": 0
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5,
+     "vrGain": 5,
+     "treble": 5.5,
+     "middle": 6,
+     "bass": 4,
+     "presence": 5,
+     "volume": 6.5,
+     "nr": 1.5
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 4,
+      "level": 5,
+      "attack": 5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 2,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 360,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "lodamp": 4,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 3
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "both",
+    "coils": "single",
+    "volume": 8,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A : couplet, accords ouverts propres avec un petit grain, style country-rock. Canal B : refrain, plus de mordant (Tweed en crunch léger) pour les accords et les licks de Telecaster. Pour un son plus doux, passez sur le micro manche. Baissez le volume de la guitare à 6 pour nettoyer. Le délai à 360 ms est un léger slapback/écho, à ajuster si besoin.",
+   "why": "Aucune fiche technique n'existe pour cet enregistrement. J'ai donc visé un son country-rock de Nashville : un Twin propre et scintillant pour le couplet, un Tweed Deluxe en crunch léger pour le refrain, avec un peu de spring reverb et un écho discret. Le mode single coil compense les humbuckers et donne le côté Telecaster de Brent Mason, avec un gain légèrement relevé.",
+   "confidence": "low",
+   "warnings": [
+    "Le matériel de la version 2013 n'est pas documenté : ce programme est une interprétation du style de Brent Mason, pas une copie exacte.",
+    "Les parties d'acoustique et de pedal steel du studio ne peuvent pas être reproduites : jouez-les sur un autre instrument ou laissez-les au reste du groupe.",
+    "Tirez le potard de tonalité (coil split) pour avoir le mode single coil prévu."
+   ],
+   "sources": [
+    {
+     "url": "https://www.guitarworld.com/features/john-fogerty-creedence-clearwater-revival-travelin-band",
+     "title": "John Fogerty on his Creedence Clearwater Revival guitar gear"
+    },
+    {
+     "url": "https://www.guitarchalk.com/have-you-ever-seen-the-rain-amp-settings/",
+     "title": "Amp Settings for Have You Ever Seen the Rain by Creedence Clearwater Revival (gear and tone tips) - Guitar Chalk"
+    },
+    {
+     "url": "https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0041848",
+     "title": "John C. Fogerty \"Have You Ever Seen the Rain?\" Guitar Tab in C Major - Download & Print - SKU: MN0041848"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Fogerty%27s_Factory",
+     "title": "Fogerty%27s Factory"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pendulum_(Creedence_Clearwater_Revival_album)",
+     "title": "Pendulum (Creedence Clearwater Revival album)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Have_You_Ever_Seen_the_Rain",
+     "title": "Have You Ever Seen the Rain"
+    },
+    {
+     "url": "https://goodguitarist.com/artist/ccr-john-fogerty/",
+     "title": "CCR John Fogerty Archives - Good Guitarist"
+    },
+    {
+     "url": "https://tabs.ultimate-guitar.com/tab/fogertys-factory/have-you-ever-seen-the-rain-chords-3371990",
+     "title": "HAVE YOU EVER SEEN THE RAIN CHORDS by Fogerty's Factory @ Ultimate-Guitar.Com"
+    }
+   ],
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "7757ca44-7b7d-4f35-bbe3-2f033d7da0f0",
+   "createdAt": "2026-10-19T23:57:33.836Z",
+   "source": "ai",
+   "request": {
+    "song": "Long Cool Woman (In a Black Dress)",
+    "artist": "The Hollies"
+   },
+   "original": {
+    "guitar": "Guitare principale d'Alan Parker (Hollies, 1972) ; modèle exact inconnu, probablement une Telecaster/Stratocaster ou Les Paul selon les sources. Style Creedence (Clearwater Revival), chant de Allan Clarke très proche de John Fogerty.",
+    "amp": "Amplis probablement britanniques poussés, crunch médium à fort ; modèle exact inconnu",
+    "effects": "Riff saturé et sec avec un peu de reverb de studio ; wah/phasing non documenté. Overdrive naturel d'ampli, probablement doublé en studio.",
+    "tuning": "Standard (E A D G B E)",
+    "notes": "Le riff en boogie/blues (type CCR) est joué en palm-muting avec un son crunchy médium et nerveux. Détails de matériel peu documentés."
+   },
+   "pedal": {
+    "name": "LONGCOOL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 5.5,
+     "vrGain": 5,
+     "treble": 6,
+     "middle": 6.5,
+     "bass": 4,
+     "presence": 5,
+     "volume": 6.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 7,
+     "vrGain": 5.5,
+     "treble": 6,
+     "middle": 7,
+     "bass": 4,
+     "presence": 5.5,
+     "volume": 7,
+     "nr": 3
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 4,
+      "level": 5,
+      "tone": 5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 1,
+      "depth": 3,
+      "manual": 5,
+      "mode": 1
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 2,
+      "lodamp": 5,
+      "hidamp": 5,
+      "predelay": 10,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME",
+    "exp2": "OFF"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 8,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Canal A : riff et couplets en palm-muting, médiums marqués, style boogie CCR. Canal B : refrain et partie solo, un peu plus de gain et de volume. Pour plus de mordant, tirez le potard de tonalité (single coil) et ajoutez un peu de gain. Baissez le volume de la guitare à 6-7 pour nettoyer le son.",
+   "why": "Le riff est un crunch britannique médium, proche d'un Plexi poussé. Le UK 68P avec cabinet 4x12 et micros humbucker en position chevalet donne un grain rock des années 70. Les médiums sont accentués pour la ressemblance avec le son CCR, avec une reverb de pièce discrète.",
+   "confidence": "low",
+   "warnings": [
+    "Le matériel exact d'Alan Parker n'est pas bien documenté : réglages basés sur le style général du morceau.",
+    "Les doublages de guitare en studio ne peuvent pas être reproduits : jouez avec un son un peu plus épais ou utilisez un looper.",
+    "Les micros humbucker sont plus chauds que les single coils d'origine probables : baissez le gain de 1 point si le son sature trop."
+   ],
+   "sources": [],
+   "model": "claude-sonnet-5-5"
+  },
+  {
+   "id": "9d4c1f7a-2e8b-4b65-a3f9-7c5e2a8d4f0a",
+   "createdAt": "2026-10-18T13:45:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Drivin' My Life Away",
+    "artist": "Eddie Rabbitt",
+    "part": "Lead fills and solo"
+   },
+   "original": {
+    "guitar": "Larry Byrom and Norbert Putnam (guitar) per the Horizon album credits; not broken down per track",
+    "amp": "Not documented. 1980 country-rock crossover studio sound",
+    "effects": "Light compression, delay, studio plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From Horizon (1980) and the film Roadie."
+   },
+   "pedal": {
+    "name": "DRIVE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1.5,
+      "tone": 5,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for fills between the vocal lines, channel B for the solo. Single coil (tone knob pulled) gives the twang. Double stops and bends with a light touch suit the country-rock style.",
+   "why": "A lightly compressed AC30 crunch with a delay just behind the notes gives snappy country-rock fills, and the Plexi channel adds weight for the solo.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Sessiondays: 1980 Eddie Rabbitt, Horizon",
+     "url": "https://sessiondays.com/2017/09/06/1980-eddie-rabbitt-horizon/"
+    },
+    {
+     "title": "westcoast.dk: Eddie Rabbitt, Horizon",
+     "url": "https://westcoast.dk/?p=15894"
+    }
+   ]
+  },
+  {
+   "id": "2b6f9c3e-7a1d-4e58-9b2c-4d8a1e6f9b9f",
+   "createdAt": "2026-10-18T13:45:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Drivin' My Life Away",
+    "artist": "Eddie Rabbitt",
+    "part": "Driving rhythm"
+   },
+   "original": {
+    "guitar": "Larry Byrom and Norbert Putnam (guitar), Eddie Rabbitt (acoustic) per the Horizon album credits; not broken down per track",
+    "amp": "Not documented. 1980 country-rock crossover studio sound",
+    "effects": "Light compression, short delay, studio plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From Horizon (1980) and the film Roadie. Written by Eddie Rabbitt, Even Stevens and David Malloy."
+   },
+   "pedal": {
+    "name": "DRIVE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for the driving, palm-muted eighth notes that give the song its rolling-down-the-highway feel: keep the picking even and the muting tight. Channel B for a bigger crunch in the choruses. Pull the tone knob (single coil) for a brighter, twangier chug.",
+   "why": "1980 country-rock crossover records used a tight, lightly compressed crunch for the driving rhythm parts, with a short delay and a studio plate reverb. The AC30 keeps it bright, and the Plexi channel adds weight for the choruses.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Sessiondays: 1980 Eddie Rabbitt, Drivin' My Life Away",
+     "url": "https://sessiondays.com/?p=26480"
+    },
+    {
+     "title": "Sessiondays: 1980 Eddie Rabbitt, Horizon",
+     "url": "https://sessiondays.com/2017/09/06/1980-eddie-rabbitt-horizon/"
+    },
+    {
+     "title": "Wikipedia: Horizon (Eddie Rabbitt album)",
+     "url": "https://en.wikipedia.org/wiki/Horizon_(Eddie_Rabbitt_album)"
+    }
+   ]
+  },
+  {
+   "id": "8f3a7d1c-6e2b-4c94-a8d5-2b7e4f9c3a8e",
+   "createdAt": "2026-10-18T13:30:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Rock n' Roll Medley",
+    "artist": "Foxie",
+    "part": "Lead fills and solos"
+   },
+   "original": {
+    "guitar": "Not documented",
+    "amp": "Not documented. Modern dansband production of 50s rock 'n' roll and Creedence songs",
+    "effects": "Slapback echo, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single released February 5, 2021. Songwriting credits include Chuck Berry, Leiber & Stoller, Eddie Cochran and John Fogerty."
+   },
+   "pedal": {
+    "name": "FOXIE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 9
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for Chuck Berry-style double-stop intros and fills, channel B, a Plexi crunch, for the bigger solos. Stomp the Tube OD for more sustain. Pull the tone knob (single coil) for brighter, twangier fills.",
+   "why": "An AC30 crunch with a slapback echo covers the Chuck Berry double stops. The Plexi-style channel gives the solos more weight without going past classic rock 'n' roll grit.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Spotify: Rock n' Roll Medley by Foxie",
+     "url": "https://open.spotify.com/track/07QFKyerHOuvyzebBiTX5N"
+    },
+    {
+     "title": "Deezer: Foxie, Rock n' Roll Medley",
+     "url": "https://www.deezer.com/en/track/1207391302"
+    }
+   ]
+  },
+  {
+   "id": "5c8e2a6f-3d9b-4a71-b6e4-9f2d7c1a8e7d",
+   "createdAt": "2026-10-18T13:30:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Rock n' Roll Medley",
+    "artist": "Foxie",
+    "part": "Rhythm"
+   },
+   "original": {
+    "guitar": "Not documented (Foxie with Jonas Dejevik, Peter Samuelsson, Anders Møller and Mange Olsson)",
+    "amp": "Not documented. Modern dansband production of 50s rock 'n' roll and Creedence songs",
+    "effects": "Slapback echo, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single released February 5, 2021, about seven minutes, also on Dansband & Bugg Medley. Songwriting credits include Chuck Berry, Leiber & Stoller, Eddie Cochran and John Fogerty."
+   },
+   "pedal": {
+    "name": "FOXIE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 2.2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for the Chuck Berry and Eddie Cochran boogie rhythm (root-fifth to root-sixth shuffle on the low strings). Channel B, a brighter AC30 crunch, for the Creedence parts. For a Gretsch-like Cochran twang, pull the tone knob (single coil). It's a seven-minute medley for dancing: keep the groove steady and the palm muting light.",
+   "why": "A small tweed amp turned up with a slapback echo is the classic 50s rock 'n' roll rhythm sound. A modern dansband production keeps it tight, so the echo and room reverb stay short.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Spotify: Rock n' Roll Medley by Foxie",
+     "url": "https://open.spotify.com/track/07QFKyerHOuvyzebBiTX5N"
+    },
+    {
+     "title": "Deezer: Foxie, Rock N' Roll Medley",
+     "url": "https://www.deezer.com/en/album/199793782"
+    },
+    {
+     "title": "Apple Music: Rock N' Roll Medley, single by Foxie",
+     "url": "https://music.apple.com/mx/album/rock-n-roll-medley-feat-jonas-dejevik-peter-samuelsson/1548836775?l=en-GB"
+    }
+   ]
+  },
+  {
+   "id": "6a9d3e2f-5c7b-4b18-a4f6-8e2c9a5d1b7c",
+   "createdAt": "2026-10-18T13:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Honey, I'm Home",
+    "artist": "Shania Twain",
+    "part": "Licks and solo (Brent Mason style)"
+   },
+   "original": {
+    "guitar": "Brent Mason credited with the licks and solos on Come On Over (not broken down per track)",
+    "amp": "Not documented. Brent Mason's style: a clean, compressed Tele with a little breakup",
+    "effects": "Compressor, delay, spring reverb (his typical style, not documented for this song)",
+    "tuning": "Standard",
+    "notes": "From Come On Over (1997), produced by Robert John \"Mutt\" Lange."
+   },
+   "pedal": {
+    "name": "HONEY LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1.5,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for clean, snappy Brent Mason-style licks between the vocal lines, channel B for the solo. Pull the tone knob (single coil) for twang. Hybrid-pick and use pedal-steel-style bends. If the comp makes it feed back, drop Sens to 3.",
+   "why": "Brent Mason's sound is a Tele bridge pickup, clean but compressed for sustain and snap, with a little breakup when he digs in and a delay behind it.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Vintage King: The making of Shania Twain's Come On Over",
+     "url": "https://vintageking.com/blogs/making-of/shania-twain-come-on-over"
+    },
+    {
+     "title": "Come On Over album record (credits)",
+     "url": "https://bemis2.marmot.org/Record/.b15202239"
+    }
+   ]
+  },
+  {
+   "id": "4e1b7c9d-8a3f-4d26-9c5e-1f7a3b8d6c6b",
+   "createdAt": "2026-10-18T13:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Honey, I'm Home",
+    "artist": "Shania Twain",
+    "part": "The riff and rhythm"
+   },
+   "original": {
+    "guitar": "Dann Huff and Biff Watson credited with riff and rhythm guitar on Come On Over (not broken down per track)",
+    "amp": "Not documented. Late-90s Mutt Lange production: tight, polished rock crunch",
+    "effects": "Short delay, small room (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From Come On Over (1997), produced by Robert John \"Mutt\" Lange; guitars tracked at Masterfonics, Nashville."
+   },
+   "pedal": {
+    "name": "HONEY RF",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK '90S",
+     "cabinet": "UK T75 4x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 2.5,
+      "mix": 1.2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for the main riff: tight JCM900-style crunch on the bridge humbucker. Play it with palm muting and stop the notes sharply, as the riff relies on the gaps. Channel B is a lighter AC30 crunch for the verses. Stomp the Tube OD for an even tighter riff.",
+   "why": "Mutt Lange's productions use tight, polished rock guitars, the Def Leppard approach applied to country. A JCM900-style amp gives punch with a firm low end, and a very short delay and a small room keep the riff dry and in your face.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Vintage King: The making of Shania Twain's Come On Over",
+     "url": "https://vintageking.com/blogs/making-of/shania-twain-come-on-over"
+    },
+    {
+     "title": "Come On Over album record (credits)",
+     "url": "https://bemis2.marmot.org/Record/.b15202239"
+    }
+   ]
+  },
+  {
+   "id": "2d8c5f1a-9e4b-4f36-b2a7-6e1c8d4b9f6a",
+   "createdAt": "2026-10-18T12:40:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Terre promise",
+    "artist": "Éric Lapointe",
+    "part": "Lead and solo"
+   },
+   "original": {
+    "guitar": "Stéphane Dufour is Éric Lapointe's longtime guitarist; the credits for this track were not found",
+    "amp": "Not documented. Mid-90s rock lead: Marshall-style amp pushed by an overdrive",
+    "effects": "Overdrive, stereo delay, hall reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Breakthrough single from Obsession (1994), produced by Aldo Nova."
+   },
+   "pedal": {
+    "name": "TERRE SO",
+    "chain": "M-D-R",
+    "activeChannel": "B",
+    "channelA": {
+     "amp": "UK '90S",
+     "cabinet": "UK T75 4x12",
+     "gain": 7,
+     "vrGain": 6.5,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK '90S",
+     "cabinet": "UK T75 4x12",
+     "gain": 7.5,
+     "vrGain": 7,
+     "treble": 6,
+     "middle": 7.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 420,
+      "feedback": 3,
+      "tone": 6,
+      "ducking": 4,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "HALL 1",
+     "params": {
+      "time": 5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 9
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Loads on channel B, ready for the solo. Channel A is a bit less gain for lead lines and fills. The stereo delay ducks under your playing and fills the gaps between phrases. Wide vibrato and long bends suit the style.",
+   "why": "A JCM900-style amp pushed by a light overdrive gives a thick, sustained 90s rock lead. A long stereo delay and a hall reverb give the solo space.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "SOCAN Magazine: SOCAN Classics, N'importe quoi, Terre promise, Poussé par le vent, Marie Stone (1994)",
+     "url": "https://www.socanmagazine.ca/features/socan-classics-nimporte-quoi-terre-promise-pousse-par-le-vent-marie-stone-1994"
+    },
+    {
+     "title": "Qobuz: Éric Lapointe",
+     "url": "https://www.qobuz.com/ca-en/interpreter/eric-lapointe/78665"
+    }
+   ]
+  },
+  {
+   "id": "7b2e9d4c-6f1a-4c85-8e3b-5a9d2c7f1e59",
+   "createdAt": "2026-10-18T12:40:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Terre promise",
+    "artist": "Éric Lapointe",
+    "part": "Rhythm"
+   },
+   "original": {
+    "guitar": "Stéphane Dufour is Éric Lapointe's longtime guitarist; the credits for this track were not found",
+    "amp": "Not documented. Mid-90s rock: Marshall-style crunch",
+    "effects": "Delay, room reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Breakthrough single from Obsession (1994), produced by Aldo Nova. Also titled \"Terre promise (poussé par le vent)\"."
+   },
+   "pedal": {
+    "name": "TERRE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK '90S",
+     "cabinet": "UK T75 4x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 380,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3.5,
+      "mix": 1.8
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A is an AC30 crunch for the verses: roll the guitar volume back to 7 for a cleaner sound. Channel B is a JCM900-style crunch for the big choruses. For the solo, switch to TERRE SO.",
+   "why": "Mid-90s Quebec rock relied on crunchy Marshall-style guitars with a tight low end. The AC30 keeps the verses open, and the JCM900-style amp gives the choruses weight. A quiet delay and a small room keep it punchy under the vocals.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "SOCAN Magazine: SOCAN Classics, N'importe quoi, Terre promise, Poussé par le vent, Marie Stone (1994)",
+     "url": "https://www.socanmagazine.ca/features/socan-classics-nimporte-quoi-terre-promise-pousse-par-le-vent-marie-stone-1994"
+    },
+    {
+     "title": "Qobuz: Éric Lapointe",
+     "url": "https://www.qobuz.com/ca-en/interpreter/eric-lapointe/78665"
+    }
+   ]
+  },
+  {
+   "id": "9e4a2d6b-1f8c-4b53-a7e9-4c6b9f2d8e48",
+   "createdAt": "2026-10-18T12:20:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Chats sauvages",
+    "artist": "Marjo",
+    "part": "Lead and solo"
+   },
+   "original": {
+    "guitar": "Jean Millaire (Marjo's guitarist and co-writer on the album)",
+    "amp": "Not documented. Mid-80s rock lead: Marshall-style crunch pushed by an overdrive",
+    "effects": "Overdrive, stereo delay, hall reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "The big hit from Celle qui va (1986), Marjo's first solo album."
+   },
+   "pedal": {
+    "name": "CHATS SO",
+    "chain": "M-D-R",
+    "activeChannel": "B",
+    "channelA": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 7.5,
+     "vrGain": 7,
+     "treble": 6,
+     "middle": 7.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 450,
+      "feedback": 3,
+      "tone": 6,
+      "ducking": 4,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "HALL 1",
+     "params": {
+      "time": 5.5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 9
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel B for the solo: it loads on B, ready to play. Channel A is a slightly lower-gain version for lead lines. The stereo delay ducks under your playing and fills the gaps between phrases. Lots of vibrato and long bends suit the 80s rock style.",
+   "why": "A JCM800-style amp pushed by a light overdrive gives the singing, sustained 80s rock lead. A long stereo delay and a hall reverb add the big production of the era.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "L'Encyclopédie canadienne : Marjo",
+     "url": "https://thecanadianencyclopedia.ca/fr/article/marjo"
+    },
+    {
+     "title": "The Canadian Encyclopedia: Marjo",
+     "url": "https://thecanadianencyclopedia.ca/en/article/marjo-emc"
+    }
+   ]
+  },
+  {
+   "id": "3c7f1b9e-5a2d-4e84-9b6c-8d1e4a7f2c37",
+   "createdAt": "2026-10-18T12:20:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Chats sauvages",
+    "artist": "Marjo",
+    "part": "Rhythm (clean verses, rock choruses)"
+   },
+   "original": {
+    "guitar": "Jean Millaire (Marjo's guitarist and co-writer on the album)",
+    "amp": "Not documented. Mid-80s Quebec rock: clean chorus for the verses, Marshall-style crunch for the choruses",
+    "effects": "Chorus, stereo delay, hall reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "The big hit from Celle qui va (1986), Marjo's first solo album, recorded with Jean Millaire on Kébec-Disc."
+   },
+   "pedal": {
+    "name": "CHATS RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 400,
+      "feedback": 2.5,
+      "tone": 6,
+      "ducking": 3,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "HALL 1",
+     "params": {
+      "time": 5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for the clean, chorused verses: switch to the middle position for a softer sound. Channel B for the rock choruses: JCM800-style crunch on the bridge humbucker. Stomp MOD off on channel B if the chorus makes the crunch too washy. For the solo, switch to CHATS SO.",
+   "why": "Mid-80s rock ballads move from a clean, chorused verse to a crunchy chorus. A JCM800-style amp gives the punch of that era, with a stereo delay and a hall reverb for the big production.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "L'Encyclopédie canadienne : Marjo",
+     "url": "https://thecanadianencyclopedia.ca/fr/article/marjo"
+    },
+    {
+     "title": "The Canadian Encyclopedia: Marjo",
+     "url": "https://thecanadianencyclopedia.ca/en/article/marjo-emc"
+    },
+    {
+     "title": "Noovo Moi : Marjo",
+     "url": "https://www.noovomoi.ca/en-vedette/artistes/article/marjo/"
+    }
+   ]
+  },
+  {
+   "id": "6d2b8f4a-9c1e-4a75-b3d6-2e8a5f7c1b16",
+   "createdAt": "2026-10-18T12:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Let Your Love Flow",
+    "artist": "The Bellamy Brothers",
+    "part": "Strummed rhythm (acoustic simulation)"
+   },
+   "original": {
+    "guitar": "David and Howard Bellamy on guitar (per MusicBrainz credits); acoustic-driven arrangement",
+    "amp": "Acoustic instruments",
+    "effects": "Studio plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded October 1975 at Wally Heider Recording Studio, Hollywood; single released 1976."
+   },
+   "pedal": {
+    "name": "LOVE AC",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x10",
+     "gain": 2.5,
+     "vrGain": 5,
+     "treble": 6,
+     "middle": 5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 9,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 2.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5,
+     "bass": 4.5,
+     "presence": 6.5,
+     "volume": 9,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "ACOUSTIC",
+     "params": {
+      "body": 6,
+      "bass": 5,
+      "treble": 6.5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.7,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 3.5,
+      "mix": 1.8
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 7
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "The song is built on strummed acoustic guitar. The ACOUSTIC effect in the PEDAL slot makes the Tele sound like one. Channel A is warmer, channel B brighter. Strum lightly and evenly. Stomp MOD for a gentle stereo chorus, a 70s touch. Turn PEDAL off for a plain clean electric. For fills, switch to LOVE CL.",
+   "why": "If there's no acoustic player in the band, an acoustic simulation into a very clean amp covers the song's main part. Split pickups in the middle position give the least electric-sounding source for the simulation, and a plate reverb gives the 70s studio space.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "MusicBrainz: Let Your Love Flow credits (Singers & Songwriters 1973-1976)",
+     "url": "https://musicbrainz-mirror.music-assistant.io/release/f4c8e5b2-4164-43c5-a600-a94e431b5a2a"
+    },
+    {
+     "title": "Wikipedia: The Bellamy Brothers",
+     "url": "https://en.wikipedia.org/wiki/The_Bellamy_Brothers"
+    }
+   ]
+  },
+  {
+   "id": "1e9c5a7d-4b3f-4d62-8a1e-7f6b2c9d4e05",
+   "createdAt": "2026-10-18T12:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Let Your Love Flow",
+    "artist": "The Bellamy Brothers",
+    "part": "Clean electric fills and arpeggios"
+   },
+   "original": {
+    "guitar": "David and Howard Bellamy, Richard Bennett and Doug Rhone (per MusicBrainz credits)",
+    "amp": "Not documented. Mid-70s LA studio sound: clean Fender-style amp",
+    "effects": "Light compression, delay, studio plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded October 1975 at Wally Heider Recording Studio, Hollywood; produced by Phil Gernhard and Tony Scotti; single released 1976. Written by Larry Williams."
+   },
+   "pedal": {
+    "name": "LOVE CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC15TB",
+     "cabinet": "VOX AC30",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.7,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1.5,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "split",
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "guitarId": "tele",
+   "guitarName": "Fender Telecaster Custom FMT HH",
+   "tips": "Channel A for clean, bright fills and arpeggios over the acoustic strumming. Channel B is a warmer AC15 with a touch of grit for melodic lines and a solo. Keep the playing light and let the notes ring: the song floats, it doesn't push. For the strummed acoustic part, switch to LOVE AC.",
+   "why": "Mid-70s LA soft-rock and country-pop records used a clean Fender-style electric, lightly compressed, with a short delay and a studio plate reverb. Both pickups, split, give a glassy, Strat-like middle-position sound.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "MusicBrainz: Let Your Love Flow credits (Singers & Songwriters 1973-1976)",
+     "url": "https://musicbrainz-mirror.music-assistant.io/release/f4c8e5b2-4164-43c5-a600-a94e431b5a2a"
+    },
+    {
+     "title": "Wikipedia: The Bellamy Brothers",
+     "url": "https://en.wikipedia.org/wiki/The_Bellamy_Brothers"
+    },
+    {
+     "title": "Goldmine: The Bellamy Brothers celebrate their 50th anniversary",
+     "url": "https://www.goldminemag.com/columns/the-bellamy-brothers-celebrate-their-50th-anniversary/"
+    }
+   ]
+  },
+  {
+   "id": "c4f7b2e9-6a1d-4c38-8e95-3b2d8f5a1c94",
+   "createdAt": "2026-10-17T15:20:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Mercury Blues",
+    "artist": "Alan Jackson",
+    "part": "Brent Mason lead, bender licks and fills"
+   },
+   "original": {
+    "guitar": "Brent Mason, Telecaster-style guitar with a B-bender (per Vintage Guitar)",
+    "amp": "Not documented for this session. Brent Mason's style: a clean, compressed Tele with a little breakup",
+    "effects": "Compressor, slapback, spring reverb (his typical style, not documented for this song)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993."
+   },
+   "pedal": {
+    "name": "MERC LDG",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 5,
+     "middle": 7.5,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 4.5,
+     "middle": 8,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 140,
+      "feedback": 1.5,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "piezo",
+    "volume": 10,
+    "bass": 5,
+    "mid": 5,
+    "treble": 5
+   },
+   "guitarId": "godin-acousticaster",
+   "guitarName": "Godin Acousticaster",
+   "tips": "Channel A for fills between the vocal lines, channel B for the solos. Brent Mason used a B-bender, so fake the bends: bend the B string up a whole step while you hold the high E (or G) note still, or pre-bend it and release. Hybrid-pick for the fast licks. The comp is at Sens 3.5 here (4 on the Tele version): a piezo guitar's body can feed back, so drop it to 3 if it starts to.",
+   "why": "A clean Fender-style channel for the fills, since a piezo's snap already suits Brent Mason's clean, compressed style, and an AC30 crunch for the solos. Gain is a point lower than on the Tele, with treble and presence down and middle up to tame the piezo's quack. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
+   "confidence": "low",
+   "warnings": [
+    "A piezo can't fully match a Telecaster bridge pickup's twang. Expect a brighter, more acoustic attack on the licks."
+   ],
+   "sources": [
+    {
+     "title": "Vintage Guitar: Alan Jackson review",
+     "url": "https://vintageguitar.com/23749/alan-jackson-3"
+    },
+    {
+     "title": "Premier Guitar: Brent Mason interview",
+     "url": "https://www.premierguitar.com/brent-mason-interview"
+    },
+    {
+     "title": "Wikipedia: Mercury Blues",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Blues"
+    }
+   ]
+  },
+  {
+   "id": "8a3e6c1f-2d7b-4f49-b5a2-9e4c7d1b6f83",
+   "createdAt": "2026-10-17T15:20:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Mercury Blues",
+    "artist": "Alan Jackson",
+    "part": "Shuffle rhythm"
+   },
+   "original": {
+    "guitar": "Brent Mason on lead and B-bender guitar (per Vintage Guitar); rhythm players not credited in the sources found",
+    "amp": "Not documented. Early-90s Nashville country-rock: tweed and Marshall-style crunch",
+    "effects": "Light compression, slapback, spring reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993. The arrangement follows David Lindley's 1981 version."
+   },
+   "pedal": {
+    "name": "MERC RYG",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 4.5,
+     "middle": 7.5,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 4.5,
+     "middle": 8,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "piezo",
+    "volume": 10,
+    "bass": 5,
+    "mid": 5,
+    "treble": 5
+   },
+   "guitarId": "godin-acousticaster",
+   "guitarName": "Godin Acousticaster",
+   "tips": "Channel A for the boogie-shuffle rhythm (the two-string shuffle on the low strings), channel B for a heavier crunch in the louder choruses. The piezo has a sharp attack, so pick a little softer than on the Tele, and palm-mute lightly.",
+   "why": "Same tweed and Plexi recipe as the Tele version, adjusted for the piezo: a point less gain so it doesn't turn fizzy, treble and presence down and middle up to soften the quack, and more channel volume for the lower output. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
+   "confidence": "low",
+   "warnings": [
+    "A piezo can't fully match the thick, gritty crunch of magnetic pickups. Channel B's Plexi sound will be lighter and brighter than on the Tele."
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Mercury Blues",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Blues"
+    },
+    {
+     "title": "Vintage Guitar: Alan Jackson review",
+     "url": "https://vintageguitar.com/23749/alan-jackson-3"
+    }
+   ]
+  },
+  {
+   "id": "5f1a8c4e-3b9d-4e62-a7c5-2d8f6b1e9c38",
+   "createdAt": "2026-10-17T15:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Rock 'n' Roll Is King",
+    "artist": "Electric Light Orchestra",
+    "part": "Chuck Berry-style lead"
+   },
+   "original": {
+    "guitar": "Jeff Lynne; Gibson humbucker guitars (Les Paul Custom, EDS-1275) listed for the single",
+    "amp": "Not documented",
+    "effects": "Slapback echo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Secret Messages (June 1983). The main solo is on violin (Mik Kaminski)."
+   },
+   "pedal": {
+    "name": "KING LDG",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK BLUES",
+     "cabinet": "UK H30 4x12",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 5,
+     "middle": 8,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK BLUES",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 5,
+     "middle": 8,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "piezo",
+    "volume": 10,
+    "bass": 5,
+    "mid": 5,
+    "treble": 5
+   },
+   "guitarId": "godin-acousticaster",
+   "guitarName": "Godin Acousticaster",
+   "tips": "Channel A for Chuck Berry-style double-stop licks and fills, channel B for a solo. The main solo on the record is violin: if you cover it on guitar, use channel B. The compressor replaces the Tube OD from the Tele version, because extra overdrive on a piezo turns harsh. If it feeds back, drop COMP Sens to 3.",
+   "why": "A JTM45-style crunch with the gain down a point from the Tele version, more middle and less treble and presence, so the piezo's double stops bite without fizz. The compressor gives the sustain the humbucker had naturally. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
+   "confidence": "low",
+   "warnings": [
+    "A piezo can't fully match the thick humbucker lead sound on the record. Expect a brighter, more acoustic attack."
+   ],
+   "sources": [
+    {
+     "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single",
+     "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html"
+    },
+    {
+     "title": "10538 Overture: ELO Secret Messages CD",
+     "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html"
+    }
+   ]
+  },
+  {
+   "id": "0b6d3f9a-7e2c-4a15-9d84-6c1e8b3f5a27",
+   "createdAt": "2026-10-17T15:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Rock 'n' Roll Is King",
+    "artist": "Electric Light Orchestra",
+    "part": "Boogie rhythm"
+   },
+   "original": {
+    "guitar": "Jeff Lynne (lead and rhythm guitar); a 12-inch single lists a Gibson EDS-1275, Les Paul Custom and Marauder among his guitars",
+    "amp": "Not documented",
+    "effects": "50s-style slapback echo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Secret Messages (June 1983), a 50s rock 'n' roll homage. Mik Kaminski plays the violin solo."
+   },
+   "pedal": {
+    "name": "KING RYG",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 4,
+     "vrGain": 5,
+     "treble": 4.5,
+     "middle": 7.5,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5,
+     "vrGain": 5,
+     "treble": 4.5,
+     "middle": 7.5,
+     "bass": 4.5,
+     "presence": 4.5,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 100,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "kind": "piezo",
+    "volume": 10,
+    "bass": 5,
+    "mid": 5,
+    "treble": 5
+   },
+   "guitarId": "godin-acousticaster",
+   "guitarName": "Godin Acousticaster",
+   "tips": "Channel A for the Chuck Berry-style boogie rhythm (root-fifth to root-sixth shuffle on the low strings), channel B for a grittier sound. The piezo has a sharp attack, so pick a little softer than on the Tele, and palm-mute lightly. The 100 ms slapback is the 50s echo.",
+   "why": "Same tweed-and-slapback recipe as the Tele version, adjusted for the piezo: less gain so it doesn't turn fizzy, treble and presence down and middle up to soften the quack, a light compressor for sustain, and more channel volume for the lower output. The guitar's EQ stays flat; all the shaping is on the Tonelab.",
+   "confidence": "low",
+   "warnings": [
+    "A piezo can't fully match the thick, punchy humbucker crunch on the record. It will sound brighter and lighter. That suits the boogie rhythm well, less so heavier parts."
+   ],
+   "sources": [
+    {
+     "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single",
+     "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html"
+    },
+    {
+     "title": "10538 Overture: ELO Secret Messages CD",
+     "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html"
+    }
+   ]
+  },
+  {
+   "id": "3e9b7d2a-6c1f-4a84-b8d3-5f2e9a7c4b1a",
+   "createdAt": "2026-10-17T14:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Rock 'n' Roll Is King",
+    "artist": "Electric Light Orchestra",
+    "part": "Chuck Berry-style lead"
+   },
+   "original": {
+    "guitar": "Jeff Lynne; Gibson humbucker guitars (Les Paul Custom, EDS-1275) listed for the single",
+    "amp": "Not documented",
+    "effects": "Slapback echo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Secret Messages (June 1983). The main solo is on violin (Mik Kaminski)."
+   },
+   "pedal": {
+    "name": "KING LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK BLUES",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK BLUES",
+     "cabinet": "UK H30 4x12",
+     "gain": 7,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for Chuck Berry-style double-stop licks and fills, channel B for the solo. The main solo on the record is violin: if you cover it on guitar, use channel B. Stomp the Tube OD for extra sustain.",
+   "why": "A JTM45-style crunch on a humbucker, with a slapback echo, gives the classic rock 'n' roll lead sound: double stops that bite without turning into modern distortion.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single",
+     "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html"
+    },
+    {
+     "title": "10538 Overture: ELO Secret Messages CD",
+     "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html"
+    }
+   ]
+  },
+  {
+   "id": "7c5a3e1b-4f8d-4d29-9b6e-2a8c7f4e1d9f",
+   "createdAt": "2026-10-17T14:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Rock 'n' Roll Is King",
+    "artist": "Electric Light Orchestra",
+    "part": "Boogie rhythm"
+   },
+   "original": {
+    "guitar": "Jeff Lynne (lead and rhythm guitar); a 12-inch single lists a Gibson EDS-1275, Les Paul Custom and Marauder among his guitars",
+    "amp": "Not documented",
+    "effects": "50s-style slapback echo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Secret Messages (June 1983), a 50s rock 'n' roll homage. Mik Kaminski plays the violin solo. The recording studio differs between sources (Wisseloord, Hilversum, or Musicland, Munich)."
+   },
+   "pedal": {
+    "name": "KING RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 6,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 100,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the Chuck Berry-style boogie rhythm (the root-fifth to root-sixth shuffle on the low strings), channel B for a grittier sound. The 100 ms slapback is the 50s echo that makes it sound like rock 'n' roll. Palm-mute lightly and keep it driving.",
+   "why": "The song is a 50s rock 'n' roll homage, so the guitar gets the classic recipe: a tweed amp just breaking up with a strong slapback echo. A light plate reverb adds Jeff Lynne's polished 80s production.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "10538 Overture: ELO Rock 'n' Roll Is King 12-inch single",
+     "url": "https://www.10538overture.dk/ELO/12_inch_maxi/elo_rock_n_roll_is_king.html"
+    },
+    {
+     "title": "10538 Overture: ELO Secret Messages CD",
+     "url": "https://www.10538overture.dk/ELO/CD/elo_secret_messages.html"
+    }
+   ]
+  },
+  {
+   "id": "2a7e4c9f-8d3b-4b61-a5c7-3f9a6e2d1c8e",
+   "createdAt": "2026-10-17T13:50:01Z",
+   "source": "manual",
+   "request": {
+    "song": "La cuisinière",
+    "artist": "La Bottine Souriante",
+    "part": "Clean electric rhythm"
+   },
+   "original": {
+    "guitar": "Band guitarists (track credits not found)",
+    "amp": "Not applicable (acoustic arrangement)",
+    "effects": "None",
+    "tuning": "Standard",
+    "notes": "For playing the song with a plain electric sound instead of the acoustic simulation."
+   },
+   "pedal": {
+    "name": "CUISI EL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC15TB",
+     "cabinet": "VOX AC30",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 2.5,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A is a plain, clean electric for percussive strumming. Channel B is a warmer AC15 with a touch of grit. There's no delay, so fast strumming stays tight: add the slapback (DELAY) only if the room sounds dead.",
+   "why": "If you'd rather sound like an electric guitar, a clean, lightly compressed amp with a short room reverb keeps the fast trad rhythm crisp and out of the way of the accordion and fiddle.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "L'Encyclopédie canadienne : La Bottine souriante",
+     "url": "https://encyclopediecanadienne.ca/article/la-bottine-souriante/"
+    }
+   ]
+  },
+  {
+   "id": "f6d1b8a3-2c9e-4f57-b3a4-9e6c1d5f8b7d",
+   "createdAt": "2026-10-17T13:50:00Z",
+   "source": "manual",
+   "request": {
+    "song": "La cuisinière",
+    "artist": "La Bottine Souriante",
+    "part": "Strummed rhythm (acoustic simulation)"
+   },
+   "original": {
+    "guitar": "Acoustic rhythm guitar (band guitarists over the years include Gilles Cartin, André Marchand and Michel Bordeleau; track credits not found)",
+    "amp": "Acoustic instrument",
+    "effects": "None (acoustic folk recording)",
+    "tuning": "Standard",
+    "notes": "Traditional Quebec music: accordion, fiddle, foot-tapping (podorythmie) and acoustic guitar. The album and players on this track were not confirmed."
+   },
+   "pedal": {
+    "name": "CUISI AC",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x10",
+     "gain": 2.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5,
+     "bass": 4.5,
+     "presence": 6.5,
+     "volume": 9,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 2.5,
+     "vrGain": 5,
+     "treble": 6,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 9,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "ACOUSTIC",
+     "params": {
+      "body": 5.5,
+      "bass": 4.5,
+      "treble": 7
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 2.5,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 7
+   },
+   "tips": "In Quebec trad music the guitar is the rhythm section: strong, percussive strumming that locks in with the foot-tapping, with accents on the off-beats and bass notes alternating on the downbeats. Channel A is brighter and more percussive, channel B a bit warmer. Leave the melody to the accordion and fiddle.",
+   "why": "The guitar on these recordings is acoustic. The ACOUSTIC effect into a very clean amp, with a short room reverb, gets an electric close to a strummed acoustic. The brighter treble setting helps the strumming cut through accordion and fiddle.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "L'Encyclopédie canadienne : La Bottine souriante",
+     "url": "https://encyclopediecanadienne.ca/article/la-bottine-souriante/"
+    },
+    {
+     "title": "The Canadian Encyclopedia: La Bottine souriante",
+     "url": "https://thecanadianencyclopedia.ca/en/article/la-bottine-souriante-emc"
+    }
+   ]
+  },
+  {
+   "id": "a9c2e6f4-1b8d-4a73-8e5f-7b3d1c9a4f6c",
+   "createdAt": "2026-10-17T13:40:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Brand New Man (with Luke Combs)",
+    "artist": "Brooks & Dunn",
+    "part": "Signature licks and solo"
+   },
+   "original": {
+    "guitar": "Session players (not credited in the sources found)",
+    "amp": "Not documented. Modern Nashville lead: clean amp pushed by an overdrive pedal",
+    "effects": "Overdrive, delay, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Re-recorded with Luke Combs for Reboot (2019), produced by Dann Huff."
+   },
+   "pedal": {
+    "name": "NEWMN LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3.5,
+      "level": 6.5,
+      "tone": 6.5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 320,
+      "feedback": 2,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for the twangy signature licks: a clean Fender pushed by the Tube OD, so it snaps but still has hair. Channel B for the solo: more gain and sustain. Turn the Tube OD off on channel A for a fully clean twang.",
+   "why": "Modern Nashville leads usually come from a clean Fender-style amp driven by an overdrive pedal: twangy attack with sustain. A delay just behind the notes fills the space, and a small room keeps it tight.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Saving Country Music: This new Brooks & Dunn Reboot could be interesting",
+     "url": "https://savingcountrymusic.com/this-new-brooks-dunn-reboot-could-be-interesting/"
+    },
+    {
+     "title": "Country Standard Time: Brooks & Dunn Reboot",
+     "url": "https://countrystandardtime.com/news/newsitem.asp?xid=10462"
+    }
+   ]
+  },
+  {
+   "id": "e3b7a1d9-5f2c-4c48-a9e6-1d8b4f7c2e3b",
+   "createdAt": "2026-10-17T13:40:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Brand New Man (with Luke Combs)",
+    "artist": "Brooks & Dunn",
+    "part": "Rhythm"
+   },
+   "original": {
+    "guitar": "Session players (not credited in the sources found)",
+    "amp": "Not documented. Modern Nashville country-rock: EL84 and Plexi-style crunch",
+    "effects": "Light compression, slapback, room reverb (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Brooks & Dunn's 1991 hit re-recorded with Luke Combs for Reboot (2019), produced by Dann Huff. Described as slightly modernized and a little busier than the original."
+   },
+   "pedal": {
+    "name": "NEWMN RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the verses: EL84 crunch with snap. Channel B for the big choruses: Plexi-style crunch. Keep it tight and punchy: it's a dance-floor song, so lock in with the kick drum.",
+   "why": "Dann Huff's modern country production stacks tight, punchy crunch guitars with a short slapback and a small room. The EL84 sound keeps the twang, and the Plexi adds weight for the choruses.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Saving Country Music: This new Brooks & Dunn Reboot could be interesting",
+     "url": "https://savingcountrymusic.com/this-new-brooks-dunn-reboot-could-be-interesting/"
+    },
+    {
+     "title": "The Singles Jukebox: Brooks & Dunn ft. Luke Combs, Brand New Man",
+     "url": "https://thesinglesjukebox.com/?p=7850"
+    }
+   ]
+  },
+  {
+   "id": "d8f5b1c3-9a7e-4e24-b6d1-4c2a9f8e6b2a",
+   "createdAt": "2026-10-17T13:30:01Z",
+   "source": "manual",
+   "request": {
+    "song": "I'm in a Hurry (And Don't Know Why)",
+    "artist": "Alabama",
+    "part": "Lead fills and solo"
+   },
+   "original": {
+    "guitar": "Session and band guitarists (not credited in the sources found)",
+    "amp": "Not documented. Early-90s Nashville country lead: EL84 crunch, Plexi-style for the solo",
+    "effects": "Compressor, delay, plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Second single from American Pride (September 1992), produced by Larry Michael Lee, Josh Leo and Alabama."
+   },
+   "pedal": {
+    "name": "HURRY LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.7,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 4,
+      "mix": 1.8
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for fills between the vocal lines, channel B for the solo. The comp adds sustain to the bends. Stomp MOD for a light chorus if you want it to sound more early-90s.",
+   "why": "A Tele through an EL84 amp at the edge of breakup for the fills, and a Plexi-style crunch for the solo, with a delay just behind the notes and a plate reverb.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: I'm in a Hurry (And Don't Know Why)",
+     "url": "https://en.wikipedia.org/wiki/I%27m_in_a_Hurry_(And_Don%27t_Know_Why)"
+    },
+    {
+     "title": "American Songwriter: On this day in 1992, Alabama released I'm in a Hurry",
+     "url": "https://americansongwriter.com/on-this-day-in-1992-alabama-released-the-hurried-single-that-became-their-31st-no-1/?nb=1"
+    }
+   ]
+  },
+  {
+   "id": "6a4d2f8b-3e1c-4b97-9c6a-8d5e2b7f4a19",
+   "createdAt": "2026-10-17T13:30:00Z",
+   "source": "manual",
+   "request": {
+    "song": "I'm in a Hurry (And Don't Know Why)",
+    "artist": "Alabama",
+    "part": "Rhythm"
+   },
+   "original": {
+    "guitar": "Session and band guitarists (not credited in the sources found)",
+    "amp": "Not documented. Early-90s Nashville country: clean Fender-style amp with chorus and delay",
+    "effects": "Compressor, light chorus, stereo delay, plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Second single from American Pride (September 1992), recorded May 5, 1992, produced by Larry Michael Lee, Josh Leo and Alabama."
+   },
+   "pedal": {
+    "name": "HURRY RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.7,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 360,
+      "feedback": 2,
+      "tone": 6,
+      "ducking": 3,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the clean, driving rhythm and arpeggios, with a touch of stereo chorus. Channel B for a light AC30 crunch where the song lifts. The song is about rushing, but the groove is steady: keep the strumming even and let the drums push.",
+   "why": "Early-90s Nashville records used a clean, compressed electric with a light chorus, a stereo delay and a studio plate reverb, sitting on top of acoustic strumming.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: I'm in a Hurry (And Don't Know Why)",
+     "url": "https://en.wikipedia.org/wiki/I%27m_in_a_Hurry_(And_Don%27t_Know_Why)"
+    },
+    {
+     "title": "Wikipedia: American Pride (album)",
+     "url": "https://en.wikipedia.org/wiki/American_Pride_(album)"
+    }
+   ]
+  },
+  {
+   "id": "b1d7f3a9-4c6e-4a82-8f5b-2e9d7a3c1f68",
+   "createdAt": "2026-10-17T13:20:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Mercury Blues",
+    "artist": "Alan Jackson",
+    "part": "Brent Mason lead, bender licks and fills"
+   },
+   "original": {
+    "guitar": "Brent Mason, Telecaster-style guitar with a B-bender (per Vintage Guitar)",
+    "amp": "Not documented for this session. Brent Mason's style: a clean, compressed Tele with a little breakup",
+    "effects": "Compressor, slapback, spring reverb (his typical style, not documented for this song)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993."
+   },
+   "pedal": {
+    "name": "MERC LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 4,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 140,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for fills between the vocal lines, channel B for the solos. Brent Mason used a B-bender, so fake the bends: bend the B string up a whole step while you hold the high E (or G) note still, or pre-bend it and release. Hybrid-pick for the fast licks. If the comp makes it feed back, drop Sens to 3.",
+   "why": "Brent Mason's sound is a Tele bridge pickup, clean but compressed for sustain and snap, with a little breakup when he digs in and a slapback behind it.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Vintage Guitar: Alan Jackson review",
+     "url": "https://vintageguitar.com/23749/alan-jackson-3"
+    },
+    {
+     "title": "Premier Guitar: Brent Mason interview",
+     "url": "https://www.premierguitar.com/brent-mason-interview"
+    },
+    {
+     "title": "Wikipedia: Mercury Blues",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Blues"
+    }
+   ]
+  },
+  {
+   "id": "5e2c8a4f-7b9d-4d16-a3e8-9b1f6c4a2d57",
+   "createdAt": "2026-10-17T13:20:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Mercury Blues",
+    "artist": "Alan Jackson",
+    "part": "Shuffle rhythm"
+   },
+   "original": {
+    "guitar": "Brent Mason on lead and B-bender guitar (per Vintage Guitar); rhythm players not credited in the sources found",
+    "amp": "Not documented. Early-90s Nashville country-rock: tweed and Marshall-style crunch",
+    "effects": "Light compression, slapback, spring reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From A Lot About Livin' (And a Little 'bout Love), single released September 1993. The arrangement follows David Lindley's 1981 version."
+   },
+   "pedal": {
+    "name": "MERC RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the boogie-shuffle rhythm (the classic two-string shuffle on the low strings), channel B for a heavier crunch in the louder choruses. Palm-mute lightly and swing it.",
+   "why": "Mercury Blues is a country-rock shuffle: a small tweed amp turned up gives the gritty, bouncy rhythm, and a Plexi-style crunch adds weight for the choruses.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: Mercury Blues",
+     "url": "https://en.wikipedia.org/wiki/Mercury_Blues"
+    },
+    {
+     "title": "Vintage Guitar: Alan Jackson review",
+     "url": "https://vintageguitar.com/23749/alan-jackson-3"
+    }
+   ]
+  },
+  {
+   "id": "8f1b4d6e-9a2c-4e37-b5d8-3c6a1f9e2b46",
+   "createdAt": "2026-10-17T13:10:01Z",
+   "source": "manual",
+   "request": {
+    "song": "All You Ever Do Is Bring Me Down",
+    "artist": "The Mavericks",
+    "part": "Twangy lead lines and fills"
+   },
+   "original": {
+    "guitar": "The Mavericks (Nick Kane on lead guitar at the time; track credits not found)",
+    "amp": "Not documented. Retro twang: clean Fender-style amp, EL84 for warmer lines",
+    "effects": "Spring reverb, slapback, tremolo (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Music for All Occasions (January 1996). The solo is on accordion (Flaco Jiménez)."
+   },
+   "pedal": {
+    "name": "BRING LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC15TB",
+     "cabinet": "VOX AC30",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "TEXTREM",
+     "params": {
+      "speed": 5,
+      "depth": 4
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 140,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 2",
+     "params": {
+      "time": 4.5,
+      "mix": 2.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for twangy, Duane Eddy-style lines on the low strings and fills between the vocal lines. Channel B for warmer melody lines. Stomp MOD for a retro tremolo. The solo on the record is accordion: if you cover it on guitar, use channel B and play it with lots of short, picked notes.",
+   "why": "Retro twang is a clean Fender with a lot of spring reverb and slapback, picked hard on the bridge pickup. The AC15TB on channel B is a rounder voice for melodies.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: All You Ever Do Is Bring Me Down",
+     "url": "https://en.wikipedia.org/wiki/All_You_Ever_Do_Is_Bring_Me_Down"
+    },
+    {
+     "title": "Wikipedia: Music for All Occasions",
+     "url": "https://en.wikipedia.org/wiki/Music_for_All_Occasions"
+    }
+   ]
+  },
+  {
+   "id": "c3e9a7f2-1d6b-4b84-a2c5-7e4f9b1d8c35",
+   "createdAt": "2026-10-17T13:10:00Z",
+   "source": "manual",
+   "request": {
+    "song": "All You Ever Do Is Bring Me Down",
+    "artist": "The Mavericks",
+    "part": "Rhythm"
+   },
+   "original": {
+    "guitar": "The Mavericks (Nick Kane on lead guitar at the time; track credits not found)",
+    "amp": "Not documented. The Mavericks' retro sound: clean Fender-style amps with plenty of spring reverb",
+    "effects": "Spring reverb, slapback (style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Music for All Occasions (January 1996), featuring Flaco Jiménez on accordion, who plays the solo."
+   },
+   "pedal": {
+    "name": "BRING RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 5.5,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "TEXTREM",
+     "params": {
+      "speed": 5,
+      "depth": 4
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 2",
+     "params": {
+      "time": 4.5,
+      "mix": 2.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the clean, bouncy Tex-Mex rhythm: short, choppy strums on the off-beats, polka style, so the accordion and bass carry the downbeats. Channel B for a warmer tweed sound in the louder sections.",
+   "why": "The Mavericks' sound mixes Tex-Mex, country and 60s pop: clean Fender amps, a short slapback and plenty of spring reverb. The guitar stays out of the way of the accordion.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: All You Ever Do Is Bring Me Down",
+     "url": "https://en.wikipedia.org/wiki/All_You_Ever_Do_Is_Bring_Me_Down"
+    },
+    {
+     "title": "Wikipedia: Music for All Occasions",
+     "url": "https://en.wikipedia.org/wiki/Music_for_All_Occasions"
+    }
+   ]
+  },
+  {
+   "id": "4b8e1c6a-2d7f-4a53-9e1b-6f3d8a2c5e04",
+   "createdAt": "2026-10-17T13:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Wagon Wheel",
+    "artist": "Darius Rucker",
+    "part": "Electric fills and licks"
+   },
+   "original": {
+    "guitar": "Session players (not credited in the sources found)",
+    "amp": "Not documented. Modern Nashville clean electric: Fender-style amp",
+    "effects": "Compressor, slapback, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "From True Believers (May 2013), produced by Frank Rogers."
+   },
+   "pedal": {
+    "name": "WAGON EL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC15TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 130,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3.5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for clean, twangy fills between the vocal lines. Channel B for a warmer, slightly broken-up sound for a solo. Leave room for the fiddle and banjo: short licks, double stops and pedal-steel-style bends work best.",
+   "why": "In an acoustic-driven arrangement, the electric guitar plays sparse fills: a clean, lightly compressed Tele sound with a slapback and spring reverb.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: True Believers (Darius Rucker album)",
+     "url": "https://en.wikipedia.org/wiki/True_Believers_(Darius_Rucker_album)"
+    }
+   ]
+  },
+  {
+   "id": "9d5f2b7e-6c3a-4f19-b8e2-1a7c4e9d6b93",
+   "createdAt": "2026-10-17T13:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Wagon Wheel",
+    "artist": "Darius Rucker",
+    "part": "Strummed rhythm (acoustic simulation)"
+   },
+   "original": {
+    "guitar": "Acoustic-driven arrangement with fiddle, banjo and mandolin (session players not credited in the sources found)",
+    "amp": "Not documented",
+    "effects": "Not documented",
+    "tuning": "Standard",
+    "notes": "From True Believers (May 2013), produced by Frank Rogers, recorded at Blackbird Studios, the Pool House and Charleston Sound. Backing vocals by Lady Antebellum."
+   },
+   "pedal": {
+    "name": "WAGON AC",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x10",
+     "gain": 2.5,
+     "vrGain": 5,
+     "treble": 6,
+     "middle": 5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 9,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5,
+     "bass": 4.5,
+     "presence": 6.5,
+     "volume": 9,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "ACOUSTIC",
+     "params": {
+      "body": 6,
+      "bass": 5,
+      "treble": 6.5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 130,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 7
+   },
+   "tips": "The song is built on strummed acoustic guitar. The ACOUSTIC effect in the PEDAL slot makes your electric sound like one. Channel A is warmer, channel B brighter. Strum the four-chord progression with a light, even down-up pattern. Turn PEDAL off for a plain clean electric. For electric fills and licks, switch to WAGON EL.",
+   "why": "If there's no acoustic player in the band, an acoustic simulation into a very clean amp covers the song's main part. Split pickups in the middle position give the least electric-sounding source for the simulation.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: True Believers (Darius Rucker album)",
+     "url": "https://en.wikipedia.org/wiki/True_Believers_(Darius_Rucker_album)"
+    },
+    {
+     "title": "Songfacts: Wagon Wheel",
+     "url": "https://dev-www.songfacts.com/facts/darius-rucker/wagon-wheel"
+    }
+   ]
+  },
+  {
+   "id": "7a3c1e8f-9b5d-4e26-a8f4-5c9b2e7d3a82",
+   "createdAt": "2026-10-17T12:50:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Oh, Pretty Woman",
+    "artist": "Roy Orbison",
+    "part": "Clean rhythm (verses)"
+   },
+   "original": {
+    "guitar": "Roy Orbison, Billy Sanford, Jerry Kennedy, Wayne Moss",
+    "amp": "Not documented. 1964 Nashville session: small Fender-style amps",
+    "effects": "Studio echo chamber (not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded August 1, 1964, produced by Fred Foster, engineered by Bill Porter."
+   },
+   "pedal": {
+    "name": "PRETTY CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6,
+     "middle": 6,
+     "bass": 5,
+     "presence": 5.5,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "PITCH SHIFTER",
+     "params": {
+      "pitch": 0,
+      "fine": 8,
+      "tracking": 20,
+      "direct": 10,
+      "effect": 6
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "CHAMBER 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 7
+   },
+   "tips": "Channel A is a warm, clean tweed for the strummed verses, and channel B a brighter blackface clean. Stomp MOD for the same unison doubling as the riff tone. For the riff itself, switch to PRETTY RF.",
+   "why": "Behind the riff, the record's guitars are clean and warm, with the studio's echo chamber around them.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: Oh, Pretty Woman",
+     "url": "https://en.wikipedia.org/wiki/Oh,_Pretty_Woman"
+    },
+    {
+     "title": "MusicRadar: Roy Orbison, Oh, Pretty Woman interview",
+     "url": "https://musicradar.com/news/roy-orbison-oh-pretty-woman-interview"
+    }
+   ]
+  },
+  {
+   "id": "2e7b5d9c-4a1f-4c68-9d3e-8f2a6c4b1d71",
+   "createdAt": "2026-10-17T12:50:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Oh, Pretty Woman",
+    "artist": "Roy Orbison",
+    "part": "The riff"
+   },
+   "original": {
+    "guitar": "Billy Sanford (intro riff), with Jerry Kennedy and Wayne Moss doubling it; Roy Orbison also on guitar",
+    "amp": "Not documented. 1964 Nashville session: small tweed/brownface Fender-style amps",
+    "effects": "Studio echo chamber (not documented)",
+    "tuning": "Standard",
+    "notes": "Recorded August 1, 1964, produced by Fred Foster, engineered by Bill Porter. Jerry Kennedy suggested starting with one guitar and adding one each time the riff repeats."
+   },
+   "pedal": {
+    "name": "PRETTY RF",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6,
+     "middle": 6.5,
+     "bass": 5,
+     "presence": 5.5,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 6,
+     "vrGain": 5.5,
+     "treble": 6,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 5.5,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "PITCH SHIFTER",
+     "params": {
+      "pitch": 0,
+      "fine": 8,
+      "tracking": 20,
+      "direct": 10,
+      "effect": 6
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "CHAMBER 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 7
+   },
+   "tips": "MOD is set to a pitch shifter tuned a few cents sharp and mixed under your guitar. It thickens one guitar into something like the three guitars playing the riff in unison on the record. Turn it off for the very first pass of the riff (one guitar) and on when the others join. Channel A is a rounder Bassman sound, channel B a grittier small tweed. Pick firmly and let the low notes thump.",
+   "why": "Mid-60s Nashville sessions used small Fender-style amps turned up just to the edge of breakup, recorded in a studio echo chamber. The record's riff is several guitars in unison, so a slightly detuned copy of your own signal recreates that thickness.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: Oh, Pretty Woman",
+     "url": "https://en.wikipedia.org/wiki/Oh,_Pretty_Woman"
+    },
+    {
+     "title": "MusicRadar: Roy Orbison, Oh, Pretty Woman interview",
+     "url": "https://musicradar.com/news/roy-orbison-oh-pretty-woman-interview"
+    },
+    {
+     "title": "Sweetwater inSync: Remembering Roy Orbison",
+     "url": "https://www.sweetwater.com/insync/remembering-roy-orbison/"
+    }
+   ]
+  },
+  {
+   "id": "1c6e9a3f-7b2d-4a85-b4c8-9e3f5d1a7b60",
+   "createdAt": "2026-10-17T12:40:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Pride and Joy",
+    "artist": "Stevie Ray Vaughan",
+    "part": "Solo"
+   },
+   "original": {
+    "guitar": "Fender Stratocaster (\"Number One\"), heavy strings (.013-.058)",
+    "amp": "Fender Vibroverb and Jackson Browne's Dumble with a 4x12",
+    "effects": "Ibanez Tube Screamer; Roland Dimension D reportedly added to the solo at the mix",
+    "tuning": "Down a half step (Eb)",
+    "notes": "Recorded November 24, 1982 for Texas Flood."
+   },
+   "pedal": {
+    "name": "PRIDE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 1
+    },
+    "channelB": {
+     "amp": "BOUTIQUE OD",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 6,
+     "treble": 6,
+     "middle": 6.5,
+     "bass": 5.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 1
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 2,
+      "level": 7.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.3,
+      "depth": 2,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 2",
+     "params": {
+      "time": 3.5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "neck",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for a brighter Vibroverb solo, channel B for the thicker Dumble one. The slow, shallow stereo chorus stands in for the Roland Dimension D on the record's solo. Turn MOD off for the raw amp sound. Heavy strings and hard picking are half of SRV's tone: play with more attack than feels natural.",
+   "why": "Same rig as the rhythm, pushed harder: more amp gain and a bit more Tube Screamer. The Dimension D was a subtle studio widener, so a slow, shallow stereo chorus is the closest thing on the Tonelab.",
+   "confidence": "medium",
+   "sources": [
+    {
+     "title": "Mix: Classic Track, Stevie Ray Vaughan \"Pride and Joy\"",
+     "url": "https://www.mixonline.com/recording/classic-tracks/classic-track-stevie-ray-vaughan-pride-and-joy-367582"
+    },
+    {
+     "title": "Line 6 blog: Jas Obrecht, Stevie Ray Vaughan's Texas Flood sessions",
+     "url": "https://blog.line6.com/?p=6428"
+    },
+    {
+     "title": "Wikipedia: Texas Flood",
+     "url": "https://en.wikipedia.org/wiki/Texas_Flood"
+    }
+   ]
+  },
+  {
+   "id": "f2a8c4e1-5d9b-4f63-8e17-3b6d1a9c5e2f",
+   "createdAt": "2026-10-17T12:40:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Pride and Joy",
+    "artist": "Stevie Ray Vaughan",
+    "part": "Shuffle rhythm"
+   },
+   "original": {
+    "guitar": "Fender Stratocaster (\"Number One\"), heavy strings (.013-.058)",
+    "amp": "Two Fender Vibroverbs (one with a 15-inch Altec) and Jackson Browne's Dumble with a 4x12, close-miked with SM57s",
+    "effects": "Ibanez Tube Screamer (the only pedal, per engineer Richard Mullen), amp spring reverb",
+    "tuning": "Down a half step (Eb)",
+    "notes": "Recorded November 24, 1982 for Texas Flood. Sources differ on how much of each amp is on the record."
+   },
+   "pedal": {
+    "name": "PRIDE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 5.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 5,
+     "bass": 5.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 1
+    },
+    "channelB": {
+     "amp": "BOUTIQUE OD",
+     "cabinet": "UK H30 4x12",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6,
+     "middle": 6,
+     "bass": 5.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 1
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 1.5,
+      "level": 7,
+      "tone": 5.5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "PITCH SHIFTER",
+     "params": {
+      "pitch": -1,
+      "fine": 0,
+      "tracking": 20,
+      "direct": 0,
+      "effect": 10
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 2",
+     "params": {
+      "time": 3.5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "neck",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "SRV tuned down a half step. Either retune to Eb, or stomp MOD: it's set to a pitch shifter one semitone down so you can play along in standard tuning (expect a little warble). Channel A is the Vibroverb, channel B the Dumble. Dig in hard: the shuffle lives in the picking hand, with muted strings between the chord stabs and the bass-note pattern.",
+   "why": "A blackface Fender at the edge of breakup, pushed by a Tube Screamer with low drive and high level, with spring reverb. That's the documented Texas Flood rig. NR is kept low so the dynamics and the muted ghost notes come through.",
+   "confidence": "medium",
+   "sources": [
+    {
+     "title": "Mix: Classic Track, Stevie Ray Vaughan \"Pride and Joy\"",
+     "url": "https://www.mixonline.com/recording/classic-tracks/classic-track-stevie-ray-vaughan-pride-and-joy-367582"
+    },
+    {
+     "title": "Line 6 blog: Jas Obrecht, Stevie Ray Vaughan's Texas Flood sessions",
+     "url": "https://blog.line6.com/?p=6428"
+    },
+    {
+     "title": "Wikipedia: Texas Flood",
+     "url": "https://en.wikipedia.org/wiki/Texas_Flood"
+    }
+   ]
+  },
+  {
+   "id": "e9c3a6d5-1b8f-4e24-a7c6-4d2b8e1f5a9e",
+   "createdAt": "2026-10-17T12:30:01Z",
+   "source": "manual",
+   "request": {
+    "song": "How Do You Like Me Now?!",
+    "artist": "Toby Keith",
+    "part": "Solo (Brent Mason style) and fills"
+   },
+   "original": {
+    "guitar": "Brent Mason (electric guitar solo, per one source), Telecaster",
+    "amp": "Not documented for this session. Brent Mason's style: a clean, heavily compressed Tele with a little breakup",
+    "effects": "Compressor, delay, spring reverb (his typical style, not documented for this song)",
+    "tuning": "Standard",
+    "notes": "Title track of How Do You Like Me Now?! (1999). One source credits the solo to Brent Mason, but the album credits disagree."
+   },
+   "pedal": {
+    "name": "NOW LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 4,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for Brent Mason-style clean, fast, compressed licks: hybrid picking, banjo rolls, pedal-steel bends. Channel B for a hairier solo. The comp is a bit stronger here (Sens 4) for sustain. If it starts to feed back, drop it to 3.",
+   "why": "Brent Mason's sound is a Tele bridge pickup, clean but compressed for sustain and snap, with a touch of breakup when he digs in and a delay behind it. It's the most copied lead sound in 90s Nashville.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: How Do You Like Me Now?!",
+     "url": "https://en.wikipedia.org/wiki/How_Do_You_Like_Me_Now%3F!"
+    },
+    {
+     "title": "AllMusic: How Do You Like Me Now?!",
+     "url": "https://www.allmusic.com/album/how-do-you-like-me-now-%21-mw0000248166"
+    }
+   ]
+  },
+  {
+   "id": "d4b7f1a2-8e3c-4c57-b2d9-6a1e9f4c8b3d",
+   "createdAt": "2026-10-17T12:30:00Z",
+   "source": "manual",
+   "request": {
+    "song": "How Do You Like Me Now?!",
+    "artist": "Toby Keith",
+    "part": "Rhythm (verses and big choruses)"
+   },
+   "original": {
+    "guitar": "Jerry McPherson (electric, per one source; album credits also list Brent Rowan and B. James Lowry)",
+    "amp": "Not documented. Late-90s Nashville country-rock: clean Fender-style verses, Marshall-style crunch choruses",
+    "effects": "Light compression, slapback, room reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Title track of How Do You Like Me Now?! (1999), produced by James Stroud and Toby Keith. The credits disagree between sources, and the gear is not documented."
+   },
+   "pedal": {
+    "name": "NOW RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the quieter verses. Channel B for the big, rocking choruses: a JCM800-style crunch. Push the tone knob in (humbucker) on channel B if you want the choruses even heavier.",
+   "why": "This song is country-rock: the verses stay clean and compressed, then the choruses hit with a real rock crunch. A JCM800-style amp gives the chorus that late-90s punch, and a small room reverb keeps it tight.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: How Do You Like Me Now?!",
+     "url": "https://en.wikipedia.org/wiki/How_Do_You_Like_Me_Now%3F!"
+    },
+    {
+     "title": "AllMusic: How Do You Like Me Now?!",
+     "url": "https://www.allmusic.com/album/how-do-you-like-me-now-%21-mw0000248166"
+    }
+   ]
+  },
+  {
+   "id": "a7d2e5b8-6c1f-4a39-9b74-2e8c5f3a9d1c",
+   "createdAt": "2026-10-17T12:20:01Z",
+   "source": "manual",
+   "request": {
+    "song": "As Good As I Once Was",
+    "artist": "Toby Keith",
+    "part": "Signature riff, fills and solo"
+   },
+   "original": {
+    "guitar": "Nashville session players (not credited in the sources found)",
+    "amp": "Not documented. Mid-2000s Nashville country lead: Tele into an EL84 amp at the edge of breakup",
+    "effects": "Compressor, slapback, spring reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Honkytonk University (May 2005), produced by James Stroud and Toby Keith. No source documents the guitar gear."
+   },
+   "pedal": {
+    "name": "TOBY LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 140,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for the signature riff and the fills, channel B for the solo. The compressor adds sustain to the bends. Hybrid-pick and snap the strings for the chicken-pickin' parts. Roll the guitar volume to 8 if the riff gets too hairy.",
+   "why": "A Tele through an EL84 amp at the edge of breakup, compressed for sustain, with a slapback that doubles each note: the classic 2000s Nashville lead sound.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: As Good as I Once Was",
+     "url": "https://en.wikipedia.org/wiki/As_Good_as_I_Once_Was"
+    },
+    {
+     "title": "UMG Catalog: Toby Keith, Furniture Store Guitar Sessions version",
+     "url": "https://news.umgcatalog.com/toby-keith-posts-furniture-store-guitar-sessions-version-good-i-once-was/"
+    }
+   ]
+  },
+  {
+   "id": "3f9c7a1e-4d2b-4b86-a5e3-8d6f2c9b1e7b",
+   "createdAt": "2026-10-17T12:20:00Z",
+   "source": "manual",
+   "request": {
+    "song": "As Good As I Once Was",
+    "artist": "Toby Keith",
+    "part": "Rhythm (clean verses, crunchy choruses)"
+   },
+   "original": {
+    "guitar": "Nashville session players (not credited in the sources found)",
+    "amp": "Not documented. Mid-2000s Nashville country: Tele into a Fender/Vox-style amp, Marshall-style crunch for choruses",
+    "effects": "Compressor, slapback, spring reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Single from Honkytonk University (May 2005), produced by James Stroud and Toby Keith. No source documents the guitar gear."
+   },
+   "pedal": {
+    "name": "TOBY RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 5.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the verses: clean with a little edge when you dig in. Channel B for the choruses: Plexi-style crunch. Mute the strings with your picking hand on the verse rhythm to keep it tight.",
+   "why": "Mid-2000s country hits use a clean, compressed Tele sound in the verses and switch to a Marshall-style crunch for the choruses. A short slapback and a little spring reverb tie both channels together.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: As Good as I Once Was",
+     "url": "https://en.wikipedia.org/wiki/As_Good_as_I_Once_Was"
+    },
+    {
+     "title": "UMG Catalog: Toby Keith, Furniture Store Guitar Sessions version",
+     "url": "https://news.umgcatalog.com/toby-keith-posts-furniture-store-guitar-sessions-version-good-i-once-was/"
+    }
+   ]
+  },
+  {
+   "id": "b5e8d2f4-3a6c-4e91-8f27-7c4b1e9a5d6a",
+   "createdAt": "2026-10-17T12:10:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Dixieland Delight",
+    "artist": "Alabama",
+    "part": "Country licks and solo"
+   },
+   "original": {
+    "guitar": "Jeff Cook (guitar and fiddle, arranger of the song)",
+    "amp": "Not documented. Early-80s Nashville studio country: clean Fender-style amp, compressed",
+    "effects": "Compressor, light chorus, delay, plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Lead single from The Closer You Get (January 1983). No source documents the guitar gear on this song."
+   },
+   "pedal": {
+    "name": "DIXIE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.7,
+      "depth": 2.5,
+      "manual": 5,
+      "mix": 2
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 280,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for clean, snappy country licks (hybrid picking, double stops, pedal-steel-style bends). Channel B for a fatter solo with a little tweed breakup. The light chorus is the early-80s touch. Turn it off for a more traditional sound.",
+   "why": "Early-80s country leads were clean and compressed for sustain, with a hint of chorus and a delay just behind the notes. Channel B adds tweed breakup for a fatter solo.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "American Songwriter: On this day in 1983, Alabama released Dixieland Delight",
+     "url": "https://americansongwriter.com/on-this-day-in-1983-alabama-released-the-no-1-single-that-later-became-a-favorite-for-generations-of-crimson-tide-fans/?nb=1"
+    },
+    {
+     "title": "Country Universe: In Memoriam, Jeff Cook",
+     "url": "https://www.countryuniverse.net/2022/11/09/in-memoriam-jeff-cook-1949-2022/"
+    }
+   ]
+  },
+  {
+   "id": "6c1a9e3d-2f7b-4d48-b9e5-5a3c8f1d7e59",
+   "createdAt": "2026-10-17T12:10:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Dixieland Delight",
+    "artist": "Alabama",
+    "part": "Rhythm"
+   },
+   "original": {
+    "guitar": "Jeff Cook (guitar and fiddle, arranger of the song)",
+    "amp": "Not documented. Early-80s Nashville studio country: clean Fender-style amp, compressed",
+    "effects": "Compressor, short slapback, plate reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "Lead single from The Closer You Get (January 1983). No source documents the guitar gear on this song."
+   },
+   "pedal": {
+    "name": "DIXIE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.7,
+      "depth": 2.5,
+      "manual": 5,
+      "mix": 2
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the clean, bright, driving rhythm under the fiddle. Channel B adds tweed grit for the louder sections. Keep the strumming tight and accent the backbeat. The fiddle carries the main melody.",
+   "why": "Early-80s Nashville records used a clean, compressed Fender-style sound with a short slapback and a studio plate reverb. A split bridge pickup gives the Tele-like snap.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "American Songwriter: On this day in 1983, Alabama released Dixieland Delight",
+     "url": "https://americansongwriter.com/on-this-day-in-1983-alabama-released-the-no-1-single-that-later-became-a-favorite-for-generations-of-crimson-tide-fans/?nb=1"
+    },
+    {
+     "title": "Country Universe: In Memoriam, Jeff Cook",
+     "url": "https://www.countryuniverse.net/2022/11/09/in-memoriam-jeff-cook-1949-2022/"
+    }
+   ]
+  },
+  {
+   "id": "8d3f6b2a-5e9c-4b17-a6d1-9f4c2e8b3a48",
+   "createdAt": "2026-10-17T12:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Lodi (2025 version)",
+    "artist": "John Fogerty",
+    "part": "Intro lick, fills and solo"
+   },
+   "original": {
+    "guitar": "John and Shane Fogerty (Legacy, 2025). John's CCR-era Rickenbacker is back in use",
+    "amp": "Not documented for Legacy. CCR-era sound: Kustom and modified Fender amps",
+    "effects": "Treble-boosted edge, slapback, spring reverb (not documented)",
+    "tuning": "Standard",
+    "notes": "Re-recording on Legacy: The Creedence Clearwater Revival Years (August 2025), produced by John and Shane Fogerty. The studio gear is not published."
+   },
+   "pedal": {
+    "name": "LODI LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 5.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "TREBLE BOOST",
+     "params": {
+      "drive": 2,
+      "level": 6,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "TEXTREM",
+     "params": {
+      "speed": 4.5,
+      "depth": 4
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 140,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3.5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for the intro lick and the fills, channel B for the solo. The treble boost gives that bright, snappy Rickenbacker-and-Kustom edge. Turn it off if it gets too sharp. Play the licks with a light, twangy touch near the bridge.",
+   "why": "Fogerty's leads are bright and cutting rather than saturated: a Bassman-style tweed just breaking up, sharpened by a treble booster, with a slapback and spring reverb.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Shore Fire Media: John Fogerty releases Lodi and Born on the Bayou from Legacy",
+     "url": "https://shorefire.com/releases/entry/john-fogerty-releases-two-new-singles-from-upcoming-album-legacy-the-creedence-clearwater-revival-years"
+    },
+    {
+     "title": "Premier Guitar: Rig Rundown, John Fogerty band",
+     "url": "https://www.premierguitar.com/gear/rig-rundown-john-fogerty-band"
+    },
+    {
+     "title": "Equipboard: John Fogerty",
+     "url": "https://equipboard.com/john-fogerty"
+    }
+   ]
+  },
+  {
+   "id": "4a8e2c6f-7b1d-4f95-8c34-1e9b5d7a2f37",
+   "createdAt": "2026-10-17T12:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Lodi (2025 version)",
+    "artist": "John Fogerty",
+    "part": "Rhythm"
+   },
+   "original": {
+    "guitar": "John and Shane Fogerty (Legacy, 2025). John's CCR-era Rickenbacker is back in use; Les Paul style guitars on stage",
+    "amp": "Not documented for Legacy. CCR-era sound: Kustom and modified Fender Vibrolux amps",
+    "effects": "Spring reverb, short slapback (not documented)",
+    "tuning": "Standard",
+    "notes": "Re-recording on Legacy: The Creedence Clearwater Revival Years (August 2025), produced by John and Shane Fogerty. The studio gear is not published."
+   },
+   "pedal": {
+    "name": "LODI RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x10",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "TEXTREM",
+     "params": {
+      "speed": 4.5,
+      "depth": 4
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 100,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3.5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A is a Vibrolux-style blackface with a little edge, for the strummed rhythm. Channel B is a grittier tweed sound for the fuller parts. Let the open chords ring. For a fuller, rounder strum, switch to the middle position (both, humbucker).",
+   "why": "Lodi is a mid-tempo country-rock song. The rhythm sits on a bright Fender-style amp just at the edge of breakup, with spring reverb and a very short slapback. The new version is fuller and more polished than the 1969 one, so the gain is a touch higher and the reverb a little bigger.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Shore Fire Media: John Fogerty releases Lodi and Born on the Bayou from Legacy",
+     "url": "https://shorefire.com/releases/entry/john-fogerty-releases-two-new-singles-from-upcoming-album-legacy-the-creedence-clearwater-revival-years"
+    },
+    {
+     "title": "American Songwriter: Shane Fogerty recreates the Up Around the Bend lick",
+     "url": "https://americansongwriter.com/john-fogerty-explains-how-his-son-shane-recreated-the-classic-guitar-lick-on-his-new-version-of-ccrs-up-around-the-bend/?nb=1"
+    },
+    {
+     "title": "Equipboard: John Fogerty",
+     "url": "https://equipboard.com/john-fogerty"
+    }
+   ]
+  },
+  {
+   "id": "2c8f5d1e-9b4a-4c63-a7e2-6d1b3f9a8e26",
+   "createdAt": "2026-10-16T17:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "La foère au camp",
+    "artist": "Irvin Blais",
+    "part": "Lead fills and solo"
+   },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Upbeat Quebec country: EL84 crunch pushed by an overdrive",
+    "effects": "Light overdrive, slapback delay, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built for an upbeat party country song, as the title suggests."
+   },
+   "pedal": {
+    "name": "FOERE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 7,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6.5,
+      "tone": 6.5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1.5,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for fast fills between the vocal lines, channel B for the solo. Hybrid-pick and use double stops for a chicken-pickin' feel. Turn the Tube OD off for a snappier, cleaner lead.",
+   "why": "Fast country leads need snap and a little hair: an EL84 crunch nudged by a light overdrive, with a slapback that doubles each note.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Viberate: Irvin Blais",
+     "url": "https://www.viberate.com/artist/irvin-blais"
+    }
+   ]
+  },
+  {
+   "id": "7e2b9c4a-1d6f-4a38-9b57-3e8a0f2c7d15",
+   "createdAt": "2026-10-16T17:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "La foère au camp",
+    "artist": "Irvin Blais",
+    "part": "Upbeat rhythm"
+   },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Upbeat Quebec country: tweed-style crunch",
+    "effects": "Slapback delay, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built for an upbeat party country song, as the title suggests."
+   },
+   "pedal": {
+    "name": "FOERE RY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5.5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 110,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A is a gritty tweed sound for driving, upbeat rhythm. Channel B is clean, for quieter verses. Palm-mute lightly and accent the backbeat. Roll the guitar volume back to 7 to clean up channel A without switching.",
+   "why": "A small tweed amp turned up gives the crunchy, bouncy rhythm of party country. A short slapback adds energy without blurring the strumming.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Viberate: Irvin Blais",
+     "url": "https://www.viberate.com/artist/irvin-blais"
+    }
+   ]
+  },
+  {
+   "id": "9c4e1a6b-8f3d-4b72-b5e0-2a7d9c3f6b24",
+   "createdAt": "2026-10-16T16:50:01Z",
+   "source": "manual",
+   "request": {
+    "song": "La Gaspésie",
+    "artist": "Irvin Blais",
+    "part": "Lead fills and solo"
+   },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Traditional Quebec country: tweed or blackface Fender, slightly pushed",
+    "effects": "Light boost, delay, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built from the traditional country style Irvin Blais is known for."
+   },
+   "pedal": {
+    "name": "GASPE LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 2,
+      "level": 6.5,
+      "tone": 6.5
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 300,
+      "feedback": 1.5,
+      "tone": 5,
+      "mix": 1.8
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 2",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for fills between the vocal lines, channel B for the solo. The Tube OD is a light boost that adds sustain without real distortion. Turn it off for a fully clean solo. Double-stop bends (two strings at once) in the style of a pedal steel suit this sound.",
+   "why": "A Bassman-style tweed amp just breaking up, nudged by a light overdrive, gives the round, singing country lead of the classic records. A short delay and a spring reverb keep it in the style.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "SOCAN Magazine: Irvin Blais",
+     "url": "https://www.socanmagazine.ca/?p=2602"
+    }
+   ]
+  },
+  {
+   "id": "5b9d2f7e-3c8a-4e61-a4d9-7f2c0b8e5a13",
+   "createdAt": "2026-10-16T16:50:00Z",
+   "source": "manual",
+   "request": {
+    "song": "La Gaspésie",
+    "artist": "Irvin Blais",
+    "part": "Clean country rhythm and fills"
+   },
+   "original": {
+    "guitar": "Unknown (no source found for this song)",
+    "amp": "Unknown. Traditional Quebec country: clean Fender-style amp",
+    "effects": "Slapback delay, spring reverb, light compression (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "No source documents this song or its gear. Built from the traditional country style Irvin Blais is known for."
+   },
+   "pedal": {
+    "name": "GASPE CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 5.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 4x10",
+     "cabinet": "TWEED 4x10",
+     "gain": 4.5,
+     "vrGain": 5,
+     "treble": 6,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 130,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 2",
+     "params": {
+      "time": 4,
+      "mix": 2.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for clean, twangy rhythm and fills (boom-chicka strumming, bass-note runs). Channel B for a warmer tweed sound with a little grit. Move to the middle position (both, split) for a softer sound in slow songs and waltzes.",
+   "why": "Traditional country electric guitar is a Telecaster-style bridge pickup into a clean Fender amp, with a short slapback and plenty of spring reverb. A light compressor evens out the picking.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "SOCAN Magazine: Irvin Blais",
+     "url": "https://www.socanmagazine.ca/?p=2602"
+    }
+   ]
+  },
+  {
+   "id": "1f7a3e9c-6b2d-4d84-a5c0-9e2b8f4d6a12",
+   "createdAt": "2026-10-16T16:40:01Z",
+   "source": "manual",
+   "request": {
+    "artist": "Brad Paisley",
+    "part": "Signature lead (solos)"
+   },
+   "original": {
+    "guitar": "Paisley-finish Telecaster, bridge pickup",
+    "amp": "Dr. Z Z-Wreck pushed by an overdrive (TS-808 / Wampler Paisley Drive)",
+    "effects": "Overdrive, analog-style delay (Aqua Puss), spring reverb",
+    "tuning": "Standard",
+    "notes": "Built from his documented live rig. His exact knob settings are not published."
+   },
+   "pedal": {
+    "name": "PAISL LD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 7,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 4,
+      "level": 7,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 380,
+      "feedback": 2.5,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A for fast country-rock licks, channel B for the big solos. Turn the Tube OD off for a cleaner, snappier lead. Roll the guitar volume back to 7 and the sound cleans up for fills. Songs: the solos in Mud on the Tires, Ticks, Alcohol, Online.",
+   "why": "His solo sound is a Tube Screamer-style overdrive with low drive and high level, pushing an EL84 amp into breakup. The AC30TB stands in for the Z-Wreck, and the analog delay sits just behind the notes.",
+   "confidence": "medium",
+   "sources": [
+    {
+     "title": "Premier Guitar: Rig Rundown, Brad Paisley's amps and effects",
+     "url": "https://www.premierguitar.com/gear/rig-rundown-brad-paisleys-amps-effects"
+    },
+    {
+     "title": "MusicRadar: Brad Paisley's gear",
+     "url": "https://www.musicradar.com/guitarist/brad-paisleys-gear-267937"
+    },
+    {
+     "title": "Uberproaudio: Brad Paisley guitar gear",
+     "url": "https://www.uberproaudio.com/who-plays-what/406-brad-paisley-guitar-gear-rig-and-equipment"
+    }
+   ]
+  },
+  {
+   "id": "e8b4c2d7-9a1f-4c35-8d62-4f0a7e3b1c91",
+   "createdAt": "2026-10-16T16:40:00Z",
+   "source": "manual",
+   "request": {
+    "artist": "Brad Paisley",
+    "part": "Signature clean twang (chicken pickin', rhythm)"
+   },
+   "original": {
+    "guitar": "Paisley-finish Telecaster (Crook Custom and Fender), Tele bridge pickup",
+    "amp": "Dr. Z Z-Wreck (Trainwreck-style, EL84) and Z-Verb heads, plus Vox AC30 and Fender Deluxe Reverb",
+    "effects": "Compressor, slapback delay, spring reverb",
+    "tuning": "Standard",
+    "notes": "Built from his documented live rig. His exact knob settings are not published."
+   },
+   "pedal": {
+    "name": "PAISL CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "AC15TB",
+     "cabinet": "VOX AC30",
+     "gain": 4,
+     "vrGain": 5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 5,
+     "treble": 7,
+     "middle": 5,
+     "bass": 4.5,
+     "presence": 6.5,
+     "volume": 8,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 140,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 9
+   },
+   "tips": "Channel A is the Vox/Dr. Z flavour: clean with a little hair on hard picking. Channel B is a cleaner, sparkly blackface sound. Hybrid-pick (pick plus middle and ring fingers) and mute with the picking hand to get the snap. Songs: the rhythm and fills of Mud on the Tires, Ticks, Water.",
+   "why": "Paisley's clean sound is a Tele bridge pickup into an EL84 amp that's just breaking up, lightly compressed, with a short slapback. The AC15TB is the closest EL84 model on the Tonelab.",
+   "confidence": "medium",
+   "sources": [
+    {
+     "title": "Premier Guitar: Rig Rundown, Brad Paisley's amps and effects",
+     "url": "https://www.premierguitar.com/gear/rig-rundown-brad-paisleys-amps-effects"
+    },
+    {
+     "title": "MusicRadar: Brad Paisley's gear",
+     "url": "https://www.musicradar.com/guitarist/brad-paisleys-gear-267937"
+    },
+    {
+     "title": "Uberproaudio: Brad Paisley guitar gear",
+     "url": "https://www.uberproaudio.com/who-plays-what/406-brad-paisley-guitar-gear-rig-and-equipment"
+    }
+   ]
+  },
+  {
+   "id": "d6f0b3a9-2e8c-4a17-9c45-8b7e1f0a6c82",
+   "createdAt": "2026-10-16T16:30:01Z",
+   "source": "manual",
+   "request": {
+    "song": "T'es dans la lune",
+    "artist": "Les BB",
+    "part": "Lead lines and solo"
+   },
+   "original": {
+    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
+    "amp": "Unknown. Typical late-80s polished rock lead: Marshall-style amp",
+    "effects": "Light chorus, long stereo delay, hall reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From the debut album Les BB (1989). No source documents the gear on this song, so this tone follows the style of the record."
+   },
+   "pedal": {
+    "name": "LUNE SOL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 7,
+     "vrGain": 6.5,
+     "treble": 6,
+     "middle": 7.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 6,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 450,
+      "feedback": 3.5,
+      "tone": 6,
+      "ducking": 4,
+      "mix": 3
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "HALL 1",
+     "params": {
+      "time": 6,
+      "mix": 2.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "neck",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 7
+   },
+   "tips": "Channel A for melodic lead lines, channel B for the solo. The neck humbucker keeps it round and singing. Switch to the bridge if it gets lost under the keyboards. Stomp the Tube OD for more sustain.",
+   "why": "The polished late-80s lead sound: a JCM800-style crunch, a touch of chorus, a long stereo delay that ducks under the playing, and a hall reverb.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "L'Encyclopédie canadienne : Les BB",
+     "url": "https://www.thecanadianencyclopedia.ca/fr/article/les-bb"
+    },
+    {
+     "title": "Wikipedia: Les B.B.",
+     "url": "https://www.wikipedia.org/wiki/Les_B.B."
+    }
+   ]
+  },
+  {
+   "id": "a2c9e5f1-7d4b-4e83-b6a0-3c1f8e2d9b71",
+   "createdAt": "2026-10-16T16:30:00Z",
+   "source": "manual",
+   "request": {
+    "song": "T'es dans la lune",
+    "artist": "Les BB",
+    "part": "Clean chorus guitar (verses and choruses)"
+   },
+   "original": {
+    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
+    "amp": "Unknown. Typical late-80s pop-rock studio clean: bright, chorused, stereo delay",
+    "effects": "Chorus, stereo delay, hall reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From the debut album Les BB (1989). No source documents the gear on this song, so this tone follows the style of the record."
+   },
+   "pedal": {
+    "name": "LUNE CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 5,
+     "bass": 5,
+     "presence": 6.5,
+     "volume": 8.5,
+     "nr": 1.4
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.7,
+      "depth": 5.5,
+      "manual": 5,
+      "mix": 5
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 400,
+      "feedback": 3,
+      "tone": 6,
+      "ducking": 3,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "HALL 1",
+     "params": {
+      "time": 6,
+      "mix": 2.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 7
+   },
+   "tips": "Channel A for the clean, chorused parts and arpeggios. Switch to channel B for a light AC30 crunch where the song needs more push. COMP is off. Turn it on, low, if arpeggios need more sustain. The chorus and delay are stereo: pan the Tonelab's L and R apart on the mixer.",
+   "why": "Late-80s pop-rock guitar sits behind the synths as a bright clean sound with deep chorus, a stereo delay and a big hall reverb. Both pickups, split, give a glassy, Strat-like middle-position sound.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "L'Encyclopédie canadienne : Les BB",
+     "url": "https://www.thecanadianencyclopedia.ca/fr/article/les-bb"
+    },
+    {
+     "title": "Wikipedia: Les B.B.",
+     "url": "https://www.wikipedia.org/wiki/Les_B.B."
+    }
+   ]
+  },
+  {
+   "id": "f19b6e42-8d3c-4f57-a2b8-0e6c4d9a7b62",
+   "createdAt": "2026-10-16T16:20:01Z",
+   "source": "manual",
+   "request": {
+    "song": "When It Rains It Pours",
+    "artist": "Luke Combs",
+    "part": "Driving choruses and solo"
+   },
+   "original": {
+    "guitar": "Nashville session players (not credited in the sources found)",
+    "amp": "Unknown. Typical modern-country rock crunch: Marshall-style amp",
+    "effects": "Light overdrive, delay, room reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "From This One's for You (2017), produced by Scott Moffatt. No source documents the gear, so this tone follows the style of the record."
+   },
+   "pedal": {
+    "name": "RAINS DR",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 5.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7,
+     "nr": 2.4
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 2.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 7,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 360,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "ROOM 1",
+     "params": {
+      "time": 3,
+      "mix": 1.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the chorus chords, channel B for the solo. Stomp the Tube OD for the solo if it needs more sustain. For a fatter solo, push the tone knob back in (humbucker).",
+   "why": "Big modern-country choruses use a Plexi-style crunch on a Tele: bright and biting, not saturated. A quiet delay and a small room keep it tight under the vocals.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: When It Rains It Pours (song)",
+     "url": "https://en.wikipedia.org/wiki/When_It_Rains_It_Pours_(song)"
+    },
+    {
+     "title": "Wikipedia: This One's for You (Luke Combs album)",
+     "url": "https://en.wikipedia.org/wiki/This_One%27s_for_You_(Luke_Combs_album)"
+    }
+   ]
+  },
+  {
+   "id": "c7d3a1e8-4b2f-4a96-9e10-5f8b2d7c3a51",
+   "createdAt": "2026-10-16T16:20:00Z",
+   "source": "manual",
+   "request": {
+    "song": "When It Rains It Pours",
+    "artist": "Luke Combs",
+    "part": "Twangy fills and clean electric (verses)"
+   },
+   "original": {
+    "guitar": "Nashville session players (not credited in the sources found); Telecaster-style twang",
+    "amp": "Unknown. Typical modern-country clean: Fender-style amp, compressed",
+    "effects": "Compressor, slapback delay, spring reverb (genre style, not documented)",
+    "tuning": "Standard",
+    "notes": "From This One's for You (2017), produced by Scott Moffatt. No source documents the gear, so this tone follows the style of the record."
+   },
+   "pedal": {
+    "name": "RAINS CL",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 4,
+     "vrGain": 5,
+     "treble": 7,
+     "middle": 5.5,
+     "bass": 4.5,
+     "presence": 6.5,
+     "volume": 7.5,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5,
+     "vrGain": 5.5,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7,
+     "nr": 2
+    },
+    "pedal": {
+     "on": true,
+     "type": "COMP",
+     "params": {
+      "sens": 3.5,
+      "level": 5,
+      "attack": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "CLASSIC CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 120,
+      "feedback": 1,
+      "tone": 6,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 3.5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the clean, twangy fills and chicken-pickin' licks: hybrid-pick (pick plus middle finger) close to the bridge. Switch to channel B for a gritty tweed edge when the band kicks in. The compressor and the 120 ms slapback are what make it sound country, so keep them on.",
+   "why": "Modern country electric parts are usually a Telecaster bridge pickup into a clean Fender-style amp, squashed by a compressor, with a short slapback. Pulled (split) Pearly Gates on the bridge is the closest your guitar gets to a Tele bridge pickup.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: When It Rains It Pours (song)",
+     "url": "https://en.wikipedia.org/wiki/When_It_Rains_It_Pours_(song)"
+    },
+    {
+     "title": "Wikipedia: This One's for You (Luke Combs album)",
+     "url": "https://en.wikipedia.org/wiki/This_One%27s_for_You_(Luke_Combs_album)"
+    }
+   ]
+  },
+  {
+   "id": "e5a2d8f3-1c7b-4e69-b0a4-9d3f6c2e8a42",
+   "createdAt": "2026-10-16T16:10:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Donne-moi ma chance",
+    "artist": "Les BB",
+    "part": "Crunch rhythm and lead lines"
+   },
+   "original": {
+    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
+    "amp": "Unknown. Typical late-80s / early-90s Marshall-style rock crunch",
+    "effects": "Light chorus, stereo delay, hall reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From the album Snob (1991). No source documents the gear on this song, so this tone follows the style of the record."
+   },
+   "pedal": {
+    "name": "BB LEAD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 6,
+     "vrGain": 6.5,
+     "treble": 6,
+     "middle": 6.5,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 2
+    },
+    "channelB": {
+     "amp": "UK '80S",
+     "cabinet": "UK T75 4x12",
+     "gain": 7.5,
+     "vrGain": 7,
+     "treble": 6,
+     "middle": 7.5,
+     "bass": 5,
+     "presence": 6.5,
+     "volume": 8.5,
+     "nr": 2
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 7,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.6,
+      "depth": 3,
+      "manual": 5,
+      "mix": 3
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 420,
+      "feedback": 3,
+      "tone": 6,
+      "ducking": 4,
+      "mix": 2.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "HALL 1",
+     "params": {
+      "time": 5,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "humbucker",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the crunch rhythm, channel B for the lead lines. Stomp the Tube OD for extra sustain on a solo. Lower the guitar volume to 7 on channel A to clean the crunch up.",
+   "why": "A JCM800-style crunch with a touch of chorus, a stereo delay and a hall reverb is the classic polished rock-lead sound of that era. The bridge humbucker gives the lead its focus.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: Les B.B.",
+     "url": "https://en.wikipedia.org/wiki/Les_B.B."
+    },
+    {
+     "title": "L'Encyclopédie canadienne : Les BB",
+     "url": "https://www.thecanadianencyclopedia.ca/fr/article/les-bb"
+    }
+   ]
+  },
+  {
+   "id": "b41e7c90-6a2f-4d18-8c53-2f9a0d6e1b31",
+   "createdAt": "2026-10-16T16:10:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Donne-moi ma chance",
+    "artist": "Les BB",
+    "part": "Clean rhythm (verses), light crunch (choruses)"
+   },
+   "original": {
+    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
+    "amp": "Unknown. Typical early-90s Quebec pop-rock studio sound: clean, compressed, chorus and stereo delay",
+    "effects": "Chorus, stereo delay, plate/hall reverb (era style, not documented)",
+    "tuning": "Standard",
+    "notes": "From the album Snob (1991). No source documents the gear on this song, so this tone follows the style of the record."
+   },
+   "pedal": {
+    "name": "BB CLEAN",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "BLACK 2x12",
+     "cabinet": "BLACK 2x12",
+     "gain": 3.5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 5,
+     "bass": 5,
+     "presence": 6.5,
+     "volume": 10,
+     "nr": 1
+    },
+    "channelB": {
+     "amp": "AC30TB",
+     "cabinet": "VOX AC30",
+     "gain": 5,
+     "vrGain": 6,
+     "treble": 6.5,
+     "middle": 6,
+     "bass": 5,
+     "presence": 6,
+     "volume": 8.5,
+     "nr": 1.4
+    },
+    "pedal": {
+     "on": false,
+     "type": "COMP",
+     "params": {
+      "sens": 5,
+      "level": 6,
+      "attack": 5
+     }
+    },
+    "mod": {
+     "on": true,
+     "type": "STEREO CHORUS",
+     "params": {
+      "speed": 0.8,
+      "depth": 5,
+      "manual": 5,
+      "mix": 5
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "STEREO DELAY",
+     "params": {
+      "time": 380,
+      "feedback": 2.5,
+      "tone": 6,
+      "ducking": 3,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "PLATE 1",
+     "params": {
+      "time": 5,
+      "mix": 2.5
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "both",
+    "coils": "single",
+    "volume": 10,
+    "tone": 7
+   },
+   "tips": "Channel A for the clean, chorused verses. Switch to channel B for a light AC30 crunch in the choruses. Stomp COMP for more sustain on arpeggios. The chorus and delay are stereo: they sound widest if the mixer has the Tonelab's L and R outputs panned apart.",
+   "why": "The early-90s pop-rock clean sound is a bright clean amp with chorus, a stereo delay just under the beat and a plate reverb. Both pickups, split, give a glassy, Strat-like middle-position sound.",
+   "confidence": "low",
+   "sources": [
+    {
+     "title": "Wikipedia: Les B.B.",
+     "url": "https://en.wikipedia.org/wiki/Les_B.B."
+    },
+    {
+     "title": "L'Encyclopédie canadienne : Les BB",
+     "url": "https://www.thecanadianencyclopedia.ca/fr/article/les-bb"
+    }
+   ]
+  },
+  {
+   "id": "3d7b9e21-5f4a-4b8c-a2d6-7e9c0f1a4b22",
+   "createdAt": "2026-10-16T16:00:01Z",
+   "source": "manual",
+   "request": {
+    "song": "Pretty Little Lie",
+    "artist": "Blackberry Smoke",
+    "part": "Intro riff and solo"
+   },
+   "original": {
+    "guitar": "B-Bender Telecaster (the intro riff and solo use B-string bender bends)",
+    "amp": "Marshall-style head (Germino) into a 4x12, with the tweed combo blended in",
+    "effects": "Klon-style boost, a little delay, spring reverb",
+    "tuning": "Standard",
+    "notes": "No source documents the exact settings for this song. Built from the band's published rigs."
+   },
+   "pedal": {
+    "name": "PLL LEAD",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6.5,
+     "vrGain": 6.5,
+     "treble": 6.5,
+     "middle": 7,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 8,
+     "nr": 1
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 7.5,
+     "vrGain": 7,
+     "treble": 6.5,
+     "middle": 7.5,
+     "bass": 4.5,
+     "presence": 6.5,
+     "volume": 8.5,
+     "nr": 1
+    },
+    "pedal": {
+     "on": true,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 3,
+      "level": 7.5,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "TEXTREM",
+     "params": {
+      "speed": 4,
+      "depth": 4
+     }
+    },
+    "delay": {
+     "on": true,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 360,
+      "feedback": 2,
+      "tone": 5,
+      "mix": 2
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 10,
+    "tone": 8
+   },
+   "tips": "Channel A for the intro riff, channel B for the solo. You don't have a B-bender, so fake the bends: bend the B string up a whole step while you hold the high E (or G) note still, or pre-bend it and let it down. Keep the tone knob pulled for single-coil twang.",
+   "why": "A Plexi-style crunch over a 4x12, pushed by a light overdrive, keeps the bends round but cutting. A short analog slapback and spring reverb fill out the sound without blurring the notes.",
+   "confidence": "medium",
+   "sources": [
+    {
+     "title": "Premier Guitar: Rig Rundown, Blackberry Smoke (2023)",
+     "url": "https://www.premierguitar.com/videos/rig-rundowns/blackberry-smoke-2023"
+    },
+    {
+     "title": "Equipboard: Charlie Starr",
+     "url": "https://equipboard.com/charlie-starr"
+    }
+   ]
+  },
+  {
+   "id": "8f0c6a4e-2b1d-4c7a-9e35-1a6d2f0b7c11",
+   "createdAt": "2026-10-16T16:00:00Z",
+   "source": "manual",
+   "request": {
+    "song": "Pretty Little Lie",
+    "artist": "Blackberry Smoke",
+    "part": "Rhythm (verses and choruses)"
+   },
+   "original": {
+    "guitar": "Charlie Starr: Les Paul Junior (P-90), Fender Esquire / B-Bender Telecaster; Paul Jackson: Les Paul",
+    "amp": "Tweed Deluxe-style combo (Echopark Vibramatic) blended with a Marshall-style head (Germino) into a 4x12",
+    "effects": "Mostly straight into the amp; Klon-style boost, spring reverb",
+    "tuning": "Standard",
+    "notes": "No source documents the exact settings for this song. Built from the band's published rigs."
+   },
+   "pedal": {
+    "name": "PLL RHY",
+    "chain": "M-D-R",
+    "activeChannel": "A",
+    "channelA": {
+     "amp": "TWEED 1x12",
+     "cabinet": "TWEED 1x12",
+     "gain": 5.5,
+     "vrGain": 6,
+     "treble": 6,
+     "middle": 6.5,
+     "bass": 4.5,
+     "presence": 6,
+     "volume": 7,
+     "nr": 1
+    },
+    "channelB": {
+     "amp": "UK 68P",
+     "cabinet": "UK H30 4x12",
+     "gain": 6,
+     "vrGain": 6,
+     "treble": 6,
+     "middle": 7,
+     "bass": 5,
+     "presence": 6,
+     "volume": 7.5,
+     "nr": 1
+    },
+    "pedal": {
+     "on": false,
+     "type": "TUBE OD",
+     "params": {
+      "drive": 2,
+      "level": 7,
+      "tone": 6
+     }
+    },
+    "mod": {
+     "on": false,
+     "type": "TEXTREM",
+     "params": {
+      "speed": 4,
+      "depth": 4
+     }
+    },
+    "delay": {
+     "on": false,
+     "type": "ANALOG DELAY",
+     "params": {
+      "time": 360,
+      "feedback": 1.5,
+      "tone": 5,
+      "mix": 1.5
+     }
+    },
+    "reverb": {
+     "on": true,
+     "type": "SPRING 1",
+     "params": {
+      "time": 4,
+      "mix": 2
+     }
+    },
+    "exp1": "VOLUME"
+   },
+   "guitar": {
+    "selector": "bridge",
+    "coils": "single",
+    "volume": 9,
+    "tone": 8
+   },
+   "tips": "Channel A is the tweed rhythm sound for the verses. Switch to channel B for a bigger Marshall-style crunch in the choruses. If it needs more push, stomp the Tube OD: it works as a light, Klon-style boost.",
+   "why": "Starr runs a tweed Deluxe-style amp all the time and blends it with a Marshall-style head. Channel A copies the tweed, channel B the Marshall. A split Pearly Gates on the bridge gets close to his Esquire and P-90 bite.",
+   "confidence": "medium",
+   "sources": [
+    {
+     "title": "Premier Guitar: Rig Rundown, Blackberry Smoke (2023)",
+     "url": "https://www.premierguitar.com/videos/rig-rundowns/blackberry-smoke-2023"
+    },
+    {
+     "title": "Equipboard: Charlie Starr",
+     "url": "https://equipboard.com/charlie-starr"
+    }
+   ]
+  }
+ ]
+}

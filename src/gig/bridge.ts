@@ -1,4 +1,5 @@
-// Connection to tools/winamp-bridge.ps1, which reports what Winamp is playing.
+// Connection to the player bridge (tools/winamp-bridge.ps1 or tools/media-bridge.ps1 for Spotify),
+// which reports what the player is playing.
 // Push first (Server-Sent Events, about 50 ms after a track change); if that can't open,
 // ask every 700 ms instead while the push connection keeps retrying in the background.
 
@@ -7,10 +8,15 @@ const OPEN_TIMEOUT_MS = 3000;
 const POLL_MS = 700;
 
 export interface NowPlaying {
-  winamp: 'running' | 'not-running';
+  /** The player the bridge follows: "Winamp", "Spotify". */
+  player: string;
+  running: boolean;
   state: 'playing' | 'paused' | 'stopped';
+  /** Playlist position (Winamp); 0 when the player doesn't tell. */
   index: number;
+  /** Winamp: "Artist - Title". Spotify: the title alone, with the artist in `artist`. */
   title: string;
+  artist?: string;
   file: string;
   /** Epoch ms when the bridge saw this change. */
   changedAt: number;

@@ -6,62 +6,30 @@
    "id": "c7d3a1e8-4b2f-4a96-9e10-5f8b2d7c3a51",
    "createdAt": "2026-10-16T16:20:00.000Z",
    "source": "manual",
-   "request": { "song": "When It Rains It Pours", "artist": "Luke Combs", "part": "Twangy fills and clean electric (verses)" },
+   "request": { "song": "When It Rains It Pours", "artist": "Luke Combs", "part": "Couplets (A) / Refrains et solo (B)" },
    "original": {
-    "guitar": "Nashville session players (not credited in the sources found); Telecaster-style twang",
-    "amp": "Unknown. Typical modern-country clean: Fender-style amp, compressed",
-    "effects": "Compressor, slapback delay, spring reverb (genre style, not documented)",
+    "guitar": "Musiciens de studio de Nashville (non crédités dans les sources trouvées); twang de style Telecaster",
+    "amp": "Inconnu. Clean country moderne typique (ampli style Fender, compressé) pour les couplets, crunch rock style Marshall pour les refrains et le solo",
+    "effects": "Compressor, slapback, reverb à ressort (style du genre, non documenté)",
     "tuning": "Standard",
-    "notes": "From This One's for You (2017), produced by Scott Moffatt. No source documents the gear, so this tone follows the style of the record."
+    "notes": "Tiré de This One's for You (2017), réalisé par Scott Moffatt. Aucune source ne documente l'équipement : ce son suit le style du disque."
    },
    "pedal": {
-    "name": "RAINS CL",
+    "name": "RAINS",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4, "vrGain": 5, "treble": 7, "middle": 5.5, "bass": 4.5, "presence": 6.5, "volume": 7.5, "nr": 2 },
-    "channelB": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7, "nr": 2 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 7.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
     "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
     "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
     "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 2.5 } },
     "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3.5, "mix": 2 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for the clean, twangy fills and chicken-pickin' licks: hybrid-pick (pick plus middle finger) close to the bridge. Switch to channel B for a gritty tweed edge when the band kicks in. The compressor and the 120 ms slapback are what make it sound country, so keep them on.",
-   "why": "Modern country electric parts are usually a Telecaster bridge pickup into a clean Fender-style amp, squashed by a compressor, with a short slapback. Pulled (split) Pearly Gates on the bridge is the closest your guitar gets to a Tele bridge pickup.",
-   "confidence": "low",
-   "sources": [
-    { "title": "Wikipedia: When It Rains It Pours (song)", "url": "https://en.wikipedia.org/wiki/When_It_Rains_It_Pours_(song)" },
-    { "title": "Wikipedia: This One's for You (Luke Combs album)", "url": "https://en.wikipedia.org/wiki/This_One%27s_for_You_(Luke_Combs_album)" }
-   ]
-  },
-  {
-   "id": "f19b6e42-8d3c-4f57-a2b8-0e6c4d9a7b62",
-   "createdAt": "2026-10-16T16:20:01.000Z",
-   "source": "manual",
-   "request": { "song": "When It Rains It Pours", "artist": "Luke Combs", "part": "Driving choruses and solo" },
-   "original": {
-    "guitar": "Nashville session players (not credited in the sources found)",
-    "amp": "Unknown. Typical modern-country rock crunch: Marshall-style amp",
-    "effects": "Light overdrive, delay, room reverb (genre style, not documented)",
-    "tuning": "Standard",
-    "notes": "From This One's for You (2017), produced by Scott Moffatt. No source documents the gear, so this tone follows the style of the record."
-   },
-   "pedal": {
-    "name": "RAINS DR",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 5.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7, "nr": 2.4 },
-    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 7.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 7, "tone": 6 } },
-    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 360, "feedback": 2, "tone": 5, "mix": 1.5 } },
-    "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for the chorus chords, channel B for the solo. Stomp the Tube OD for the solo if it needs more sustain. For a fatter solo, push the tone knob back in (humbucker).",
-   "why": "Big modern-country choruses use a Plexi-style crunch on a Tele: bright and biting, not saturated. A quiet delay and a small room keep it tight under the vocals.",
+   "tips": "Canal A pour les couplets : fills clean et twangy, licks de chicken pickin' en hybrid picking (médiator plus majeur) près du chevalet. Canal B pour les refrains qui poussent et pour le solo : crunch style Plexi. Pour un solo plus gras, enfonce le bouton de tonalité (humbucker). Le compressor et le slapback de 120 ms font le son country : garde-les allumés.",
+   "why": "Les guitares électriques country modernes, c'est souvent un micro chevalet de Telecaster dans un ampli clean style Fender, écrasé par un compressor, avec un slapback court. Pour les refrains et le solo, un crunch Plexi sur une Tele reste brillant et mordant sans trop saturer.",
    "confidence": "low",
    "sources": [
     { "title": "Wikipedia: When It Rains It Pours (song)", "url": "https://en.wikipedia.org/wiki/When_It_Rains_It_Pours_(song)" },

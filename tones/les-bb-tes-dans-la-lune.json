@@ -6,62 +6,30 @@
    "id": "a2c9e5f1-7d4b-4e83-b6a0-3c1f8e2d9b71",
    "createdAt": "2026-10-16T16:30:00.000Z",
    "source": "manual",
-   "request": { "song": "T'es dans la lune", "artist": "Les BB", "part": "Clean chorus guitar (verses and choruses)" },
+   "request": { "song": "T'es dans la lune", "artist": "Les BB", "part": "Couplets (A) / Solo (B)" },
    "original": {
-    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
-    "amp": "Unknown. Typical late-80s pop-rock studio clean: bright, chorused, stereo delay",
-    "effects": "Chorus, stereo delay, hall reverb (era style, not documented)",
+    "guitar": "Patrick Bourgeois ou Alain Lapointe (les crédits de cette chanson n'ont pas été trouvés)",
+    "amp": "Inconnu. Son typique de pop-rock de studio de la fin des années 80 : clean brillant avec chorus pour les couplets, crunch style Marshall pour le solo",
+    "effects": "Chorus, delay stéréo, reverb hall (style de l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "From the debut album Les BB (1989). No source documents the gear on this song, so this tone follows the style of the record."
+    "notes": "Tiré du premier album Les BB (1989). Aucune source ne documente l'équipement de cette chanson : ce son suit le style du disque."
    },
    "pedal": {
-    "name": "LUNE CL",
+    "name": "LUNE",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 6, "treble": 6.5, "middle": 5, "bass": 5, "presence": 6.5, "volume": 8.5, "nr": 1.4 },
-    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2 },
-    "pedal": { "on": false, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
+    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 7, "vrGain": 6.5, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2.4 },
+    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6, "tone": 6 } },
     "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.7, "depth": 5.5, "manual": 5, "mix": 5 } },
     "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 400, "feedback": 3, "tone": 6, "ducking": 3, "mix": 2.5 } },
     "reverb": { "on": true, "type": "HALL 1", "params": { "time": 6, "mix": 2.5 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "both", "coils": "single", "volume": 10, "tone": 7 },
-   "tips": "Channel A for the clean, chorused parts and arpeggios. Switch to channel B for a light AC30 crunch where the song needs more push. COMP is off. Turn it on, low, if arpeggios need more sustain. The chorus and delay are stereo: pan the Tonelab's L and R apart on the mixer.",
-   "why": "Late-80s pop-rock guitar sits behind the synths as a bright clean sound with deep chorus, a stereo delay and a big hall reverb. Both pickups, split, give a glassy, Strat-like middle-position sound.",
-   "confidence": "low",
-   "sources": [
-    { "title": "L'Encyclopédie canadienne : Les BB", "url": "https://www.thecanadianencyclopedia.ca/fr/article/les-bb" },
-    { "title": "Wikipedia: Les B.B.", "url": "https://www.wikipedia.org/wiki/Les_B.B." }
-   ]
-  },
-  {
-   "id": "d6f0b3a9-2e8c-4a17-9c45-8b7e1f0a6c82",
-   "createdAt": "2026-10-16T16:30:01.000Z",
-   "source": "manual",
-   "request": { "song": "T'es dans la lune", "artist": "Les BB", "part": "Lead lines and solo" },
-   "original": {
-    "guitar": "Patrick Bourgeois or Alain Lapointe (the credits for this track were not found)",
-    "amp": "Unknown. Typical late-80s polished rock lead: Marshall-style amp",
-    "effects": "Light chorus, long stereo delay, hall reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "From the debut album Les BB (1989). No source documents the gear on this song, so this tone follows the style of the record."
-   },
-   "pedal": {
-    "name": "LUNE SOL",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 6, "vrGain": 6, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 7, "vrGain": 6.5, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2.4 },
-    "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6, "tone": 6 } },
-    "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
-    "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 450, "feedback": 3.5, "tone": 6, "ducking": 4, "mix": 3 } },
-    "reverb": { "on": true, "type": "HALL 1", "params": { "time": 6, "mix": 2.5 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "neck", "coils": "humbucker", "volume": 10, "tone": 7 },
-   "tips": "Channel A for melodic lead lines, channel B for the solo. The neck humbucker keeps it round and singing. Switch to the bridge if it gets lost under the keyboards. Stomp the Tube OD for more sustain.",
-   "why": "The polished late-80s lead sound: a JCM800-style crunch, a touch of chorus, a long stereo delay that ducks under the playing, and a hall reverb.",
+   "tips": "Canal A pour les couplets et les arpèges : clean brillant avec un chorus profond. Canal B pour les lignes de lead et le solo : crunch style JCM800. Pour le solo, passe au micro manche, bouton de tonalité enfoncé (humbucker), et écrase PEDAL (Tube OD) pour plus de sustain; écrase MOD pour enlever le chorus si le solo devient trop flou. Le chorus et le delay sont stéréo : sépare les sorties L et R du Tonelab sur la console.",
+   "why": "La guitare pop-rock de la fin des années 80 se place derrière les synthés avec un clean brillant, un chorus profond, un delay stéréo et une grosse reverb hall. Les deux micros en simple bobinage donnent un son de position du milieu, vitré, à la Strat. Le solo passe à un crunch JCM800 poli, avec le même delay qui s'efface sous le jeu.",
    "confidence": "low",
    "sources": [
     { "title": "L'Encyclopédie canadienne : Les BB", "url": "https://www.thecanadianencyclopedia.ca/fr/article/les-bb" },

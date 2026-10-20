@@ -6,62 +6,30 @@
    "id": "6c1a9e3d-2f7b-4d48-b9e5-5a3c8f1d7e59",
    "createdAt": "2026-10-17T12:10:00.000Z",
    "source": "manual",
-   "request": { "song": "Dixieland Delight", "artist": "Alabama", "part": "Rhythm" },
+   "request": { "song": "Dixieland Delight", "artist": "Alabama", "part": "Couplets (A) / Solo (B)" },
    "original": {
-    "guitar": "Jeff Cook (guitar and fiddle, arranger of the song)",
-    "amp": "Not documented. Early-80s Nashville studio country: clean Fender-style amp, compressed",
-    "effects": "Compressor, short slapback, plate reverb (era style, not documented)",
+    "guitar": "Jeff Cook (guitare et violon, arrangeur de la chanson)",
+    "amp": "Non documenté. Son country de studio de Nashville du début des années 80 : ampli de style Fender clean, compressé",
+    "effects": "Compressor, slapback court, reverb plate, peut-être un léger chorus sur les leads (style de l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "Lead single from The Closer You Get (January 1983). No source documents the guitar gear on this song."
+    "notes": "Premier extrait de The Closer You Get (janvier 1983). Aucune source ne documente l'équipement de guitare sur cette chanson."
    },
    "pedal": {
-    "name": "DIXIE RY",
+    "name": "DIXIE",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
-    "channelB": { "amp": "TWEED 1x12", "cabinet": "TWEED 1x12", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
     "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
     "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.7, "depth": 2.5, "manual": 5, "mix": 2 } },
     "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 1.8 } },
     "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 4, "mix": 2 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for the clean, bright, driving rhythm under the fiddle. Channel B adds tweed grit for the louder sections. Keep the strumming tight and accent the backbeat. The fiddle carries the main melody.",
-   "why": "Early-80s Nashville records used a clean, compressed Fender-style sound with a short slapback and a studio plate reverb. A split bridge pickup gives the Tele-like snap.",
-   "confidence": "low",
-   "sources": [
-    { "title": "American Songwriter: On this day in 1983, Alabama released Dixieland Delight", "url": "https://americansongwriter.com/on-this-day-in-1983-alabama-released-the-no-1-single-that-later-became-a-favorite-for-generations-of-crimson-tide-fans/?nb=1" },
-    { "title": "Country Universe: In Memoriam, Jeff Cook", "url": "https://www.countryuniverse.net/2022/11/09/in-memoriam-jeff-cook-1949-2022/" }
-   ]
-  },
-  {
-   "id": "b5e8d2f4-3a6c-4e91-8f27-7c4b1e9a5d6a",
-   "createdAt": "2026-10-17T12:10:01.000Z",
-   "source": "manual",
-   "request": { "song": "Dixieland Delight", "artist": "Alabama", "part": "Country licks and solo" },
-   "original": {
-    "guitar": "Jeff Cook (guitar and fiddle, arranger of the song)",
-    "amp": "Not documented. Early-80s Nashville studio country: clean Fender-style amp, compressed",
-    "effects": "Compressor, light chorus, delay, plate reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "Lead single from The Closer You Get (January 1983). No source documents the guitar gear on this song."
-   },
-   "pedal": {
-    "name": "DIXIE LD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2 },
-    "channelB": { "amp": "TWEED 4x10", "cabinet": "TWEED 4x10", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
-    "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.7, "depth": 2.5, "manual": 5, "mix": 2 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 280, "feedback": 1.5, "tone": 6, "mix": 2 } },
-    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 4, "mix": 2 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
-   "tips": "Channel A for clean, snappy country licks (hybrid picking, double stops, pedal-steel-style bends). Channel B for a fatter solo with a little tweed breakup. The light chorus is the early-80s touch. Turn it off for a more traditional sound.",
-   "why": "Early-80s country leads were clean and compressed for sustain, with a hint of chorus and a delay just behind the notes. Channel B adds tweed breakup for a fatter solo.",
+   "tips": "Canal A pour le rythme clean, brillant et entraînant sous le violon : strumming serré, accent sur le contretemps. Canal B pour les licks et le solo, avec un peu de grain tweed (hybrid picking, double stops, bends à la pedal steel). Écrasez MOD pour un léger chorus sur le solo, la touche début années 80. Montez le tone à 9 pour le solo si vous voulez plus de mordant.",
+   "why": "Les disques de Nashville du début des années 80 utilisaient un son de style Fender clean et compressé, avec un slapback court et une reverb plate de studio. Le micro chevalet en simple bobinage donne le claquant d'une Tele, et le tweed 4x10 du canal B épaissit le solo.",
    "confidence": "low",
    "sources": [
     { "title": "American Songwriter: On this day in 1983, Alabama released Dixieland Delight", "url": "https://americansongwriter.com/on-this-day-in-1983-alabama-released-the-no-1-single-that-later-became-a-favorite-for-generations-of-crimson-tide-fans/?nb=1" },

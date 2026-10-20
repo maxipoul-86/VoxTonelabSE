@@ -52,10 +52,14 @@ export interface PedalSettings {
   mod: EffectSettings;
   delay: EffectSettings;
   reverb: EffectSettings;
-  /** Expression pedal 1 target label, e.g. "VOLUME". Left as is when absent. */
+  /** Expression pedal 1 target label. Kept for reading programs; applyRecipe always uses EXP1_TARGET. */
   exp1?: string;
+  /** Expression pedal 2 target label, e.g. "P/MANUAL". Left as is when absent. */
   exp2?: string;
 }
+
+/** EXP 1 is the volume pedal in every tone, so it never changes from song to song. */
+export const EXP1_TARGET = 'VOLUME';
 
 export type Selector = 'bridge' | 'both' | 'neck';
 export type Coils = 'humbucker' | 'single';
@@ -188,8 +192,10 @@ export function applyRecipe(pedal: PedalSettings, base: Uint8Array = blankProgra
     }
   }
 
+  // EXP 1 is always the volume pedal, whatever the recipe says; EXP 2 follows the tone.
+  const expLabels = { exp1: EXP1_TARGET, exp2: pedal.exp2 };
   for (const pedalKey of ['exp1', 'exp2'] as const) {
-    const label = pedal[pedalKey];
+    const label = expLabels[pedalKey];
     if (!label) continue;
     const code = expTargetCode(b, label);
     if (code === undefined) {

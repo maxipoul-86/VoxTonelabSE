@@ -26,7 +26,7 @@ class FakeEventSource {
   }
 }
 
-const snap = (title: string): NowPlaying => ({ winamp: 'running', state: 'playing', index: 0, title, file: '', changedAt: 1 });
+const snap = (title: string): NowPlaying => ({ player: 'Winamp', running: true, state: 'playing', index: 0, title, file: '', changedAt: 1 });
 
 describe('connectBridge', () => {
   beforeEach(() => {

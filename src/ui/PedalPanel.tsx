@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { Knob } from './Knob';
 import { store, useStore } from './store';
+import { GigStrip } from './Gig';
+import { FineTune } from './FineTune';
+import { Modal } from './Modal';
 import { SCALES } from '../tonelab/scales';
 import { getName, rangeOf, read, sanitizeName, type Channel, type ControlRef } from '../tonelab/program';
 import { expTargetRange, expTargets, type SplitSetup } from '../tonelab/recipe';
@@ -13,14 +16,13 @@ import {
   CTRL_FACTORS,
   CTRL_TARGETS,
   EFFECT_SLOTS,
-  PROGRAM_COUNT,
   SLOT_KEYS,
   effectType,
   programLabel,
   type ParamDef,
   type SlotKey,
 } from '../tonelab/spec';
-import { DEFAULT_GUITAR, SELECTOR_TEXT, activeGuitar, type SplitGuitar } from '../ai/guitar';
+import { DEFAULT_GUITAR, activeGuitar, type SplitGuitar } from '../ai/guitar';
 import { GuitarMismatch, GuitarSwitch, recipeGuitar } from './GuitarSwitch';
 
 function useKnob(ref: ControlRef, scale: keyof typeof SCALES, options?: readonly string[]) {
@@ -143,6 +145,17 @@ function AmpSection() {
             </button>
           ))}
         </div>
+        <button
+          type="button"
+          className="btn small"
+          title="Swap channel A and B: amp, cabinet, knobs. The sound playing stays the same."
+          onClick={() => {
+            void store.swapChannels();
+            setView(view === 'A' ? 'B' : 'A');
+          }}
+        >
+          Swap A ⇄ B
+        </button>
         <label className="picker-label">
           <span>Amp</span>
           <select className="picker" value={ampIdx} onChange={(e) => store.setControl({ kind: 'ampType', ch }, Number(e.target.value), { final: true })}>
@@ -224,7 +237,7 @@ function GuitarCard() {
           ) : (
             <SplitControls setup={g} guitar={made.kind === 'split' ? made : DEFAULT_GUITAR} />
           )}
-          {recipe.tips && <p className="tip">{recipe.tips}</p>}
+          {recipe.tips && <Tips key={recipe.id} text={recipe.tips} />}
         </>
       ) : (
         <>
@@ -236,28 +249,33 @@ function GuitarCard() {
   );
 }
 
+/** Compact so the card stays about as tall as the amp section: the selector side by side, knobs on one line. */
 function SplitControls({ setup, guitar }: { setup: SplitSetup; guitar: SplitGuitar }) {
-  const sel = SELECTOR_TEXT(guitar);
+  const pickup = (s: string) => s.split('(')[0].trim();
+  const pickupName = { bridge: pickup(guitar.bridgePickup), both: 'both pickups', neck: pickup(guitar.neckPickup) }[setup.selector];
   return (
     <>
-      <div className="dim small">Pickup selector</div>
-      <ul className="selector">
+      <ul className="selector" aria-label="Pickup selector">
         {(['bridge', 'both', 'neck'] as const).map((p) => (
           <li key={p} className={setup.selector === p ? 'current' : ''}>
-            <Led on={setup.selector === p} /> {sel[p]}
-            {p === 'bridge' && <span className="dim pickup">{guitar.bridgePickup.split('(')[0].trim()}</span>}
-            {p === 'neck' && <span className="dim pickup">{guitar.neckPickup.split('(')[0].trim()}</span>}
+            <span>
+              <Led on={setup.selector === p} /> {guitar.selector[p]}
+            </span>
+            <span className="dim small">{p}</span>
           </li>
         ))}
       </ul>
-      <div className="row-between">
-        <span className="dim small">Tone knob</span>
-        <strong>{setup.coils === 'humbucker' ? 'Pushed · humbucker' : 'Pulled · single coil'}</strong>
-      </div>
-      <div className="mono">
-        <span className="dim small">Volume </span>
-        {setup.volume} <span className="dim small"> Tone </span>
-        {setup.tone}
+      <div className="dim small pickup-name">{pickupName}</div>
+      <div className="guitar-knobs">
+        <span>
+          <span className="dim small">Tone knob </span>
+          <strong>{setup.coils === 'humbucker' ? 'pushed · humbucker' : 'pulled · single coil'}</strong>
+        </span>
+        <span className="mono">
+          <span className="dim small">Vol </span>
+          {setup.volume} <span className="dim small"> Tone </span>
+          {setup.tone}
+        </span>
       </div>
     </>
   );
@@ -294,7 +312,13 @@ function FootBar() {
         {(['exp1', 'exp2'] as const).map((p) => (
           <label key={p}>
             <span className="dim">{p === 'exp1' ? 'EXP 1' : 'EXP 2'}</span>
-            <select className="picker small" value={read(program, { kind: 'expTarget', pedal: p })} onChange={(e) => setExp(p, Number(e.target.value))}>
+            <select
+              className="picker small"
+              value={read(program, { kind: 'expTarget', pedal: p })}
+              onChange={(e) => setExp(p, Number(e.target.value))}
+              disabled={p === 'exp1'}
+              title={p === 'exp1' ? 'EXP 1 is always the volume pedal' : undefined}
+            >
               {targets.map((t) => (
                 <option key={t.code} value={t.code}>
                   {t.label}
@@ -328,44 +352,6 @@ function FootBar() {
   );
 }
 
-function StoreDialog({ onClose }: { onClose: () => void }) {
-  const current = useStore((s) => s.slot) ?? 0;
-  const [slot, setSlot] = useState(current);
-  return (
-    <div className="dialog-backdrop" role="presentation" onClick={onClose}>
-      <div className="dialog" role="dialog" aria-modal="true" aria-labelledby="store-title" onClick={(e) => e.stopPropagation()}>
-        <h2 id="store-title">Store to a program slot</h2>
-        <p>This overwrites the program in that slot on the pedal. Take a backup first under MIDI if you have not.</p>
-        <label className="field">
-          <span>Slot (bank-number)</span>
-          <select value={slot} onChange={(e) => setSlot(Number(e.target.value))}>
-            {Array.from({ length: PROGRAM_COUNT }, (_, i) => (
-              <option key={i} value={i}>
-                {programLabel(i)}
-              </option>
-            ))}
-          </select>
-        </label>
-        <div className="dialog-actions">
-          <button type="button" className="btn" onClick={onClose}>
-            Cancel
-          </button>
-          <button
-            type="button"
-            className="btn primary"
-            onClick={() => {
-              void store.storeToSlot(slot);
-              onClose();
-            }}
-          >
-            Overwrite {programLabel(slot)}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function PanelHeader() {
   const program = useStore((s) => s.program);
   const recipe = useStore((s) => s.recipe);
@@ -373,7 +359,7 @@ function PanelHeader() {
   const conn = useStore((s) => s.conn);
   const last = useStore((s) => s.lastFromPedal);
   const slot = useStore((s) => s.slot);
-  const [storeOpen, setStoreOpen] = useState(false);
+  const [tuning, setTuning] = useState(false);
   const [name, setNameText] = useState<string | null>(null);
   const changes = baseline ? Array.from(program).filter((b, i) => b !== baseline[i]).length : 0;
   const commitName = () => {
@@ -414,15 +400,35 @@ function PanelHeader() {
         <button type="button" className="btn" disabled={!recipe} onClick={() => store.backToRecipe()}>
           Back to recipe
         </button>
+        <button type="button" className="btn" onClick={() => setTuning(true)}>
+          Fine tune…
+        </button>
         <button type="button" className="btn primary" onClick={() => void store.saveMyVersion()}>
           Save my version
         </button>
-        <button type="button" className="btn" disabled={conn.status !== 'connected'} onClick={() => setStoreOpen(true)}>
-          Store to slot…
-        </button>
       </div>
-      {storeOpen && <StoreDialog onClose={() => setStoreOpen(false)} />}
+      {tuning && (
+        <Modal label="Fine tune" onClose={() => setTuning(false)}>
+          <FineTune onClose={() => setTuning(false)} />
+        </Modal>
+      )}
     </header>
+  );
+}
+
+/** The tone's tips, cut to 3 lines so a long text doesn't push the effects off the screen. */
+function Tips({ text }: { text: string }) {
+  const [open, setOpen] = useState(false);
+  const long = text.length > 140;
+  return (
+    <div className="tip">
+      <p className={long && !open ? 'tip-text clamped' : 'tip-text'}>{text}</p>
+      {long && (
+        <button type="button" className="link-btn" onClick={() => setOpen(!open)}>
+          {open ? 'Less' : 'More'}
+        </button>
+      )}
+    </div>
   );
 }
 
@@ -430,6 +436,7 @@ export function PedalPanel() {
   return (
     <div className="pedal">
       <PanelHeader />
+      <GigStrip />
       <div className="row-amp">
         <AmpSection />
         <GuitarCard />

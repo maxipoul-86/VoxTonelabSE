@@ -36,6 +36,23 @@ export function Library({ onLoaded }: { onLoaded: () => void }) {
     await store.refreshLibrary();
   };
 
+  const removeAll = async () => {
+    if (!confirm(`Delete all ${items.length} tones, for every guitar, from this browser? Export first if you want to keep a copy.`)) return;
+    await library.clear();
+    await store.refreshLibrary();
+    store.toast('Library cleared', 'ok');
+  };
+
+  const addStarter = async () => {
+    try {
+      const count = await library.addStarterTones();
+      await store.refreshLibrary();
+      store.toast(`Added ${count} starter tones`, 'ok');
+    } catch (err) {
+      store.toast((err as Error).message, 'error');
+    }
+  };
+
   return (
     <div className="page narrow">
       <h1>Library</h1>
@@ -68,6 +85,12 @@ export function Library({ onLoaded }: { onLoaded: () => void }) {
             e.target.value = '';
           }}
         />
+        <button className="btn" type="button" onClick={() => void addStarter()}>
+          Add starter tones
+        </button>
+        <button className="btn danger" type="button" disabled={!items.length} onClick={() => void removeAll()}>
+          Delete all…
+        </button>
       </div>
       {guitars.length > 1 && (
         <div className="tabs" role="tablist" aria-label="Guitar">

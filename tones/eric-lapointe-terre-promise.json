@@ -6,66 +6,32 @@
    "id": "7b2e9d4c-6f1a-4c85-8e3b-5a9d2c7f1e59",
    "createdAt": "2026-10-18T12:40:00.000Z",
    "source": "manual",
-   "request": { "song": "Terre promise", "artist": "Éric Lapointe", "part": "Rhythm" },
+   "request": { "song": "Terre promise", "artist": "Éric Lapointe", "part": "Couplets (A) / Solo (B)" },
    "original": {
-    "guitar": "Stéphane Dufour is Éric Lapointe's longtime guitarist; the credits for this track were not found",
-    "amp": "Not documented. Mid-90s rock: Marshall-style crunch",
-    "effects": "Delay, room reverb (era style, not documented)",
+    "guitar": "Stéphane Dufour est le guitariste de longue date d'Éric Lapointe ; les crédits de cette pièce n'ont pas été trouvés",
+    "amp": "Non documenté. Rock du milieu des années 90 : crunch de style Marshall, poussé par un overdrive pour le solo",
+    "effects": "Overdrive, delay stéréo, reverb room et hall (style de l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "Breakthrough single from Obsession (1994), produced by Aldo Nova. Also titled \"Terre promise (poussé par le vent)\"."
+    "notes": "Le single qui l'a fait connaître, tiré de Obsession (1994), réalisé par Aldo Nova. Aussi titré « Terre promise (poussé par le vent) »."
    },
    "pedal": {
-    "name": "TERRE RY",
+    "name": "TERRE",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6.5, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "channelB": { "amp": "UK '90S", "cabinet": "UK T75 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "UK '90S", "cabinet": "UK T75 4x12", "gain": 7.5, "vrGain": 7, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2.4 },
     "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
     "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
     "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 380, "feedback": 2, "tone": 5, "mix": 1.5 } },
     "reverb": { "on": true, "type": "ROOM 1", "params": { "time": 3.5, "mix": 1.8 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
    "guitarId": "tele",
    "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Channel A is an AC30 crunch for the verses: roll the guitar volume back to 7 for a cleaner sound. Channel B is a JCM900-style crunch for the big choruses. For the solo, switch to TERRE SO.",
-   "why": "Mid-90s Quebec rock relied on crunchy Marshall-style guitars with a tight low end. The AC30 keeps the verses open, and the JCM900-style amp gives the choruses weight. A quiet delay and a small room keep it punchy under the vocals.",
-   "confidence": "low",
-   "sources": [
-    { "title": "SOCAN Magazine: SOCAN Classics, N'importe quoi, Terre promise, Poussé par le vent, Marie Stone (1994)", "url": "https://www.socanmagazine.ca/features/socan-classics-nimporte-quoi-terre-promise-pousse-par-le-vent-marie-stone-1994" },
-    { "title": "Qobuz: Éric Lapointe", "url": "https://www.qobuz.com/ca-en/interpreter/eric-lapointe/78665" }
-   ]
-  },
-  {
-   "id": "2d8c5f1a-9e4b-4f36-b2a7-6e1c8d4b9f6a",
-   "createdAt": "2026-10-18T12:40:01.000Z",
-   "source": "manual",
-   "request": { "song": "Terre promise", "artist": "Éric Lapointe", "part": "Lead and solo" },
-   "original": {
-    "guitar": "Stéphane Dufour is Éric Lapointe's longtime guitarist; the credits for this track were not found",
-    "amp": "Not documented. Mid-90s rock lead: Marshall-style amp pushed by an overdrive",
-    "effects": "Overdrive, stereo delay, hall reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "Breakthrough single from Obsession (1994), produced by Aldo Nova."
-   },
-   "pedal": {
-    "name": "TERRE SO",
-    "chain": "M-D-R",
-    "activeChannel": "B",
-    "channelA": { "amp": "UK '90S", "cabinet": "UK T75 4x12", "gain": 7, "vrGain": 6.5, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "channelB": { "amp": "UK '90S", "cabinet": "UK T75 4x12", "gain": 7.5, "vrGain": 7, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2.4 },
-    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
-    "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
-    "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 420, "feedback": 3, "tone": 6, "ducking": 4, "mix": 2.5 } },
-    "reverb": { "on": true, "type": "HALL 1", "params": { "time": 5, "mix": 2 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 9 },
-   "guitarId": "tele",
-   "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Loads on channel B, ready for the solo. Channel A is a bit less gain for lead lines and fills. The stereo delay ducks under your playing and fills the gaps between phrases. Wide vibrato and long bends suit the style.",
-   "why": "A JCM900-style amp pushed by a light overdrive gives a thick, sustained 90s rock lead. A long stereo delay and a hall reverb give the solo space.",
+   "tips": "Canal A : un crunch AC30 pour les couplets ; baisse le volume de la guitare à 7 pour un son plus clair, monte-le à 10 pour les refrains. Canal B : le JCM900 pour le solo ; écrase aussi PEDAL (Tube OD) pour le sustain, et monte la tonalité de la guitare à 9. Vibrato large et longs bends vont bien avec le style.",
+   "why": "Le rock québécois du milieu des années 90 reposait sur des guitares crunch de style Marshall avec un bas serré. L'AC30 garde les couplets ouverts ; pour le solo, un ampli de style JCM900 poussé par un overdrive léger donne un lead épais et soutenu. Un delay discret et une petite room gardent le tout percutant sous la voix.",
    "confidence": "low",
    "sources": [
     { "title": "SOCAN Magazine: SOCAN Classics, N'importe quoi, Terre promise, Poussé par le vent, Marie Stone (1994)", "url": "https://www.socanmagazine.ca/features/socan-classics-nimporte-quoi-terre-promise-pousse-par-le-vent-marie-stone-1994" },

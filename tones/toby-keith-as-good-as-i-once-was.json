@@ -6,62 +6,30 @@
    "id": "3f9c7a1e-4d2b-4b86-a5e3-8d6f2c9b1e7b",
    "createdAt": "2026-10-17T12:20:00.000Z",
    "source": "manual",
-   "request": { "song": "As Good As I Once Was", "artist": "Toby Keith", "part": "Rhythm (clean verses, crunchy choruses)" },
+   "request": { "song": "As Good As I Once Was", "artist": "Toby Keith", "part": "Couplets (A) / Riff, refrains et solo (B)" },
    "original": {
-    "guitar": "Nashville session players (not credited in the sources found)",
-    "amp": "Not documented. Mid-2000s Nashville country: Tele into a Fender/Vox-style amp, Marshall-style crunch for choruses",
-    "effects": "Compressor, slapback, spring reverb (era style, not documented)",
+    "guitar": "Musiciens de session de Nashville (non crédités dans les sources trouvées)",
+    "amp": "Non documenté. Country de Nashville du milieu des années 2000 : Tele dans un ampli de style Fender ou Vox, crunch façon Marshall dans les refrains, ampli EL84 au bord de la saturation pour les leads",
+    "effects": "Compressor, slapback, spring reverb (style de l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "Single from Honkytonk University (May 2005), produced by James Stroud and Toby Keith. No source documents the guitar gear."
+    "notes": "Simple tiré de Honkytonk University (mai 2005), réalisé par James Stroud et Toby Keith. Aucune source ne documente l'équipement de guitare."
    },
    "pedal": {
-    "name": "TOBY RY",
+    "name": "TOBY",
     "chain": "M-D-R",
     "activeChannel": "A",
-    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4.5, "vrGain": 5, "treble": 6.5, "middle": 6, "bass": 5, "presence": 6, "volume": 8, "nr": 2 },
-    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 5.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 4.5, "vrGain": 5, "treble": 6.5, "middle": 6, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2 },
+    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
     "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
     "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
     "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 120, "feedback": 1, "tone": 6, "mix": 1.8 } },
     "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for the verses: clean with a little edge when you dig in. Channel B for the choruses: Plexi-style crunch. Mute the strings with your picking hand on the verse rhythm to keep it tight.",
-   "why": "Mid-2000s country hits use a clean, compressed Tele sound in the verses and switch to a Marshall-style crunch for the choruses. A short slapback and a little spring reverb tie both channels together.",
-   "confidence": "low",
-   "sources": [
-    { "title": "Wikipedia: As Good as I Once Was", "url": "https://en.wikipedia.org/wiki/As_Good_as_I_Once_Was" },
-    { "title": "UMG Catalog: Toby Keith, Furniture Store Guitar Sessions version", "url": "https://news.umgcatalog.com/toby-keith-posts-furniture-store-guitar-sessions-version-good-i-once-was/" }
-   ]
-  },
-  {
-   "id": "a7d2e5b8-6c1f-4a39-9b74-2e8c5f3a9d1c",
-   "createdAt": "2026-10-17T12:20:01.000Z",
-   "source": "manual",
-   "request": { "song": "As Good As I Once Was", "artist": "Toby Keith", "part": "Signature riff, fills and solo" },
-   "original": {
-    "guitar": "Nashville session players (not credited in the sources found)",
-    "amp": "Not documented. Mid-2000s Nashville country lead: Tele into an EL84 amp at the edge of breakup",
-    "effects": "Compressor, slapback, spring reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "Single from Honkytonk University (May 2005), produced by James Stroud and Toby Keith. No source documents the guitar gear."
-   },
-   "pedal": {
-    "name": "TOBY LD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5.5, "vrGain": 5.5, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2 },
-    "channelB": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6.5, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3.5, "level": 5, "attack": 6 } },
-    "mod": { "on": false, "type": "CLASSIC CHORUS", "params": { "speed": 0.8, "depth": 3 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 140, "feedback": 1.5, "tone": 6, "mix": 2 } },
-    "reverb": { "on": true, "type": "SPRING 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
-   "tips": "Channel A for the signature riff and the fills, channel B for the solo. The compressor adds sustain to the bends. Hybrid-pick and snap the strings for the chicken-pickin' parts. Roll the guitar volume to 8 if the riff gets too hairy.",
-   "why": "A Tele through an EL84 amp at the edge of breakup, compressed for sustain, with a slapback that doubles each note: the classic 2000s Nashville lead sound.",
+   "tips": "Canal A pour les couplets : propre, avec un peu de mordant quand tu attaques. Étouffe les cordes avec la main droite pour garder la rythmique serrée. Canal B pour le riff signature, les refrains plus crunchy et le solo : un EL84 au bord de la saturation. Monte le bouton de tonalité à 9 pour le solo, et baisse le volume de la guitare à 8 si le riff devient trop poilu. Hybrid picking et cordes claquées pour les passages chicken pickin'.",
+   "why": "Les succès country du milieu des années 2000 utilisent une Tele propre et compressée dans les couplets, puis un son plus crunchy pour les refrains et les leads. Une Tele dans un ampli EL84 poussé, compressée pour le sustain, avec un slapback qui double chaque note : le son lead classique de Nashville des années 2000.",
    "confidence": "low",
    "sources": [
     { "title": "Wikipedia: As Good as I Once Was", "url": "https://en.wikipedia.org/wiki/As_Good_as_I_Once_Was" },

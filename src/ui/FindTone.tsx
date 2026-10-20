@@ -6,10 +6,18 @@ import type { ToneRecipe } from '../tonelab/recipe';
 import { RecipeSummary } from './RecipeSummary';
 import { GuitarSwitch } from './GuitarSwitch';
 import { activeGuitar } from '../ai/guitar';
+import { CloseButton } from './Modal';
+import { MicButton } from './MicButton';
 
-export function FindTone({ onLoaded }: { onLoaded: () => void }) {
+/** Opened from the Gig screen: the track's song and artist, and its key so the tone found gets linked to it. */
+export interface FindPrefill {
+  song?: string;
+  artist?: string;
+  trackKey?: string;
+}
+
+export function FindTone({ onLoaded, prefill, onClose }: { onLoaded: () => void; prefill?: FindPrefill; onClose?: () => void }) {
   const settings = useStore((s) => s.settings);
-  const [prefill] = useState(() => store.takeFindPrefill());
   const [song, setSong] = useState(prefill?.song ?? '');
   const [artist, setArtist] = useState(prefill?.artist ?? '');
   const [part, setPart] = useState('');
@@ -22,6 +30,8 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
   const [refineText, setRefineText] = useState('');
 
   const guitar = activeGuitar(settings);
+  // Opened for a playing track: the tone found or made becomes that track's tone (and loads).
+  const linkToTrack = (r: ToneRecipe) => prefill?.trackKey && store.linkTrack(prefill.trackKey, r.id);
   const ctx = () => ({ ai: settings.ai, guitar, rig: settings.rig, learned: store.learned(), onStatus: setBusy });
 
   async function find(force = false) {
@@ -32,6 +42,7 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
       const hit = await library.find(song, artist, part, guitar.id).catch(() => undefined);
       if (hit) {
         setSaved(hit);
+        linkToTrack(hit);
         return;
       }
     }
@@ -40,6 +51,7 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
       const r = await generateTone({ song: song.trim() || undefined, artist: artist.trim() || undefined, part: part.trim() || undefined, notes: notes.trim() || undefined }, ctx(), { webSearch });
       setResult(r);
       await store.saveRecipe(r.recipe);
+      linkToTrack(r.recipe);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -55,6 +67,7 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
       setResult(r);
       setRefineText('');
       await store.saveRecipe(r.recipe);
+      linkToTrack(r.recipe);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -69,7 +82,10 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
 
   return (
     <div className="page narrow">
-      <h1>Find a tone</h1>
+      <div className="row-between">
+        <h1>Find a tone</h1>
+        {onClose && <CloseButton onClose={onClose} />}
+      </div>
       {!settings.ai.apiKey && <p className="notice">Add an API key in Settings to generate tones. Saved tones in the Library work without one.</p>}
       <form
         className="form-grid"
@@ -80,11 +96,17 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
       >
         <label className="field">
           <span>Song</span>
-          <input value={song} onChange={(e) => setSong(e.target.value)} placeholder="e.g. Back in Black" autoComplete="off" />
+          <div className="with-mic">
+            <input value={song} onChange={(e) => setSong(e.target.value)} placeholder="e.g. Back in Black" autoComplete="off" />
+            <MicButton onText={setSong} onInterim={setSong} />
+          </div>
         </label>
         <label className="field">
           <span>Artist or band</span>
-          <input value={artist} onChange={(e) => setArtist(e.target.value)} placeholder="e.g. AC/DC" autoComplete="off" />
+          <div className="with-mic">
+            <input value={artist} onChange={(e) => setArtist(e.target.value)} placeholder="e.g. AC/DC" autoComplete="off" />
+            <MicButton onText={setArtist} onInterim={setArtist} />
+          </div>
         </label>
         <label className="field">
           <span>Part (optional)</span>
@@ -92,7 +114,10 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
         </label>
         <label className="field wide">
           <span>Notes (optional)</span>
-          <input value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="e.g. live version, a bit less gain" autoComplete="off" />
+          <div className="with-mic">
+            <input value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="e.g. live version, a bit less gain" autoComplete="off" />
+            <MicButton onText={setNotes} onInterim={setNotes} />
+          </div>
         </label>
         <label className="check wide">
           <input type="checkbox" checked={webSearch} onChange={(e) => setWebSearch(e.target.checked)} />
@@ -143,7 +168,10 @@ export function FindTone({ onLoaded }: { onLoaded: () => void }) {
           >
             <label className="field grow">
               <span>Adjust it</span>
-              <input value={refineText} onChange={(e) => setRefineText(e.target.value)} placeholder="brighter · less gain · make B a lead tone" />
+              <div className="with-mic">
+            <input value={refineText} onChange={(e) => setRefineText(e.target.value)} placeholder="brighter · less gain · make B a lead tone" />
+            <MicButton onText={setRefineText} onInterim={setRefineText} />
+          </div>
             </label>
             <button className="btn" type="submit" disabled={!!busy || !refineText.trim()}>
               Adjust

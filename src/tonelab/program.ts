@@ -337,3 +337,33 @@ export function blankProgram(): Uint8Array {
   b = write(b, { kind: 'expMax', pedal: 'exp1' }, 100);
   return b;
 }
+
+// ----- channels -----
+
+/** EXP targets that point at one channel, and their twin on the other. */
+const EXP_CHANNEL_TWIN: Record<number, number> = { 0b101000: 0b110000, 0b110000: 0b101000, 0b101001: 0b110001, 0b110001: 0b101001 };
+
+/**
+ * Channel A's amp, cabinet, knobs and on/off switches go to B and B's to A. The active channel and
+ * EXP targets on a channel (A/GAIN A...) follow, so the sound playing doesn't change. Effects are shared.
+ */
+export function swapChannels(bytes: Uint8Array): Uint8Array {
+  const pairs: [ControlRef, ControlRef][] = [
+    [{ kind: 'ampType', ch: 'A' }, { kind: 'ampType', ch: 'B' }],
+    [{ kind: 'cabType', ch: 'A' }, { kind: 'cabType', ch: 'B' }],
+    [{ kind: 'status', key: 'ampA' }, { kind: 'status', key: 'ampB' }],
+    [{ kind: 'status', key: 'cabA' }, { kind: 'status', key: 'cabB' }],
+    ...AMP_PARAMS.map((p): [ControlRef, ControlRef] => [{ kind: 'ampParam', ch: 'A', key: p.key }, { kind: 'ampParam', ch: 'B', key: p.key }]),
+  ];
+  let b = bytes;
+  for (const [a, x] of pairs) {
+    b = write(b, a, read(bytes, x));
+    b = write(b, x, read(bytes, a));
+  }
+  b = write(b, { kind: 'status', key: 'channelB' }, read(bytes, { kind: 'status', key: 'channelB' }) ? 0 : 1);
+  for (const pedal of ['exp1', 'exp2'] as const) {
+    const twin = EXP_CHANNEL_TWIN[read(bytes, { kind: 'expTarget', pedal })];
+    if (twin !== undefined) b = write(b, { kind: 'expTarget', pedal }, twin);
+  }
+  return b;
+}

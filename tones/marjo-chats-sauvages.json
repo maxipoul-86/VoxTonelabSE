@@ -6,71 +6,37 @@
    "id": "3c7f1b9e-5a2d-4e84-9b6c-8d1e4a7f2c37",
    "createdAt": "2026-10-18T12:20:00.000Z",
    "source": "manual",
-   "request": { "song": "Chats sauvages", "artist": "Marjo", "part": "Rhythm (clean verses, rock choruses)" },
+   "request": { "song": "Chats sauvages", "artist": "Marjo", "part": "Couplets (A) / Refrains rock et solo (B)" },
    "original": {
-    "guitar": "Jean Millaire (Marjo's guitarist and co-writer on the album)",
-    "amp": "Not documented. Mid-80s Quebec rock: clean chorus for the verses, Marshall-style crunch for the choruses",
-    "effects": "Chorus, stereo delay, hall reverb (era style, not documented)",
+    "guitar": "Jean Millaire (guitariste de Marjo et co-auteur sur l'album)",
+    "amp": "Non documenté. Rock québécois du milieu des années 80 : clean avec chorus pour les couplets, crunch style Marshall pour les refrains et le solo",
+    "effects": "Chorus, overdrive pour le solo, delay stéréo, reverb hall (style de l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "The big hit from Celle qui va (1986), Marjo's first solo album, recorded with Jean Millaire on Kébec-Disc."
+    "notes": "Le grand succès de Celle qui va (1986), le premier album solo de Marjo, enregistré avec Jean Millaire chez Kébec-Disc."
    },
    "pedal": {
-    "name": "CHATS RY",
+    "name": "CHATS",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 3.5, "vrGain": 5, "treble": 6.5, "middle": 5.5, "bass": 5, "presence": 6, "volume": 8.5, "nr": 2 },
-    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 6, "vrGain": 6, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 7, "vrGain": 6.5, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2.4 },
     "pedal": { "on": false, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
     "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
     "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 400, "feedback": 2.5, "tone": 6, "ducking": 3, "mix": 2 } },
     "reverb": { "on": true, "type": "HALL 1", "params": { "time": 5, "mix": 2 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
-   "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
+   "guitar": { "kind": "split", "selector": "both", "coils": "humbucker", "volume": 10, "tone": 8 },
    "guitarId": "tele",
    "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Channel A for the clean, chorused verses: switch to the middle position for a softer sound. Channel B for the rock choruses: JCM800-style crunch on the bridge humbucker. Stomp MOD off on channel B if the chorus makes the crunch too washy. For the solo, switch to CHATS SO.",
-   "why": "Mid-80s rock ballads move from a clean, chorused verse to a crunchy chorus. A JCM800-style amp gives the punch of that era, with a stereo delay and a hall reverb for the big production.",
+   "tips": "Canal A pour les couplets : clean avec chorus, sur la position du milieu pour un son plus doux. Canal B pour les refrains rock et le solo : crunch style JCM800; passe au humbucker chevalet. Écrase MOD pour enlever le chorus sur le canal B s'il rend le crunch trop flou. Pour le solo, écrase aussi PEDAL (Tube OD) pour plus de sustain, avec beaucoup de vibrato et de longs bends.",
+   "why": "Les ballades rock du milieu des années 80 passent d'un couplet clean avec chorus à un refrain crunchy. Un ampli style JCM800 donne le punch de l'époque, poussé par une overdrive légère pour un solo qui chante, avec un delay stéréo et une reverb hall pour la grosse réalisation.",
    "confidence": "low",
    "sources": [
     { "title": "L'Encyclopédie canadienne : Marjo", "url": "https://thecanadianencyclopedia.ca/fr/article/marjo" },
     { "title": "The Canadian Encyclopedia: Marjo", "url": "https://thecanadianencyclopedia.ca/en/article/marjo-emc" },
     { "title": "Noovo Moi : Marjo", "url": "https://www.noovomoi.ca/en-vedette/artistes/article/marjo/" }
-   ]
-  },
-  {
-   "id": "9e4a2d6b-1f8c-4b53-a7e9-4c6b9f2d8e48",
-   "createdAt": "2026-10-18T12:20:01.000Z",
-   "source": "manual",
-   "request": { "song": "Chats sauvages", "artist": "Marjo", "part": "Lead and solo" },
-   "original": {
-    "guitar": "Jean Millaire (Marjo's guitarist and co-writer on the album)",
-    "amp": "Not documented. Mid-80s rock lead: Marshall-style crunch pushed by an overdrive",
-    "effects": "Overdrive, stereo delay, hall reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "The big hit from Celle qui va (1986), Marjo's first solo album."
-   },
-   "pedal": {
-    "name": "CHATS SO",
-    "chain": "M-D-R",
-    "activeChannel": "B",
-    "channelA": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6, "middle": 7, "bass": 5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "channelB": { "amp": "UK '80S", "cabinet": "UK T75 4x12", "gain": 7.5, "vrGain": 7, "treble": 6, "middle": 7.5, "bass": 5, "presence": 6, "volume": 8, "nr": 2.4 },
-    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 3, "level": 6.5, "tone": 6 } },
-    "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
-    "delay": { "on": true, "type": "STEREO DELAY", "params": { "time": 450, "feedback": 3, "tone": 6, "ducking": 4, "mix": 2.5 } },
-    "reverb": { "on": true, "type": "HALL 1", "params": { "time": 5.5, "mix": 2 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 9 },
-   "guitarId": "tele",
-   "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Channel B for the solo: it loads on B, ready to play. Channel A is a slightly lower-gain version for lead lines. The stereo delay ducks under your playing and fills the gaps between phrases. Lots of vibrato and long bends suit the 80s rock style.",
-   "why": "A JCM800-style amp pushed by a light overdrive gives the singing, sustained 80s rock lead. A long stereo delay and a hall reverb add the big production of the era.",
-   "confidence": "low",
-   "sources": [
-    { "title": "L'Encyclopédie canadienne : Marjo", "url": "https://thecanadianencyclopedia.ca/fr/article/marjo" },
-    { "title": "The Canadian Encyclopedia: Marjo", "url": "https://thecanadianencyclopedia.ca/en/article/marjo-emc" }
    ]
   }
  ]

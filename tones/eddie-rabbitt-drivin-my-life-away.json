@@ -6,70 +6,37 @@
    "id": "2b6f9c3e-7a1d-4e58-9b2c-4d8a1e6f9b9f",
    "createdAt": "2026-10-18T13:45:00.000Z",
    "source": "manual",
-   "request": { "song": "Drivin' My Life Away", "artist": "Eddie Rabbitt", "part": "Driving rhythm" },
+   "request": { "song": "Drivin' My Life Away", "artist": "Eddie Rabbitt", "part": "Couplets (A) / Solo (B)" },
    "original": {
-    "guitar": "Larry Byrom and Norbert Putnam (guitar), Eddie Rabbitt (acoustic) per the Horizon album credits; not broken down per track",
-    "amp": "Not documented. 1980 country-rock crossover studio sound",
-    "effects": "Light compression, short delay, studio plate reverb (era style, not documented)",
+    "guitar": "Larry Byrom et Norbert Putnam (guitare), Eddie Rabbitt (acoustique) selon les crédits de l'album Horizon ; pas de détail par pièce",
+    "amp": "Non documenté. Son de studio country-rock crossover de 1980",
+    "effects": "Compression légère, delay, reverb à plaque de studio (style de l'époque, non documenté)",
     "tuning": "Standard",
-    "notes": "From Horizon (1980) and the film Roadie. Written by Eddie Rabbitt, Even Stevens and David Malloy."
+    "notes": "Tiré de Horizon (1980) et du film Roadie. Écrite par Eddie Rabbitt, Even Stevens et David Malloy."
    },
    "pedal": {
-    "name": "DRIVE RY",
+    "name": "DRIVE",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 5, "vrGain": 5.5, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
+    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
     "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
     "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
     "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 110, "feedback": 1, "tone": 5, "mix": 1.5 } },
     "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "kind": "split", "selector": "bridge", "coils": "humbucker", "volume": 10, "tone": 8 },
    "guitarId": "tele",
    "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Channel A for the driving, palm-muted eighth notes that give the song its rolling-down-the-highway feel: keep the picking even and the muting tight. Channel B for a bigger crunch in the choruses. Pull the tone knob (single coil) for a brighter, twangier chug.",
-   "why": "1980 country-rock crossover records used a tight, lightly compressed crunch for the driving rhythm parts, with a short delay and a studio plate reverb. The AC30 keeps it bright, and the Plexi channel adds weight for the choruses.",
+   "tips": "Canal A : les croches étouffées qui roulent comme sur l'autoroute ; garde l'attaque égale et le palm mute serré. Canal B : le crunch Plexi pour le solo et les fills, un peu plus fort. Pour le solo, tire le bouton de tonalité (simple bobinage) pour le twang ; double stops et bends légers vont bien avec le style. Le delay court sert aux deux canaux.",
+   "why": "Les disques country-rock crossover de 1980 utilisaient un crunch serré et légèrement compressé pour la rythmique, avec un delay court et une reverb à plaque de studio. L'AC30 garde les couplets brillants ; le canal Plexi ajoute du poids et du sustain pour le solo.",
    "confidence": "low",
    "sources": [
     { "title": "Sessiondays: 1980 Eddie Rabbitt, Drivin' My Life Away", "url": "https://sessiondays.com/?p=26480" },
     { "title": "Sessiondays: 1980 Eddie Rabbitt, Horizon", "url": "https://sessiondays.com/2017/09/06/1980-eddie-rabbitt-horizon/" },
-    { "title": "Wikipedia: Horizon (Eddie Rabbitt album)", "url": "https://en.wikipedia.org/wiki/Horizon_(Eddie_Rabbitt_album)" }
-   ]
-  },
-  {
-   "id": "9d4c1f7a-2e8b-4b65-a3f9-7c5e2a8d4f0a",
-   "createdAt": "2026-10-18T13:45:01.000Z",
-   "source": "manual",
-   "request": { "song": "Drivin' My Life Away", "artist": "Eddie Rabbitt", "part": "Lead fills and solo" },
-   "original": {
-    "guitar": "Larry Byrom and Norbert Putnam (guitar) per the Horizon album credits; not broken down per track",
-    "amp": "Not documented. 1980 country-rock crossover studio sound",
-    "effects": "Light compression, delay, studio plate reverb (era style, not documented)",
-    "tuning": "Standard",
-    "notes": "From Horizon (1980) and the film Roadie."
-   },
-   "pedal": {
-    "name": "DRIVE LD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "AC30TB", "cabinet": "VOX AC30", "gain": 6, "vrGain": 6, "treble": 6.5, "middle": 6.5, "bass": 4.5, "presence": 6, "volume": 7.5, "nr": 2.4 },
-    "channelB": { "amp": "UK 68P", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 7, "bass": 4.5, "presence": 6, "volume": 8, "nr": 2.4 },
-    "pedal": { "on": true, "type": "COMP", "params": { "sens": 3, "level": 5, "attack": 6 } },
-    "mod": { "on": false, "type": "STEREO CHORUS", "params": { "speed": 0.6, "depth": 3, "manual": 5, "mix": 3 } },
-    "delay": { "on": true, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1.5, "tone": 5, "mix": 1.8 } },
-    "reverb": { "on": true, "type": "PLATE 1", "params": { "time": 3, "mix": 1.5 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "kind": "split", "selector": "bridge", "coils": "single", "volume": 10, "tone": 9 },
-   "guitarId": "tele",
-   "guitarName": "Fender Telecaster Custom FMT HH",
-   "tips": "Channel A for fills between the vocal lines, channel B for the solo. Single coil (tone knob pulled) gives the twang. Double stops and bends with a light touch suit the country-rock style.",
-   "why": "A lightly compressed AC30 crunch with a delay just behind the notes gives snappy country-rock fills, and the Plexi channel adds weight for the solo.",
-   "confidence": "low",
-   "sources": [
-    { "title": "Sessiondays: 1980 Eddie Rabbitt, Horizon", "url": "https://sessiondays.com/2017/09/06/1980-eddie-rabbitt-horizon/" },
+    { "title": "Wikipedia: Horizon (Eddie Rabbitt album)", "url": "https://en.wikipedia.org/wiki/Horizon_(Eddie_Rabbitt_album)" },
     { "title": "westcoast.dk: Eddie Rabbitt, Horizon", "url": "https://westcoast.dk/?p=15894" }
    ]
   }

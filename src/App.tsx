@@ -39,7 +39,7 @@ export function App() {
   const conn = useStore((s) => s.conn);
   useEffect(() => {
     void store.refreshLibrary();
-    // Following Winamp stays on between sessions, so a gig laptop is ready when the app opens.
+    // Following the player stays on between sessions, so a gig laptop is ready when the app opens.
     if (store.state.settings.gigFollow) store.startFollowing();
   }, []);
   useEffect(() => {
@@ -48,10 +48,13 @@ export function App() {
 
   return (
     <div className="app">
-      <nav className="tabs" aria-label="Sections">
-        <span className="brand">Tonelab SE</span>
+      <nav className="sidenav" aria-label="Sections">
+        <span className="brand" aria-label="VOX Tonelab SE">
+          <span className="brand-vox">VOX</span>
+          <span className="brand-model">TONELAB SE</span>
+        </span>
         {TABS.map((t) => (
-          <button key={t.id} type="button" className="tab" aria-current={tab === t.id ? 'page' : undefined} onClick={() => setTab(t.id)}>
+          <button key={t.id} type="button" className="nav-item" aria-current={tab === t.id ? 'page' : undefined} onClick={() => setTab(t.id)}>
             {t.label}
             {t.id === 'midi' && <span className={`dot ${conn.status}`} aria-label={conn.status} />}
           </button>
@@ -61,7 +64,7 @@ export function App() {
         {tab === 'pedal' && <PedalPanel />}
         {tab === 'find' && <FindTone onLoaded={() => setTab('pedal')} />}
         {tab === 'library' && <Library onLoaded={() => setTab('pedal')} />}
-        {tab === 'gig' && <Gig onFind={() => setTab('find')} />}
+        {tab === 'gig' && <Gig />}
         {tab === 'midi' && <MidiBench />}
         {tab === 'settings' && <Settings />}
       </main>

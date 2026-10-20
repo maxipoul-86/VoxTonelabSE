@@ -6,64 +6,32 @@
    "id": "f2a8c4e1-5d9b-4f63-8e17-3b6d1a9c5e2f",
    "createdAt": "2026-10-17T12:40:00.000Z",
    "source": "manual",
-   "request": { "song": "Pride and Joy", "artist": "Stevie Ray Vaughan", "part": "Shuffle rhythm" },
+   "request": { "song": "Pride and Joy", "artist": "Stevie Ray Vaughan", "part": "Shuffle des couplets (A) / Solo (B)" },
    "original": {
-    "guitar": "Fender Stratocaster (\"Number One\"), heavy strings (.013-.058)",
-    "amp": "Two Fender Vibroverbs (one with a 15-inch Altec) and Jackson Browne's Dumble with a 4x12, close-miked with SM57s",
-    "effects": "Ibanez Tube Screamer (the only pedal, per engineer Richard Mullen), amp spring reverb",
-    "tuning": "Down a half step (Eb)",
-    "notes": "Recorded November 24, 1982 for Texas Flood. Sources differ on how much of each amp is on the record."
+    "guitar": "Fender Stratocaster (« Number One »), cordes lourdes (.013-.058)",
+    "amp": "Deux Fender Vibroverb (dont un avec un haut-parleur Altec de 15 pouces) et le Dumble de Jackson Browne avec un 4x12, captés de près avec des SM57",
+    "effects": "Ibanez Tube Screamer (la seule pédale, selon l'ingénieur Richard Mullen), spring reverb de l'ampli; un Roland Dimension D aurait été ajouté au solo au mixage",
+    "tuning": "Un demi-ton plus bas (Mib)",
+    "notes": "Enregistré le 24 novembre 1982 pour Texas Flood. Les sources ne s'entendent pas sur la part de chaque ampli sur le disque."
    },
    "pedal": {
-    "name": "PRIDE RY",
+    "name": "PRIDE",
     "chain": "M-D-R",
     "activeChannel": "A",
     "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 5.5, "vrGain": 6, "treble": 6.5, "middle": 5, "bass": 5.5, "presence": 6, "volume": 7.5, "nr": 1 },
-    "channelB": { "amp": "BOUTIQUE OD", "cabinet": "UK H30 4x12", "gain": 5, "vrGain": 5.5, "treble": 6, "middle": 6, "bass": 5.5, "presence": 6, "volume": 7.5, "nr": 1 },
+    "channelB": { "amp": "BOUTIQUE OD", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6, "treble": 6, "middle": 6.5, "bass": 5.5, "presence": 6, "volume": 8, "nr": 1 },
     "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 1.5, "level": 7, "tone": 5.5 } },
     "mod": { "on": false, "type": "PITCH SHIFTER", "params": { "pitch": -1, "fine": 0, "tracking": 20, "direct": 0, "effect": 10 } },
     "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1, "tone": 5, "mix": 1.5 } },
     "reverb": { "on": true, "type": "SPRING 2", "params": { "time": 3.5, "mix": 2 } },
-    "exp1": "VOLUME"
+    "exp1": "VOLUME",
+    "exp2": "OFF"
    },
    "guitar": { "selector": "neck", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "SRV tuned down a half step. Either retune to Eb, or stomp MOD: it's set to a pitch shifter one semitone down so you can play along in standard tuning (expect a little warble). Channel A is the Vibroverb, channel B the Dumble. Dig in hard: the shuffle lives in the picking hand, with muted strings between the chord stabs and the bass-note pattern.",
-   "why": "A blackface Fender at the edge of breakup, pushed by a Tube Screamer with low drive and high level, with spring reverb. That's the documented Texas Flood rig. NR is kept low so the dynamics and the muted ghost notes come through.",
+   "tips": "SRV jouait un demi-ton plus bas. Accorde-toi en Mib, ou écrase MOD : c'est un pitch shifter réglé un demi-ton plus bas pour jouer en accordage standard (attends-toi à un léger flottement). Canal A : le Vibroverb pour le shuffle des couplets. Canal B : le Dumble, plus gras et plus chantant, pour le solo. Attaque fort : le shuffle vit dans la main droite, avec des cordes étouffées entre les accords et le motif de basse. Les cordes lourdes et l'attaque, c'est la moitié du son de SRV.",
+   "why": "Un Fender blackface au bord de la saturation, poussé par un Tube Screamer avec peu de drive et beaucoup de niveau, avec de la spring reverb : c'est le montage documenté de Texas Flood. Pour le solo, le Dumble pousse plus fort. Le NR reste bas pour garder la dynamique et les notes fantômes étouffées.",
    "confidence": "medium",
-   "sources": [
-    { "title": "Mix: Classic Track, Stevie Ray Vaughan \"Pride and Joy\"", "url": "https://www.mixonline.com/recording/classic-tracks/classic-track-stevie-ray-vaughan-pride-and-joy-367582" },
-    { "title": "Line 6 blog: Jas Obrecht, Stevie Ray Vaughan's Texas Flood sessions", "url": "https://blog.line6.com/?p=6428" },
-    { "title": "Wikipedia: Texas Flood", "url": "https://en.wikipedia.org/wiki/Texas_Flood" }
-   ]
-  },
-  {
-   "id": "1c6e9a3f-7b2d-4a85-b4c8-9e3f5d1a7b60",
-   "createdAt": "2026-10-17T12:40:01.000Z",
-   "source": "manual",
-   "request": { "song": "Pride and Joy", "artist": "Stevie Ray Vaughan", "part": "Solo" },
-   "original": {
-    "guitar": "Fender Stratocaster (\"Number One\"), heavy strings (.013-.058)",
-    "amp": "Fender Vibroverb and Jackson Browne's Dumble with a 4x12",
-    "effects": "Ibanez Tube Screamer; Roland Dimension D reportedly added to the solo at the mix",
-    "tuning": "Down a half step (Eb)",
-    "notes": "Recorded November 24, 1982 for Texas Flood."
-   },
-   "pedal": {
-    "name": "PRIDE LD",
-    "chain": "M-D-R",
-    "activeChannel": "A",
-    "channelA": { "amp": "BLACK 2x12", "cabinet": "BLACK 2x12", "gain": 6.5, "vrGain": 6.5, "treble": 6.5, "middle": 5.5, "bass": 5.5, "presence": 6, "volume": 7.5, "nr": 1 },
-    "channelB": { "amp": "BOUTIQUE OD", "cabinet": "UK H30 4x12", "gain": 6.5, "vrGain": 6, "treble": 6, "middle": 6.5, "bass": 5.5, "presence": 6, "volume": 8, "nr": 1 },
-    "pedal": { "on": true, "type": "TUBE OD", "params": { "drive": 2, "level": 7.5, "tone": 6 } },
-    "mod": { "on": true, "type": "STEREO CHORUS", "params": { "speed": 0.3, "depth": 2, "manual": 5, "mix": 3 } },
-    "delay": { "on": false, "type": "ANALOG DELAY", "params": { "time": 300, "feedback": 1, "tone": 5, "mix": 1.5 } },
-    "reverb": { "on": true, "type": "SPRING 2", "params": { "time": 3.5, "mix": 2 } },
-    "exp1": "VOLUME"
-   },
-   "guitar": { "selector": "neck", "coils": "single", "volume": 10, "tone": 8 },
-   "tips": "Channel A for a brighter Vibroverb solo, channel B for the thicker Dumble one. The slow, shallow stereo chorus stands in for the Roland Dimension D on the record's solo. Turn MOD off for the raw amp sound. Heavy strings and hard picking are half of SRV's tone: play with more attack than feels natural.",
-   "why": "Same rig as the rhythm, pushed harder: more amp gain and a bit more Tube Screamer. The Dimension D was a subtle studio widener, so a slow, shallow stereo chorus is the closest thing on the Tonelab.",
-   "confidence": "medium",
+   "warnings": ["Le chorus lent qui remplace le Roland Dimension D du solo n'est pas disponible : la case MOD sert au pitch shifter pour l'accordage en Mib."],
    "sources": [
     { "title": "Mix: Classic Track, Stevie Ray Vaughan \"Pride and Joy\"", "url": "https://www.mixonline.com/recording/classic-tracks/classic-track-stevie-ray-vaughan-pride-and-joy-367582" },
     { "title": "Line 6 blog: Jas Obrecht, Stevie Ray Vaughan's Texas Flood sessions", "url": "https://blog.line6.com/?p=6428" },

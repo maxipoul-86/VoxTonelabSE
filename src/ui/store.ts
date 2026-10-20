@@ -4,12 +4,12 @@ import { useSyncExternalStore } from 'react';
 import { getMidiAccess, listPortPairs, openWebMidi, type PortPair } from '../midi/connection';
 import { TonelabClient, type GlobalSettings, type LogEntry } from '../midi/tonelabClient';
 import { VirtualTonelab } from '../midi/virtualTonelab';
-import { blankProgram, controlFromAddress, read, write, type ControlRef } from '../tonelab/program';
+import { blankProgram, controlFromAddress, read, swapChannels, write, type ControlRef } from '../tonelab/program';
 import { applyRecipe, defaultSetup, newId, readRecipe, recipeGuitarId, type ToneRecipe } from '../tonelab/recipe';
 import { activeGuitar } from '../ai/guitar';
 import { programLabel } from '../tonelab/spec';
 import { backups, library, loadSettings, saveSettings, type AppSettings } from '../store/storage';
-import { learnedEdits } from '../ai/engine';
+import { learnedEdits, refineTone, type EngineResult } from '../ai/engine';
 import { findTone, parseTrack, type Track } from '../gig/match';
 import { connectBridge, type BridgeHandle, type NowPlaying } from '../gig/bridge';
 
@@ -33,12 +33,14 @@ export interface AppState {
   gig: GigState;
 }
 
-/** Following Winamp: bridge status, what's playing and which tone it got. */
+/** Following the player (Winamp or Spotify): bridge status, what's playing and which tone it got. */
 export interface GigState {
   bridge: 'off' | 'connecting' | 'live' | 'polling' | 'unreachable';
   nowPlaying?: NowPlaying;
   track?: Track;
   toneId?: string;
+  /** Why the tone may be the wrong one (matched by title only, not approved); see findTone. */
+  toneDoubt?: string;
   otherGuitarToneId?: string;
   /** Time from the bridge seeing the track change to the pedal's ACK. */
   lastSwitchMs?: number;
@@ -107,17 +109,17 @@ class Store {
     }
   }
 
-  // ----- gig: follow Winamp -----
+  // ----- gig: follow the player (Winamp or Spotify) -----
 
   private bridge: BridgeHandle | null = null;
-  /** "index|title" of the last track handled, so pausing and resuming doesn't reload it. */
+  /** "index|artist|title" of the last track handled, so pausing and resuming doesn't reload it. */
   private handledTrack: string | null = null;
 
   private setGig(patch: Partial<GigState>) {
     this.set({ gig: { ...this.state.gig, ...patch } });
   }
 
-  /** Start loading each Winamp track's tone as it starts. Remembered for next time. */
+  /** Start loading each track's tone as it starts. Remembered for next time. */
   startFollowing() {
     this.bridge?.close();
     this.handledTrack = null;
@@ -137,8 +139,8 @@ class Store {
 
   private onSnapshot(s: NowPlaying) {
     this.setGig({ nowPlaying: s });
-    if (s.winamp !== 'running' || s.state !== 'playing') return;
-    const id = `${s.index}|${s.title}`;
+    if (!s.running || s.state !== 'playing' || !(s.title || s.file)) return;
+    const id = `${s.index}|${s.artist ?? ''}|${s.title}`;
     if (id === this.handledTrack) return;
     this.handledTrack = id;
     void this.applyTrack(parseTrack(s), s.changedAt);
@@ -146,24 +148,11 @@ class Store {
 
   /** Find the track's tone for the guitar being played and load it into the edit buffer. */
   private async applyTrack(track: Track, changedAt?: number) {
-    const { recipe, otherGuitar } = findTone(track, this.state.library, this.guitar.id, this.state.settings.trackLinks);
-    this.setGig({ track, toneId: recipe?.id, otherGuitarToneId: otherGuitar?.id, lastSwitchMs: undefined });
+    const { recipe, doubt, otherGuitar } = findTone(track, this.state.library, this.guitar.id, this.state.settings.trackLinks);
+    this.setGig({ track, toneId: recipe?.id, toneDoubt: doubt, otherGuitarToneId: otherGuitar?.id, lastSwitchMs: undefined });
     if (!recipe || this.state.recipe?.id === recipe.id) return;
     const sent = await this.loadRecipe(recipe);
     if (sent && changedAt) this.setGig({ lastSwitchMs: Date.now() - changedAt });
-  }
-
-  private findPrefill: { song?: string; artist?: string } | null = null;
-
-  /** Open Find with these fields filled in (read once by the Find screen). */
-  prefillFind(p: { song?: string; artist?: string }) {
-    this.findPrefill = p;
-  }
-
-  takeFindPrefill() {
-    const p = this.findPrefill;
-    this.findPrefill = null;
-    return p;
   }
 
   /** Always use this tone for this track (null = back to automatic). */
@@ -312,6 +301,18 @@ class Store {
     }
   }
 
+  /** Swap channel A and B (see swapChannels) and send the result to the edit buffer. */
+  async swapChannels() {
+    const program = swapChannels(this.state.program);
+    this.set({ program });
+    if (!this.client) return;
+    try {
+      await this.client.sendProgram(program);
+    } catch (e) {
+      this.toast((e as Error).message, 'error');
+    }
+  }
+
   /** Load a recipe: build the program from it and send it to the edit buffer. */
   /** Puts a tone in the edit buffer (nothing is stored). Resolves true once the pedal confirmed it. */
   async loadRecipe(recipe: ToneRecipe): Promise<boolean> {
@@ -341,6 +342,25 @@ class Store {
     await this.refreshLibrary();
   }
 
+  /**
+   * Fine tune: the fast model (Haiku by default) adjusts the tone as it is on the pedal now, knob
+   * changes included. The result is saved to the library and loaded, ready for the next adjustment.
+   */
+  async fineTune(instruction: string, onStatus?: (s: string | null) => void): Promise<EngineResult> {
+    const { ai, rig } = this.state.settings;
+    if (!ai.apiKey) throw new Error('Add an API key in Settings to fine tune.');
+    if (this.client) await this.readEditBuffer();
+    const pedal = readRecipe(this.state.program);
+    const parent = this.state.recipe;
+    const current: ToneRecipe = parent
+      ? { ...parent, pedal }
+      : { id: newId(), createdAt: new Date().toISOString(), source: 'captured', request: { song: pedal.name }, pedal, guitar: defaultSetup(this.guitar.kind), guitarId: this.guitar.id };
+    const result = await refineTone(current, instruction, { ai, guitar: this.guitar, rig, learned: this.learned(), onStatus });
+    await this.saveRecipe(result.recipe);
+    await this.loadRecipe(result.recipe);
+    return result;
+  }
+
   /** "Save my version": store the current panel as an edited recipe linked to the loaded one. */
   async saveMyVersion() {
     if (this.client) await this.readEditBuffer();
@@ -368,18 +388,6 @@ class Store {
     await this.saveRecipe(recipe);
     this.set({ recipe, baseline: this.state.program });
     this.toast('Saved your version to the library', 'ok');
-  }
-
-  async storeToSlot(slot: number) {
-    if (!this.client) return this.toast('Connect to the pedal first.', 'error');
-    try {
-      await this.client.sendProgram(this.state.program);
-      await this.client.writeProgram(slot);
-      this.set({ slot });
-      this.toast(`Stored in program ${programLabel(slot)}`, 'ok');
-    } catch (e) {
-      this.toast((e as Error).message, 'error');
-    }
   }
 
   async backupAll(download: (name: string, text: string) => void) {
